@@ -305,22 +305,19 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "Hudson Yards → 하이라인 진입", detail: "Hudson Yards 광장에서 하이라인 직결 · 도보 0분" },
           { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "북→남 방향 (34th St → Gansevoort St)\n23rd St 잔디밭 · 17th St 10th Ave 전망대\n· Chelsea Thicket · 약 45분" }
         ]},
-      { time: "13:30", end: "15:00", title: "Chelsea Market 점심 & 쇼핑", type: "food", location: "Chelsea Market", address: "75 9th Ave, NY 10011",
-        description: "🌮 Los Tacos No.1 (꼭!)\n🦞 Lobster Place (랍스터롤)\n🍩 Doughnuttery (작은 도넛)\n🥖 Amy's Bread\n🍫 Fat Witch Bakery (브라우니)\n\n💰 1인 $20~35\n쇼핑: 부티크/기념품 가게도 많음",
-        photo: "https://images.unsplash.com/photo-1611810175252-615167ac09ef?w=600&h=300&fit=crop&auto=format",
-        tip: "Los Tacos No.1는 줄 서더라도 기다릴 가치 있음!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "하이라인 → Chelsea Market", detail: "하이라인 14th St 출구로 하차 → Chelsea Market\n9th Ave 방향 도보 1분" }
-        ]},
-      { time: "15:00", end: "17:00", title: "Meatpacking District 산책", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
-        description: "트렌디한 부티크 + 갤러리 + 카페\n• Whitney Museum 외관 (입장 옵션 $30)\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상\n• Pastis 카페 (와인 한잔 옵션)\n• Gansevoort St 자갈길 사진 포인트",
+      { time: "13:30", end: "17:00", title: "Meatpacking District 산책 + 자유시간", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
+        description: "Hudson Yards 브런치로 이미 든든하니, 천천히 둘러보는 오후.\n\n🛍️ 산책/쇼핑\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상 (탁 트인 뷰)\n• Gansevoort St 자갈길 사진 포인트\n\n🏛️ 미술관 옵션\n• Whitney Museum 외관/입장 ($30)\n• 옥상에서 하이라인 + 허드슨강 뷰\n\n☕ 카페/와인 옵션\n• Pastis (52 Gansevoort St) - 와인/커피\n• Bubby's High Line - 가벼운 스낵\n• 또는 그냥 벤치/공원에서 휴식\n\n💡 일몰 전 여유로운 산책 + 휴식 시간",
         photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
-        tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰!",
+        tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰가 압권!",
+        links: [
+          { icon: "🏛️", label: "Whitney Museum", href: "https://whitney.org/visit" },
+          { icon: "☕", label: "Pastis 카페", href: "https://resy.com/cities/ny/pastis-9" }
+        ],
         transit: [
-          { mode: "walk", icon: "🚶", label: "Chelsea Market → Meatpacking", detail: "Chelsea Market(9th Ave) → 남쪽 도보\nGansevoort St까지 약 5분" }
+          { mode: "walk", icon: "🚶", label: "하이라인 끝 → Meatpacking", detail: "하이라인 남쪽 끝 (Gansevoort St 출구)\n→ Meatpacking 지구 도보 0~3분" }
         ]},
       { time: "17:30", end: "20:30", title: "Little Island 일몰 & 저녁", type: "highlight", location: "Little Island at Pier 55", address: "Pier 55, Hudson River Park (W 13th St & 11th Ave)",
-        description: "🌅 허드슨강 위 떠 있는 인공 섬 공원!\n• 입장 무료 · 06:00~24:00 운영\n• 132개 튤립 모양 콘크리트 기둥 위 정원\n• The Glade 야외극장 (주말 무료 공연)\n• 일몰 뷰 명소 (5월 일몰 ~20:00)\n\n🍽️ 저녁 옵션\n• The Play Ground 푸드 카트 (피자/타코/맥주)\n• 또는 Chelsea Market에서 포장 → Little Island 피크닉\n• 또는 근처 Pastis(52 Gansevoort St) / Catch(21 9th Ave) 식당\n\n💰 1인 $25~50 (옵션에 따라)",
+        description: "🌅 허드슨강 위 떠 있는 인공 섬 공원!\n• 입장 무료 · 06:00~24:00 운영\n• 132개 튤립 모양 콘크리트 기둥 위 정원\n• The Glade 야외극장 (주말 무료 공연)\n• 일몰 뷰 명소 (5월 일몰 ~20:00)\n\n🍽️ 저녁 옵션\n• The Play Ground 푸드 카트 (피자/타코/맥주)\n• 또는 근처 Pastis(52 Gansevoort St) / Catch(21 9th Ave) 식당\n• 또는 Meatpacking 동네 식당 포장 → 피크닉\n\n💰 1인 $25~50 (옵션에 따라)",
         photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
         links: [
           { icon: "🌐", label: "Little Island 공식", href: "https://littleisland.org/" },
