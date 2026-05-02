@@ -132,7 +132,7 @@ const DAYS = [
         ]},
       { time: "18:30", end: "20:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
         description: "브루클린 최고의 가성비 스테이크!\n• Butcher's Steak $34\n• 1인 예산: $60~80\n• 예약: rfrr.com/st-anselm",
-        photo: "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?w=600&h=300&fit=crop",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGAeF8DR8bA22P1R9BNuJg81LgCMSLliF3tGNYD92OlYp-MtkIyTdUY2hs2vutn30xge1eS2_WbsLvByuaLyI5OVpAYTp_6vPNSRnGKC4ZDXRBnHqQ8APLHrYjEUPCPdyRaI13N=w600-h300-n-k-no",
         tip: "Butcher's Steak 반드시 주문!",
         transit: [
           { mode: "subway", icon: "🚇", label: "DUMBO → Williamsburg", detail: "York St역 (F line) → East Broadway 환승 → Lorimer St역 하차\n또는 DUMBO에서 Uber · 약 10분 · $12~15" },
