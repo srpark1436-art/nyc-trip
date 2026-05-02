@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b7dd8"/>
+      <stop offset="33%" stop-color="#9b5fbf"/>
+      <stop offset="66%" stop-color="#3a9a4f"/>
+      <stop offset="100%" stop-color="#cf6a45"/>
+    </linearGradient>
+  </defs>
+  <rect width="180" height="180" rx="40" fill="url(#bg)"/>
+  <g fill="white" opacity="0.96">
+    <rect x="25"  y="110" width="14" height="40"/>
+    <rect x="45"  y="90"  width="17" height="60"/>
+    <rect x="68"  y="73"  width="14" height="77"/>
+    <rect x="88"  y="50"  width="14" height="100"/>
+    <polygon points="93,50 96,50 94.5,30"/>
+    <rect x="108" y="62"  width="17" height="88"/>
+    <rect x="131" y="78"  width="14" height="72"/>
+    <rect x="151" y="96"  width="11" height="54"/>
+  </g>
+  <text x="90" y="170" font-size="14" font-weight="700" text-anchor="middle" fill="white" opacity="0.85" font-family="-apple-system, system-ui, sans-serif">NYC</text>
+</svg>

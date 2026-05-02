@@ -181,14 +181,14 @@ const DAYS = [
         ]},
       { time: "17:30", end: "19:00", title: "브라이언파크 맥주 한잔", type: "highlight", location: "The Porch at Bryant Park", address: "41 W 40th St, New York, NY 10018",
         description: "스트링 라이트 아래 나무 데크에서 맥주!\n크래프트 맥주, 위스키, 칵테일\n영업: 12:00~21:00",
-        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
+        photo: "https://thumbs.dreamstime.com/b/bryant-park-night-midtown-manhattan-new-york-city-147362561.jpg",
         tip: "그네 의자에 앉아 코파운더들과 수다하기 최적",
         transit: [
           { mode: "walk", icon: "🚶", label: "MoMA → Bryant Park", detail: "MoMA 53rd St → 6th Ave 남쪽 도보 → 40th St · 약 12분" }
         ]},
       { time: "19:00", end: "21:00", title: "미드타운 디너", type: "food", location: "Koreatown 또는 주변", address: "W 32nd St, New York, NY 10001",
         description: "한식: Jongro BBQ, Her Name is Han\n양식: The Smith, Quality Italian",
-        photo: "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?w=600&h=300&fit=crop",
+        photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
         tip: "코리아타운은 24시간 영업 많아요",
         transit: [
           { mode: "walk", icon: "🚶", label: "Bryant Park → 코리아타운", detail: "40th St → 32nd St 남쪽 도보 · 약 10분\n5th Ave 따라 내려가면 됩니다" }
@@ -283,7 +283,7 @@ const DAYS = [
         ]},
       { time: "13:30", end: "15:00", title: "Hudson Yards & Edge", type: "sightseeing", location: "Hudson Yards", address: "20 Hudson Yards, NY 10001",
         description: "Edge 전망대 ($44/인) · 럭셔리 쇼핑",
-        photo: "https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?w=600&h=300&fit=crop",
+        photo: "https://kr.img.news.koreanair.com/wp-content/uploads/2019/08/NR201908_living_JFK_3-768x509.png",
         tip: "Edge에서 숙소 방향 뉴저지가 보여요!",
         transit: [
           { mode: "walk", icon: "🚶", label: "하이라인에서 직결", detail: "하이라인 북쪽 끝 → Hudson Yards 직결 · 도보 0분" }
@@ -305,6 +305,7 @@ const DAYS = [
         ]},
       { time: "19:30", end: "21:30", title: "마지막 밤 디너", type: "food", location: "Meatpacking District", address: "Gansevoort St 주변",
         description: "Catch(21 9th Ave) · STK(26 Little W 12th St)\nPastis(52 Gansevoort St)",
+        photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
         tip: "Meatpacking은 밤에 분위기 최고",
         transit: [
           { mode: "walk", icon: "🚶", label: "West Village → Meatpacking", detail: "Bleecker St → 서쪽/북쪽 도보 · 약 10분\n또는 14th St & 9th Ave 방향" }
