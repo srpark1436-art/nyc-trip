@@ -59,19 +59,26 @@ const DAYS = [
           { mode: "ferry", icon: "⛴️", label: "페리 옵션 (뷰)", detail: "숙소 → Port Imperial(도보/Uber 8분) → 페리 8분 · $9\nW. 39th St 하차 후 타임스퀘어 도보 10분" },
           { mode: "car", icon: "🚗", label: "Uber 직행", detail: "숙소 → 타임스퀘어 · 약 15~25분 · $25~35 (1인 $8~12)" }
         ]},
-      { time: "17:00", end: "19:00", title: "타임스퀘어 & 미드타운 산책", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, Manhattan, NY 10036",
+      { time: "17:00", end: "18:30", title: "타임스퀘어 & 미드타운 산책", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, Manhattan, NY 10036",
         description: "첫날 뉴욕의 에너지를 느끼며 타임스퀘어 주변 산책.\n록펠러센터, 5번가도 근처에 있어요.",
         photo: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=300&fit=crop",
         tip: "TKTS 부스에서 당일 브로드웨이 할인 티켓 체크!",
         transit: [
           { mode: "walk", icon: "🚶", label: "도보 산책", detail: "타임스퀘어 → 록펠러센터(도보 5분) → 5번가(도보 3분)" }
         ]},
-      { time: "19:00", end: "19:45", title: "숙소 복귀", type: "transport", location: "미드타운 → 숙소", address: "Port Authority / W. 39th St → 5303 JFK Blvd East",
-        description: "타임스퀘어에서 숙소로 돌아갑니다.\n첫날은 일찍 들어가서 컨디션 관리!",
-        tip: "158번 버스가 가장 가성비 좋습니다",
+      { time: "18:30", end: "19:45", title: "브라이언파크 맥주 한잔", type: "highlight", location: "The Porch at Bryant Park", address: "41 W 40th St, New York, NY 10018",
+        description: "스트링 라이트 아래 나무 데크에서 맥주!\n크래프트 맥주, 위스키, 칵테일\n영업: 12:00~21:00\n\n🍺 도착 첫날 환영주 — 시차 풀고 가볍게!",
+        photo: "https://thumbs.dreamstime.com/b/bryant-park-night-midtown-manhattan-new-york-city-147362561.jpg",
+        tip: "그네 의자에 앉아 코파운더들과 도착 인사 + 일정 미팅 최적",
         transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (추천)", detail: "Port Authority Bus Terminal → JFK Blvd East\n약 25~35분 · $3.50 · 환승 없음" },
-          { mode: "ferry", icon: "⛴️", label: "페리", detail: "W. 39th St → Port Imperial · 8분 · $9\n막차 시간 체크 필수" },
+          { mode: "walk", icon: "🚶", label: "타임스퀘어 → Bryant Park", detail: "타임스퀘어 → 6th Ave & 40th St · 도보 약 7분" }
+        ]},
+      { time: "20:00", end: "20:45", title: "숙소 복귀", type: "transport", location: "미드타운 → 숙소", address: "Bryant Park → 5303 JFK Blvd East",
+        description: "Bryant Park에서 숙소로 복귀.\n페리 W. 39th St이 가깝습니다 (도보 5분).",
+        tip: "페리 또는 158번 직행 — 마지막 시간 확인",
+        transit: [
+          { mode: "ferry", icon: "⛴️", label: "페리 (가까움)", detail: "Bryant Park 도보 → W. 39th St 페리 터미널 (약 8분)\n→ Port Imperial · 8분 · $9 · 막차 시간 체크" },
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행", detail: "Bryant Park 도보 → Port Authority (약 5분)\n→ 158번 → JFK Blvd East · 약 25~35분 · $3.50" },
           { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "미드타운 → 숙소 · 약 15~20분 · $25~35 (1인 $8~12)" }
         ]},
       { time: "20:00", end: "21:00", title: "Food Bazaar 장보기 (한남마트 옵션)", type: "food", location: "Food Bazaar Supermarket / 한남마트", address: "Bergenline Ave, West New York / Fort Lee, NJ",
@@ -84,16 +91,16 @@ const DAYS = [
           { mode: "car", icon: "🚗", label: "한남마트 Uber", detail: "숙소 → 한남마트 (Fort Lee) 약 12~18분\n$12~16 (편도) · 왕복 $25~32" },
           { mode: "bus", icon: "🚌", label: "한남마트 버스 대안", detail: "Bus 156 또는 158 (북쪽 방향) → Fort Lee\n환승 필요 · 약 30~40분 · 비추" }
         ]},
-      { time: "21:00", end: "22:30", title: "숙소에서 저녁 식사", type: "food", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
-        description: "사 온 음식으로 숙소에서 편하게 저녁!\n맨해튼 스카이라인 야경을 보며 첫날 마무리.\n\n🍽️ 추천 메뉴\n• 즉석국 + 밥 + 김치\n• 라면 + 김밥\n• 즉석 회/초밥\n• 마트 도시락",
-        tip: "장기 여행 시 식비 절약 + 시차 적응에 최고!",
+      { time: "21:00", end: "22:30", title: "🍺 숙소에서 맥주 타임", type: "highlight", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
+        description: "첫날 도착 환영 맥주 타임!\nBoulevard East에서 맨해튼 스카이라인 야경 + 맥주.\n\n🍻 추천 안주\n• Food Bazaar에서 사 온 치즈/햄/올리브\n• 한국 라면 야식\n• 즉석 핫윙/감자튀김\n• 컵라면 + 맥주 클래식\n\n🍺 맥주 추천\n• 미국 크래프트 (Brooklyn Lager, Sam Adams)\n• 한국 (한남마트 가져온 카스/테라)\n• Mexican (Modelo, Corona)\n\n🌃 보너스: 서로 도착 인사 + 내일 일정 가볍게 확인",
+        tip: "시차 적응 + 첫날 친목 + 야경 = 완벽한 마무리!",
         transit: null }
     ]
   },
   {
     date: "5월 15일", day: "목요일", title: "월스트리트 & 브루클린", emoji: "🗽", accent: "#c4863e",
     events: [
-      { time: "08:30", end: "09:15", title: "페리로 월스트리트 직행", type: "highlight", location: "Port Imperial → Pier 11/Wall Street", address: "South St & Wall St, Manhattan",
+      { time: "09:30", end: "10:15", title: "페리로 월스트리트 직행", type: "highlight", location: "Port Imperial → Pier 11/Wall Street", address: "South St & Wall St, Manhattan",
         description: "유람선처럼 페리로 월스트리트 직행!\n• 소요시간: 약 25분 · 요금: 편도 $9\n• 허드슨 강 위에서 자유의 여신상 감상",
         photo: "https://images.unsplash.com/photo-1669221190861-beb5200a2ca5?w=600&h=300&fit=crop&auto=format",
         tip: "페리 우측 자리에 앉으면 자유의 여신상이 보입니다!",
@@ -101,21 +108,21 @@ const DAYS = [
           { mode: "bus", icon: "🚌", label: "숙소 → Port Imperial", detail: "NJ Transit Bus 158 탑승 (Boulevard East) · 약 10분" },
           { mode: "ferry", icon: "⛴️", label: "Port Imperial → Pier 11/Wall St", detail: "NY Waterway 페리 · 약 25분 · $9 · 평일 AM 운행" }
         ]},
-      { time: "09:30", end: "11:30", title: "월스트리트 워킹 투어", type: "sightseeing", location: "Wall Street Financial District", address: "Wall St & Broad St, New York, NY 10005",
+      { time: "10:30", end: "12:30", title: "월스트리트 워킹 투어", type: "sightseeing", location: "Wall Street Financial District", address: "Wall St & Broad St, New York, NY 10005",
         description: "• Charging Bull (황소 동상) - Broadway & Morris St\n• Federal Hall - 26 Wall St\n• NYSE 외관 · Trinity Church\n• 9/11 Memorial & Museum ($29/인)",
         photo: "https://images.unsplash.com/photo-1747893062300-dd53c62893ef?w=600&h=300&fit=crop&auto=format",
         tip: "M&A 어드바이저로서 월가의 에너지를 직접 느껴보세요!",
         transit: [
           { mode: "walk", icon: "🚶", label: "Pier 11에서 도보", detail: "Pier 11 → Wall St 도보 2분 → Charging Bull 도보 5분\n→ Federal Hall & NYSE 도보 3분 → Trinity Church 도보 4분\n→ 9/11 Memorial 도보 10분 (원하면)" }
         ]},
-      { time: "12:00", end: "13:30", title: "Stone Street 점심", type: "food", location: "Stone Street Historic District", address: "Stone St, New York, NY 10004",
+      { time: "13:00", end: "14:30", title: "Stone Street 점심", type: "food", location: "Stone Street Historic District", address: "Stone St, New York, NY 10004",
         description: "역사적인 자갈길 레스토랑 거리.\nAdrienne's Pizzabar, The Growler 등.",
         photo: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&h=300&fit=crop",
         tip: "5월 날씨에 야외 테이블이 최고!",
         transit: [
           { mode: "walk", icon: "🚶", label: "Wall St에서 도보", detail: "Wall St → Stone St · 도보 3분 · Hanover Square 방향" }
         ]},
-      { time: "14:00", end: "15:00", title: "브루클린 브릿지 도보 횡단", type: "sightseeing", location: "Brooklyn Bridge", address: "Brooklyn Bridge, New York, NY 10038",
+      { time: "15:00", end: "16:00", title: "브루클린 브릿지 도보 횡단", type: "sightseeing", location: "Brooklyn Bridge", address: "Brooklyn Bridge, New York, NY 10038",
         description: "맨해튼 → 브루클린 방향으로 도보 횡단\n약 30~40분 소요",
         photo: "https://commons.wikimedia.org/wiki/Special:FilePath/Brooklyn_Bridge_Postdlf.jpg?width=600",
         tip: "오후 햇살에 브루클린 방향 사진이 예쁘게 나옵니다",
@@ -123,22 +130,26 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "Stone St → 브루클린 브릿지 입구", detail: "Stone St → Park Row 방향 북쪽 도보 · 약 15분\nCity Hall Park 지나서 Brooklyn Bridge 보행자 입구" },
           { mode: "walk", icon: "🚶", label: "다리 횡단", detail: "보행자 전용 데크 · 맨해튼→브루클린 방향 · 약 30~40분\nDUMBO 출구로 하차" }
         ]},
-      { time: "15:30", end: "17:30", title: "DUMBO & Brooklyn Bridge Park", type: "sightseeing", location: "DUMBO, Brooklyn", address: "Washington St & Water St, Brooklyn, NY 11201",
+      { time: "16:30", end: "18:30", title: "DUMBO & Brooklyn Bridge Park", type: "sightseeing", location: "DUMBO, Brooklyn", address: "Washington St & Water St, Brooklyn, NY 11201",
         description: "워싱턴 스트리트의 인생샷 포인트\nBrooklyn Bridge Park 강변 산책",
         photo: "https://plus.unsplash.com/premium_photo-1681558921634-f73645bde42f?w=600&h=300&fit=crop&auto=format",
         tip: "Washington St에서 Manhattan Bridge 프레임 인생샷!",
         transit: [
           { mode: "walk", icon: "🚶", label: "브릿지 출구에서 도보", detail: "다리 하차 → Washington St 사진 포인트 도보 5분\n→ Brooklyn Bridge Park 도보 3분\n→ Jane's Carousel 도보 2분" }
         ]},
-      { time: "18:30", end: "20:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
-        description: "브루클린 최고의 가성비 스테이크!\n• Butcher's Steak $34\n• 1인 예산: $60~80\n• 예약: rfrr.com/st-anselm",
+      { time: "19:30", end: "21:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
+        description: "브루클린 최고의 가성비 스테이크!\n• Butcher's Steak $34\n• 1인 예산: $60~80\n• 예약 필수 (Resy)",
         photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGAeF8DR8bA22P1R9BNuJg81LgCMSLliF3tGNYD92OlYp-MtkIyTdUY2hs2vutn30xge1eS2_WbsLvByuaLyI5OVpAYTp_6vPNSRnGKC4ZDXRBnHqQ8APLHrYjEUPCPdyRaI13N=w600-h300-n-k-no",
+        links: [
+          { icon: "📅", label: "Resy 예약", href: "https://resy.com/cities/ny/st-anselm" },
+          { icon: "🌐", label: "공식 사이트", href: "https://stanselm.nyc/" }
+        ],
         tip: "Butcher's Steak 반드시 주문!",
         transit: [
           { mode: "subway", icon: "🚇", label: "DUMBO → Williamsburg", detail: "York St역 (F line) → East Broadway 환승 → Lorimer St역 하차\n또는 DUMBO에서 Uber · 약 10분 · $12~15" },
           { mode: "walk", icon: "🚶", label: "Lorimer St역 → St. Anselm", detail: "역에서 Metropolitan Ave 방향 도보 · 약 5분" }
         ]},
-      { time: "21:00", title: "Williamsburg & 숙소 복귀", type: "transport", location: "Williamsburg → 숙소", address: "Bedford Ave, Brooklyn",
+      { time: "22:00", title: "Williamsburg & 숙소 복귀", type: "transport", location: "Williamsburg → 숙소", address: "Bedford Ave, Brooklyn",
         description: "Bedford Ave 바 거리 산책 후 Uber로 복귀",
         tip: "뉴욕에서 가장 트렌디한 동네",
         transit: [
@@ -148,69 +159,13 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 16일", day: "금요일", title: "소호 브런치 & MoMA & 브라이언파크", emoji: "🎨", accent: "#9b5fbf",
-    events: [
-      { time: "09:00", end: "10:00", title: "숙소 → 맨해튼 이동", type: "transport", location: "Port Imperial Ferry → 소호", address: "Port Imperial → SoHo",
-        description: "페리 + 지하철로 소호까지 이동",
-        tip: "MetroCard 또는 OMNY 비접촉 결제 이용",
-        transit: [
-          { mode: "bus", icon: "🚌", label: "숙소 → Port Imperial", detail: "NJ Transit Bus 158 · 약 10분" },
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9" },
-          { mode: "subway", icon: "🚇", label: "W. 39th St → SoHo", detail: "42nd St-Times Sq역 → N/R/W line 남쪽 → Prince St역 하차\n약 15분 · $2.90" }
-        ]},
-      { time: "10:30", end: "12:00", title: "Balthazar 브런치", type: "highlight", location: "Balthazar", address: "80 Spring St, New York, NY 10012 (SoHo)",
-        description: "뉴욕 아이콘 프렌치 브라세리!\n• Eggs Benedict, French Toast, Croque Monsieur\n• 1인 예산: $40~60",
-        photo: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=300&fit=crop",
-        tip: "French Toast + Bloody Mary가 뉴요커 스타일!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Prince St역에서 도보", detail: "Prince St역 → Spring St 방향 남쪽 도보 · 약 3분" }
-        ]},
-      { time: "12:30", end: "13:30", title: "SoHo 쇼핑 & 산책", type: "sightseeing", location: "SoHo", address: "Broadway & Prince St, NY 10012",
-        description: "캐스트 아이언 건축물과 부티크 숍.\nBroadway, Prince St, Mercer St 탐방.",
-        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
-        tip: "Mercer St에 숨은 갤러리가 많아요",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Balthazar에서 도보", detail: "Spring St → Broadway → Prince St → Mercer St\n도보 산책 루트 · 자유롭게" }
-        ]},
-      { time: "14:00", end: "17:00", title: "MoMA (뉴욕 현대미술관)", type: "sightseeing", location: "Museum of Modern Art", address: "11 W 53rd St, New York, NY 10019",
-        description: "세계 최고의 현대미술관!\n• 금요일 4PM 이후 무료 입장!\n• 고흐, 피카소, 워홀, 모네\n• 5층부터 아래로 관람 추천",
-        photo: "https://images.unsplash.com/photo-1663075112339-7481c89612aa?w=600&h=300&fit=crop&auto=format",
-        tip: "🎉 금요일 4PM 이후 무료입장!",
-        transit: [
-          { mode: "subway", icon: "🚇", label: "SoHo → MoMA", detail: "Prince St역 → N/R line 북쪽 → 49th St역 하차\n도보 동쪽 5분 → 53rd St의 MoMA · 총 약 20분" }
-        ]},
-      { time: "17:30", end: "19:00", title: "브라이언파크 맥주 한잔", type: "highlight", location: "The Porch at Bryant Park", address: "41 W 40th St, New York, NY 10018",
-        description: "스트링 라이트 아래 나무 데크에서 맥주!\n크래프트 맥주, 위스키, 칵테일\n영업: 12:00~21:00",
-        photo: "https://thumbs.dreamstime.com/b/bryant-park-night-midtown-manhattan-new-york-city-147362561.jpg",
-        tip: "그네 의자에 앉아 코파운더들과 수다하기 최적",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "MoMA → Bryant Park", detail: "MoMA 53rd St → 6th Ave 남쪽 도보 → 40th St · 약 12분" }
-        ]},
-      { time: "19:00", end: "21:00", title: "미드타운 디너", type: "food", location: "Koreatown 또는 주변", address: "W 32nd St, New York, NY 10001",
-        description: "한식: Jongro BBQ, Her Name is Han\n양식: The Smith, Quality Italian",
-        photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
-        tip: "코리아타운은 24시간 영업 많아요",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Bryant Park → 코리아타운", detail: "40th St → 32nd St 남쪽 도보 · 약 10분\n5th Ave 따라 내려가면 됩니다" }
-        ]},
-      { time: "21:00", title: "숙소 복귀", type: "transport", location: "미드타운 → 숙소", address: "페리 또는 Uber",
-        description: "W. 39th St 페리 또는 Uber 이용",
-        tip: "페리 마지막 시간 확인 필수!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "코리아타운 → W. 39th St 페리", detail: "32nd St → 39th St & 12th Ave · 도보 약 15분" },
-          { mode: "ferry", icon: "⛴️", label: "W. 39th St → Port Imperial", detail: "NY Waterway · 8분 · $9 · 마지막 페리 시간 확인!" },
-          { mode: "car", icon: "🚗", label: "또는 Uber 직행", detail: "코리아타운 → 숙소 · 약 15분 · $25~35 (1인 $8~12)" }
-        ]}
-    ]
-  },
-  {
-    date: "5월 17일", day: "토요일", title: "센트럴파크 & 재즈의 밤", emoji: "🌳", accent: "#3a9a4f",
+    date: "5월 16일", day: "금요일", title: "센트럴파크 & 재즈의 밤", emoji: "🌳", accent: "#3a9a4f",
     events: [
       { time: "09:00", end: "09:45", title: "숙소 → 센트럴파크", type: "transport", location: "Port Imperial → Central Park", address: "59th St & 5th Ave",
         description: "페리 + 지하철로 센트럴파크 남쪽 입구까지",
-        tip: "토요일 아침 페리는 여유로워요",
+        tip: "금요일 아침 페리는 여유로워요",
         transit: [
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9 · 주말 운행" },
+          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9" },
           { mode: "subway", icon: "🚇", label: "미드타운 → 센트럴파크", detail: "42nd St-Times Sq역 → N/R line 북쪽 → 5th Ave-59th St역 하차\n약 10분 · 센트럴파크 남동쪽 입구 바로 앞" }
         ]},
       { time: "10:00", end: "13:00", title: "센트럴파크 워킹 투어", type: "highlight", location: "Central Park", address: "59th St → Belvedere Castle",
@@ -226,13 +181,18 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "Belvedere Castle → Columbus Circle", detail: "공원 내 서쪽 방향 도보 · 약 15분\n또는 72nd St 출구 → 남쪽 도보 10분" }
         ]},
-      { time: "14:30", end: "17:30", title: "메트로폴리탄 미술관 (The Met)", type: "highlight", location: "The Metropolitan Museum of Art", address: "1000 5th Ave, New York, NY 10028",
-        description: "세계 3대 미술관!\n• 입장료: $30/인\n• 이집트관 덴두르 신전, 인상파 갤러리\n• 루프탑 가든 (5월 오픈!)\n• 토요일 10AM~9PM",
+      { time: "14:30", end: "17:30", title: "🏛️ 미술관 택1 — MoMA 또는 The Met", type: "highlight", location: "Museum of Modern Art / Metropolitan Museum", address: "MoMA: 11 W 53rd St / The Met: 1000 5th Ave",
+        description: "오후 미술관 — 둘 중 취향대로 선택!\n\n🏛️ The Met (메트로폴리탄) — 추천\n• 입장료: $30/인\n• 이집트관 덴두르 신전, 인상파, 5월 루프탑 가든\n• 금요일 10AM~9PM (늦게까지 운영, Columbus Circle에서 1 line 5분)\n• 센트럴파크 산책 직후라 위치 최적\n\n🎨 MoMA (현대미술관)\n• 입장료: $30/인 (첫째 금요일 16:00~20:00 무료)\n• 고흐, 피카소, 워홀, 모네\n• 미드타운 53rd St (Columbus Circle에서 N/R line 약 10분)\n\n💡 센트럴파크 옆 The Met이 동선상 자연스러움",
         photo: "https://images.unsplash.com/photo-1739021424458-fb31d89c424b?w=600&h=300&fit=crop&auto=format",
-        tip: "루프탑에서 센트럴파크 뷰 + 와인 한잔!",
+        links: [
+          { icon: "🎟️", label: "The Met 티켓", href: "https://www.metmuseum.org/visit/plan-your-visit" },
+          { icon: "🎟️", label: "MoMA 티켓", href: "https://www.moma.org/tickets/" }
+        ],
+        tip: "동선 베스트는 The Met (Columbus Circle에서 1 line 직행)",
         transit: [
           { mode: "subway", icon: "🚇", label: "Columbus Circle → The Met", detail: "59th St-Columbus Cir역 → 1 line 북쪽 → 86th St역 하차\n→ 5th Ave 방향 동쪽 도보 10분 · 또는 M86 버스" },
-          { mode: "walk", icon: "🚶", label: "또는 공원 내 도보", detail: "Columbus Circle → 공원 내 East Drive → The Met\n약 30분 산책 코스 (날씨 좋을 때 추천)" }
+          { mode: "walk", icon: "🚶", label: "Met — 공원 내 도보", detail: "Columbus Circle → 공원 East Drive → The Met\n약 30분 산책 (날씨 좋을 때)" },
+          { mode: "subway", icon: "🚇", label: "Columbus Circle → MoMA", detail: "59th St-Columbus Cir역 → N/R line 동쪽 → 5 Av/53 St역 하차\n도보 1분 · 약 10분" }
         ]},
       { time: "18:00", end: "19:00", title: "Columbus Circle", type: "sightseeing", location: "Columbus Circle", address: "10 Columbus Cir, NY 10019",
         description: "The Shops에서 쇼핑 · Dizzy's Club 준비",
@@ -242,8 +202,12 @@ const DAYS = [
           { mode: "subway", icon: "🚇", label: "The Met → Columbus Circle", detail: "86th St역 → 1 line 남쪽 → 59th St-Columbus Cir역\n약 10분" }
         ]},
       { time: "19:30", end: "22:00", title: "Dizzy's Club 재즈 디너", type: "highlight", location: "Dizzy's Club", address: "10 Columbus Cir, 5FL, NY 10019",
-        description: "센트럴파크 뷰 + 월드클래스 재즈!\n• 커버차지: $20~45\n• 1인 예산: $80~120\n• 예약: jazz.org/dizzys",
+        description: "센트럴파크 뷰 + 월드클래스 재즈!\n• 커버차지: $20~45\n• 1인 예산: $80~120\n• 7:30PM / 9:30PM 2회 공연",
         photo: "https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=600&h=300&fit=crop",
+        links: [
+          { icon: "🎷", label: "공연/예약", href: "https://www.jazz.org/dizzys/" },
+          { icon: "📅", label: "공연 캘린더", href: "https://www.jazz.org/calendar/" }
+        ],
         tip: "2층 중앙 테이블이 최고의 뷰!",
         transit: [
           { mode: "walk", icon: "🚶", label: "Columbus Circle 건물 내", detail: "Deutsche Bank Center(Time Warner Center) 5층\n로비에서 엘리베이터 이용" }
@@ -257,64 +221,123 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 18일", day: "일요일", title: "하이라인 & 첼시 & 마지막 밤", emoji: "🌆", accent: "#cf6a45",
+    date: "5월 17일", day: "토요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
-      { time: "09:30", end: "10:15", title: "숙소 → 첼시 이동", type: "transport", location: "Port Imperial → Chelsea", address: "W. 39th St → Chelsea",
-        description: "마지막 관광일!",
-        tip: "짐 정리도 미리 해두세요",
+      { time: "09:00", end: "10:00", title: "숙소 → SoHo 이동", type: "transport", location: "숙소 → SoHo", address: "5303 JFK Blvd East → Broadway & Prince St",
+        description: "🎯 최적 동선: SoHo → West Village → Greenwich Village\n\n도보 흐름 (총 1.2km):\n1️⃣ SoHo (Prince/Broadway) — 모닝 쇼핑\n2️⃣ → 서쪽 도보 10분 → West Village (Bleecker St) — 점심\n3️⃣ → 동쪽 도보 5~10분 → Greenwich Village (Washington Sq) — 휴식\n\n💡 SoHo 매장은 보통 10:30~11:00 오픈, 오전이 한적함",
+        tip: "🟢 158번 + N/R/W line이 SoHo Prince St 직결",
         transit: [
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9" },
-          { mode: "subway", icon: "🚇", label: "미드타운 → Chelsea Market", detail: "42nd St역 → A/C/E line 남쪽 → 14th St역 하차\n→ 9th Ave 방향 도보 5분 · 총 약 20분" }
+          { mode: "bus", icon: "🚌", label: "🟢 158번 + N/R/W (추천 · 가성비)", detail: "STEP 1: 숙소 앞 Blvd East → 158번 직행 → Port Authority\n약 25~35분 · $3.50\n\nSTEP 2: 42nd St-Times Sq역 → N/R/W line 남쪽 → Prince St 하차\n약 12분 · $2.90\n\n총 40~50분 · $6.40\n하차 즉시 SoHo 한복판" },
+          { mode: "subway", icon: "🚇", label: "🚇 PATH 직행 (빠름)", detail: "STEP 1: 숙소 → Hoboken Terminal\n• 22번 버스 또는 Lyft 약 10~15분 ($2.25 / $10~15)\n\nSTEP 2: PATH (HOB-WTC line) → Christopher St 하차\n약 10분 · $2.75\n\nSTEP 3: Christopher St → SoHo 도보 약 12분 (남쪽)\n또는 1 line 한 정거장 → Houston St\n\n총 30~40분 · $5~18" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 (뷰 옵션)", detail: "STEP 1: 숙소 → Port Imperial · Bus 158/159 약 10분\n\nSTEP 2: Port Imperial → W. 39th St · NY Waterway 8분 · $9\n\nSTEP 3: 42nd St역 → N/R/W 남쪽 → Prince St · 약 12분\n\n총 약 50분 · $14" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → SoHo Broadway/Prince 직행\n약 20~25분 · $30~40 (3인 $10~13)" }
         ]},
-      { time: "10:30", end: "12:00", title: "Chelsea Market 브런치", type: "food", location: "Chelsea Market", address: "75 9th Ave, NY 10011",
-        description: "Los Tacos No.1 · Lobster Place · Doughnuttery",
-        photo: "https://images.unsplash.com/photo-1611810175252-615167ac09ef?w=600&h=300&fit=crop&auto=format",
-        tip: "Los Tacos No.1은 기다릴 가치 있음!",
+      { time: "10:00", end: "12:00", title: "SoHo 모닝 쇼핑", type: "sightseeing", location: "SoHo", address: "Broadway & Prince St, NY 10012",
+        description: "캐스트 아이언 건축물 + 부티크 숍 (오전 한적)\n• Broadway 메인 쇼핑 거리\n• Prince St · Spring St · Mercer St\n• Aimé Leon Dore, Kith, MoMA Design Store\n• 갤러리 + 부티크 인테리어 샵",
+        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
+        tip: "Mercer St에 숨은 갤러리/하이엔드 부티크 多",
         transit: [
-          { mode: "walk", icon: "🚶", label: "14th St역에서", detail: "14th St역 → 9th Ave & 15th St · 도보 5분\nChelsea Market 입구 9th Ave 또는 10th Ave" }
+          { mode: "walk", icon: "🚶", label: "Prince St역에서", detail: "Prince St역 → Broadway 출구 · 도보 1분\n바로 SoHo 한복판" }
         ]},
-      { time: "12:00", end: "13:30", title: "하이라인 공원 산책", type: "highlight", location: "The High Line", address: "Gansevoort St to 34th St",
-        description: "폐 고가 철도 위 공원!\n• 2.3km · 45분~1시간\n• 5월 꽃이 만발하는 최적 시즌\n• Hudson Yards까지 연결",
-        photo: "https://images.unsplash.com/photo-1701353592956-3247fd68d999?w=600&h=300&fit=crop&auto=format",
-        tip: "10th Ave 전망대 뷰가 멋져요!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Chelsea Market → High Line 입구", detail: "Chelsea Market 10th Ave 출구 → Gansevoort St 입구 도보 3분\n계단 또는 엘리베이터로 하이라인 진입" },
-          { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "남→북 방향 (Gansevoort → 34th St)\n10th Ave 전망대 · Chelsea Thicket · 23rd St 잔디밭\n→ Hudson Yards 도착 · 약 45분" }
-        ]},
-      { time: "13:30", end: "15:00", title: "Hudson Yards & Edge", type: "sightseeing", location: "Hudson Yards", address: "20 Hudson Yards, NY 10001",
-        description: "Edge 전망대 ($44/인) · 럭셔리 쇼핑",
-        photo: "https://kr.img.news.koreanair.com/wp-content/uploads/2019/08/NR201908_living_JFK_3-768x509.png",
-        tip: "Edge에서 숙소 방향 뉴저지가 보여요!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "하이라인에서 직결", detail: "하이라인 북쪽 끝 → Hudson Yards 직결 · 도보 0분" }
-        ]},
-      { time: "15:30", end: "17:00", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
-        description: "워싱턴 스퀘어 파크 · 보헤미안 거리",
-        photo: "https://plus.unsplash.com/premium_photo-1681868376745-0565b18b4c8c?w=600&h=300&fit=crop&auto=format",
-        tip: "NYU 캠퍼스의 에너지를 느끼세요",
-        transit: [
-          { mode: "subway", icon: "🚇", label: "Hudson Yards → Greenwich Village", detail: "34th St-Hudson Yards역 → 7 line → 34th St 환승\n→ 1 line 남쪽 → Christopher St-Sheridan Sq역\n또는 Uber · 약 12분 · $12~15" },
-          { mode: "walk", icon: "🚶", label: "역에서 도보", detail: "Christopher St역 → Washington Sq Park 도보 7분" }
-        ]},
-      { time: "17:30", end: "19:00", title: "West Village 카페 & 와인", type: "food", location: "West Village", address: "Bleecker St, NY 10014",
-        description: "Buvette(42 Grove St) · Dante(79 MacDougal St)\nMagnolia Bakery 컵케이크!",
+      { time: "12:00", end: "14:00", title: "West Village 점심 & 카페", type: "food", location: "West Village", address: "Bleecker St, NY 10014",
+        description: "🍽️ 점심 추천\n• Buvette (42 Grove St) - 프렌치 비스트로 (예약 추천)\n• Joe's Pizza (7 Carmine St) - 클래식 슬라이스 (워크인)\n• Joseph Leonard (170 Waverly Pl) - 미국식 브런치 (예약 추천)\n\n☕ 카페/디저트\n• Magnolia Bakery (401 Bleecker) - 컵케이크\n• Dante (79 MacDougal) - 네그로니",
         photo: "https://images.unsplash.com/photo-1634874495432-cb368c167e9b?w=600&h=300&fit=crop&auto=format",
-        tip: "Dante 네그로니는 완벽한 마무리",
+        links: [
+          { icon: "📅", label: "Buvette 예약", href: "https://resy.com/cities/ny/buvette" },
+          { icon: "📅", label: "Joseph Leonard", href: "https://resy.com/cities/ny/joseph-leonard" },
+          { icon: "🍕", label: "Joe's Pizza", href: "https://www.joespizzanyc.com/" }
+        ],
+        tip: "Buvette의 Croque Monsieur + 라떼 강추!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "Washington Sq → West Village", detail: "공원에서 서쪽 방향 도보\nMacDougal St(Dante) · Bleecker St · Grove St(Buvette)\n모두 도보 5~10분 거리" }
+          { mode: "walk", icon: "🚶", label: "SoHo → West Village", detail: "Broadway/Prince → 서쪽 도보 약 10분\nHouston St 건너 → Bleecker St 진입" }
         ]},
-      { time: "19:30", end: "21:30", title: "마지막 밤 디너", type: "food", location: "Meatpacking District", address: "Gansevoort St 주변",
-        description: "Catch(21 9th Ave) · STK(26 Little W 12th St)\nPastis(52 Gansevoort St)",
+      { time: "14:00", end: "15:30", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
+        description: "워싱턴 스퀘어 파크 + NYU 캠퍼스\n• Washington Square Arch (개선문 + 분수)\n• 거리 공연/체스 두는 사람 구경\n• MacDougal St 보헤미안 거리\n• Comedy Cellar (코미디 클럽 외관)\n\n💡 Dian's House 출발 전 휴식 명소",
+        photo: "https://plus.unsplash.com/premium_photo-1681868376745-0565b18b4c8c?w=600&h=300&fit=crop&auto=format",
+        tip: "Washington Square Arch 앞이 사진 명소! 벤치에서 잠시 쉬어가기",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "West Village → Greenwich", detail: "Bleecker St → 동쪽 도보 약 5~10분\nMacDougal St 따라가면 Washington Square 도착" }
+        ]},
+      { time: "18:00", end: "21:00", title: "🏡 Dian's House Dinner Invitation", type: "highlight", location: "Dian's House", address: "[Dian에게 주소 확인]",
+        description: "Dian의 집 디너 초대 — 이날의 하이라이트!\n\n🎁 손님 매너 체크리스트\n• 와인 (red/white 1병씩) 또는 꽃다발 지참\n• 한국 디저트/티/전통주 선물 옵션\n• 드레스 코드: 깔끔한 캐주얼\n• 알레르기/식단 제한 미리 공유\n\n💬 미국식 디너 매너\n• 5~10분 정도만 늦는 정도 OK\n• 식사 후 정리 도와주기 제안\n• 머무르는 시간: 식사 후 1~2시간 정도\n• 다음 날 감사 메시지/카드 보내기\n\n🎉 이런 시간이 진짜 뉴욕 추억",
+        tip: "Dian에게 알레르기, 도착 시간, 선물 호불호 미리 확인!",
+        transit: [
+          { mode: "car", icon: "🚗", label: "Greenwich Village → Dian's House", detail: "Washington Square Park 옆에서 Uber 호출\n시간/비용은 Dian의 위치에 따라 달라짐" }
+        ]},
+      { time: "21:00", title: "숙소 복귀", type: "transport", location: "Dian's House → 숙소", address: "Uber/Lyft",
+        description: "Dian의 집에서 숙소로 복귀.\n저녁 시간은 Uber가 가장 편안하고 안전!",
+        tip: "내일 일정 위해 적당한 시간에 마무리",
+        transit: [
+          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Dian's House → 숙소 직행\n시간/비용은 위치에 따라 달라짐 (예상 $25~50)" }
+        ]}
+    ]
+  },
+  {
+    date: "5월 18일", day: "일요일", title: "Hudson Yards · 하이라인 · Little Island", emoji: "🌆", accent: "#cf6a45",
+    events: [
+      { time: "09:30", end: "10:30", title: "숙소 → Hudson Yards 이동", type: "transport", location: "숙소 → Hudson Yards", address: "5303 JFK Blvd East → 20 Hudson Yards, NY 10001",
+        description: "마지막 관광일! 짐 정리도 미리 해두세요.\n북→남 도보 동선으로 효율적으로 즐기기.\n\n3가지 옵션:\n🚌 158번 직행 (가성비)\n⛴️ 페리 (뷰 + 분위기)\n🚗 Uber (편의/짐 많을 때)",
+        tip: "마지막 날 분위기는 페리 루트가 최고!",
+        transit: [
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (가성비)", detail: "숙소 앞 Blvd East → Port Authority Bus Terminal\n약 25~35분 · $3.50 · 환승 없음\n하차 후 7 line 한 정거장 → 34th St-Hudson Yards" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 1/3 — 숙소 → Port Imperial", detail: "Port Imperial Ferry Terminal까지\n• NJ Bus 158/159 (Blvd East) · 약 10분 · $2.25\n• 또는 Uber · 약 8분 · $8~12\n• 또는 도보 · 약 15분 (날씨 좋으면 강추)" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 2/3 — Port Imperial → W. 39th St", detail: "NY Waterway 페리 · 약 8분 · $9 (편도)\n주말 운행 시간 6:20~21:00 (확인)\n허드슨강 위에서 맨해튼 스카이라인 + 자유의 여신상 조망" },
+          { mode: "walk", icon: "🚶", label: "⛴️ 페리 3/3 — W. 39th St → Hudson Yards", detail: "W. 39th St 터미널 → Hudson Yards\n12th Ave 따라 남쪽 도보 약 7~10분\n도착지: Vessel/Edge 입구 광장" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Hudson Yards · 약 15~20분\n$25~35 (1인 $8~12)\n짐 많거나 날씨 안 좋을 때 추천" }
+        ]},
+      { time: "10:30", end: "12:00", title: "Hudson Yards 브런치 & Edge", type: "highlight", location: "Hudson Yards", address: "20 Hudson Yards, NY 10001",
+        description: "🍳 브런치 추천\n• Mercado Little Spain (José Andrés의 스페인 푸드 코트)\n• Bar Wayō (일식 브런치)\n• Citarella Gourmet Market 카페\n• Whole Foods 데일리 메뉴\n\n🏙️ Edge 전망대 (옵션)\n• $44/인 · 100층 야외 전망대\n• Hudson Yards 빌딩 5층 통해 진입\n\n💰 브런치 예산: 1인 $25~40",
+        photo: "https://kr.img.news.koreanair.com/wp-content/uploads/2019/08/NR201908_living_JFK_3-768x509.png",
+        links: [
+          { icon: "🥘", label: "Mercado Little Spain", href: "https://www.littlespain.com/" },
+          { icon: "🏙️", label: "Edge 전망대 예매", href: "https://www.edgenyc.com/" },
+          { icon: "🌐", label: "Hudson Yards", href: "https://www.hudsonyardsnewyork.com/" }
+        ],
+        tip: "Mercado Little Spain의 하몽+상그리아가 최고!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "34th St-Hudson Yards역 → 광장", detail: "역 출구 바로 앞 · Vessel 광장 · 도보 1~2분" }
+        ]},
+      { time: "12:00", end: "13:30", title: "하이라인 공원 산책 (북→남)", type: "highlight", location: "The High Line", address: "34th St → Gansevoort St",
+        description: "폐 고가 철도 위 공원!\n• 2.3km · 45분~1시간\n• 5월 꽃이 만발하는 최적 시즌\n• 북쪽(Hudson Yards) → 남쪽(Gansevoort) 방향",
+        photo: "https://images.unsplash.com/photo-1701353592956-3247fd68d999?w=600&h=300&fit=crop&auto=format",
+        tip: "10th Ave 전망대(17th St)에서 풍경 감상!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "Hudson Yards → 하이라인 진입", detail: "Hudson Yards 광장에서 하이라인 직결 · 도보 0분" },
+          { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "북→남 방향 (34th St → Gansevoort St)\n23rd St 잔디밭 · 17th St 10th Ave 전망대\n· Chelsea Thicket · 약 45분" }
+        ]},
+      { time: "13:30", end: "15:00", title: "Chelsea Market 점심 & 쇼핑", type: "food", location: "Chelsea Market", address: "75 9th Ave, NY 10011",
+        description: "🌮 Los Tacos No.1 (꼭!)\n🦞 Lobster Place (랍스터롤)\n🍩 Doughnuttery (작은 도넛)\n🥖 Amy's Bread\n🍫 Fat Witch Bakery (브라우니)\n\n💰 1인 $20~35\n쇼핑: 부티크/기념품 가게도 많음",
+        photo: "https://images.unsplash.com/photo-1611810175252-615167ac09ef?w=600&h=300&fit=crop&auto=format",
+        tip: "Los Tacos No.1는 줄 서더라도 기다릴 가치 있음!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "하이라인 → Chelsea Market", detail: "하이라인 14th St 출구로 하차 → Chelsea Market\n9th Ave 방향 도보 1분" }
+        ]},
+      { time: "15:00", end: "17:00", title: "Meatpacking District 산책", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
+        description: "트렌디한 부티크 + 갤러리 + 카페\n• Whitney Museum 외관 (입장 옵션 $30)\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상\n• Pastis 카페 (와인 한잔 옵션)\n• Gansevoort St 자갈길 사진 포인트",
         photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
-        tip: "Meatpacking은 밤에 분위기 최고",
+        tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "West Village → Meatpacking", detail: "Bleecker St → 서쪽/북쪽 도보 · 약 10분\n또는 14th St & 9th Ave 방향" }
+          { mode: "walk", icon: "🚶", label: "Chelsea Market → Meatpacking", detail: "Chelsea Market(9th Ave) → 남쪽 도보\nGansevoort St까지 약 5분" }
         ]},
-      { time: "22:00", title: "숙소 복귀 & 짐 정리", type: "transport", location: "맨해튼 → 숙소", address: "Uber/Lyft",
-        description: "내일 아침 JFK 출발 준비!",
-        tip: "내일 9시 출발이니 일찍 자세요!",
+      { time: "17:30", end: "20:30", title: "Little Island 일몰 & 저녁", type: "highlight", location: "Little Island at Pier 55", address: "Pier 55, Hudson River Park (W 13th St & 11th Ave)",
+        description: "🌅 허드슨강 위 떠 있는 인공 섬 공원!\n• 입장 무료 · 06:00~24:00 운영\n• 132개 튤립 모양 콘크리트 기둥 위 정원\n• The Glade 야외극장 (주말 무료 공연)\n• 일몰 뷰 명소 (5월 일몰 ~20:00)\n\n🍽️ 저녁 옵션\n• The Play Ground 푸드 카트 (피자/타코/맥주)\n• 또는 Chelsea Market에서 포장 → Little Island 피크닉\n• 또는 근처 Pastis(52 Gansevoort St) / Catch(21 9th Ave) 식당\n\n💰 1인 $25~50 (옵션에 따라)",
+        photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
+        links: [
+          { icon: "🌐", label: "Little Island 공식", href: "https://littleisland.org/" },
+          { icon: "🎭", label: "공연 일정", href: "https://littleisland.org/whats-on" },
+          { icon: "📅", label: "Pastis 예약", href: "https://resy.com/cities/ny/pastis-9" },
+          { icon: "📅", label: "Catch 예약", href: "https://resy.com/cities/ny/catch-nyc" }
+        ],
+        tip: "5월 일몰 시간(~20:00)에 맞춰 도착하면 인생샷!",
         transit: [
-          { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "Meatpacking → 숙소 · 약 15분 · $25~35 (1인 $8~12)" }
+          { mode: "walk", icon: "🚶", label: "Meatpacking → Little Island", detail: "Gansevoort St → 서쪽 끝 (Hudson River Park)\n도보 5~7분 · 입구는 W 13th St 다리" }
+        ]},
+      { time: "21:00", title: "숙소 복귀 & 짐 정리", type: "transport", location: "맨해튼 → 숙소", address: "Little Island → 5303 JFK Blvd East",
+        description: "내일 아침 JFK 출발 준비!\nUber로 편하게 복귀.",
+        tip: "내일 9시 출발 — 일찍 자고 짐 미리 정리!",
+        transit: [
+          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Little Island → 숙소 · 약 15분 · $25~35 (1인 $8~12)\n야간 Uber가 가장 편함" },
+          { mode: "ferry", icon: "⛴️", label: "페리 대안", detail: "도보로 W. 39th St 페리(약 30분) → Port Imperial 8분\n도보로 짐 무거우면 비추" }
         ]}
     ]
   },
@@ -720,7 +743,7 @@ export default function App() {
                   </p>
 
                   {/* 구글 지도 버튼 */}
-                  <div style={{ display:"flex", gap:6, marginBottom:12 }}>
+                  <div style={{ display:"flex", gap:6, marginBottom:ev.links?.length ? 8 : 12 }}>
                     <a href={mapsUrl(ev.address, ev.location)} target="_blank" rel="noopener noreferrer" style={{
                       flex:1, padding:"10px 8px", borderRadius:6, fontSize:13, fontWeight:600,
                       background:"#fff", border:`1px solid ${d.accent}33`, color:d.accent,
@@ -734,6 +757,20 @@ export default function App() {
                       whiteSpace:"nowrap", minWidth:0,
                     }}>🧭 길찾기</a>
                   </div>
+
+                  {/* 외부 링크 (예약/공식 사이트 등) */}
+                  {ev.links && ev.links.length > 0 && (
+                    <div style={{ display:"flex", gap:6, flexWrap:"wrap", marginBottom:12 }}>
+                      {ev.links.map((ln, li) => (
+                        <a key={li} href={ln.href} target="_blank" rel="noopener noreferrer" style={{
+                          flex:"1 1 auto", padding:"10px 12px", borderRadius:6, fontSize:13, fontWeight:600,
+                          background:`${d.accent}10`, border:`1px solid ${d.accent}40`, color:d.accent,
+                          textAlign:"center", textDecoration:"none", display:"inline-flex", alignItems:"center", justifyContent:"center", gap:5,
+                          whiteSpace:"nowrap",
+                        }}>{ln.icon || "🔗"} {ln.label}</a>
+                      ))}
+                    </div>
+                  )}
 
                   <p style={{ fontSize:16, color:"#555", lineHeight:1.9, whiteSpace:"pre-line" }}>{ev.description}</p>
 
