@@ -325,13 +325,13 @@ const DAYS = [
         description: "체크아웃 · 마지막 스카이라인 감상",
         tip: "여권, 탑승권, 충전기 최종 체크!",
         transit: null },
-      { time: "09:00", end: "10:30", title: "숙소 → JFK 공항 (2명)", type: "transport", location: "Uber/Lyft → JFK Airport", address: "West New York, NJ → JFK, Queens, NY",
-        description: "⚡ 2명 이동\n\n🚗 Uber/Lyft로 JFK 직행\n• 비용: $130~150 → 1인당 $65~75\n• 소요: 70~90분 (월요일 러시아워)\n• 11:00까지 공항 도착 목표\n\n💡 Uber Reserve로 전날 밤 미리 예약!",
+      { time: "09:00", end: "10:30", title: "숙소 → JFK 공항 (3명)", type: "transport", location: "Uber/Lyft → JFK Airport", address: "West New York, NJ → JFK, Queens, NY",
+        description: "⚡ 3명 이동 (모두 함께)\n\n🚗 Uber/Lyft로 JFK 직행\n• 비용: $140~160 → 1인당 약 $47~53\n• 소요: 70~90분 (월요일 러시아워)\n• 11:00까지 공항 도착 목표\n• UberXL/Comfort 추천 (3명+캐리어)\n\n💡 Uber Reserve로 전날 밤 미리 예약!",
         photo: "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=600&h=300&fit=crop",
-        tip: "월요일 러시아워 대비 일찍 출발!",
+        tip: "3명+캐리어는 UberXL이 안전. 월요일 러시아워 대비 일찍 출발!",
         transit: [
-          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "숙소 → JFK 직행 · 70~90분 · $130~150 (1인 $65~75)\nLincoln Tunnel → BQE → Belt Pkwy → JFK" },
-          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "NJ Bus 165/166 → Port Authority → A train → JFK AirTrain\n약 2.5시간 · $15/인 · 러시아워에는 비추천" }
+          { mode: "car", icon: "🚗", label: "UberXL/Comfort (추천)", detail: "숙소 → JFK 직행 · 70~90분 · $140~160 (1인 $47~53)\nLincoln Tunnel → BQE → Belt Pkwy → JFK\n3명+캐리어는 큰 차량 필수" },
+          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "NJ Bus 165/166 → Port Authority → A train → JFK AirTrain\n약 2.5시간 · $15/인 · 짐 많으면 비추천" }
         ]},
       { time: "11:00", end: "13:00", title: "JFK 공항 & 체크인", type: "transport", location: "JFK International Airport", address: "Queens, NY 11430",
         description: "체크인, 보안검색, 면세점",
