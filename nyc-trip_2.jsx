@@ -30,7 +30,7 @@ const directionsUrl = (address, location) => {
 
 const DAYS = [
   {
-    date: "5월 14일", day: "수요일", title: "도착 & 첫 만남, 맨해튼", emoji: "✈️", accent: "#3b7dd8",
+    date: "5월 14일", day: "목요일", title: "도착 & 첫 만남, 맨해튼", emoji: "✈️", accent: "#3b7dd8",
     events: [
       { time: "11:10", end: "12:00", title: "JFK 공항 도착", type: "transport", location: "John F. Kennedy International Airport", address: "Queens, NY 11430",
         description: "입국 심사 및 수하물 수취 (약 40~60분 소요)",
@@ -98,7 +98,7 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 15일", day: "목요일", title: "월스트리트 & 브루클린", emoji: "🗽", accent: "#c4863e",
+    date: "5월 15일", day: "금요일", title: "월스트리트 & 브루클린", emoji: "🗽", accent: "#c4863e",
     events: [
       { time: "09:30", end: "10:15", title: "페리로 월스트리트 직행", type: "highlight", location: "Port Imperial → Pier 11/Wall Street", address: "South St & Wall St, Manhattan",
         description: "유람선처럼 페리로 월스트리트 직행!\n• 소요시간: 약 25분 · 요금: 편도 $9\n• 허드슨 강 위에서 자유의 여신상 감상",
@@ -159,11 +159,11 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 16일", day: "금요일", title: "센트럴파크 & 재즈의 밤", emoji: "🌳", accent: "#3a9a4f",
+    date: "5월 16일", day: "토요일", title: "센트럴파크 & 재즈의 밤", emoji: "🌳", accent: "#3a9a4f",
     events: [
       { time: "09:00", end: "09:45", title: "숙소 → 센트럴파크", type: "transport", location: "Port Imperial → Central Park", address: "59th St & 5th Ave",
         description: "페리 + 지하철로 센트럴파크 남쪽 입구까지",
-        tip: "금요일 아침 페리는 여유로워요",
+        tip: "토요일 아침 페리는 여유로워요",
         transit: [
           { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9" },
           { mode: "subway", icon: "🚇", label: "미드타운 → 센트럴파크", detail: "42nd St-Times Sq역 → N/R line 북쪽 → 5th Ave-59th St역 하차\n약 10분 · 센트럴파크 남동쪽 입구 바로 앞" }
@@ -182,7 +182,7 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "Belvedere Castle → Columbus Circle", detail: "공원 내 서쪽 방향 도보 · 약 15분\n또는 72nd St 출구 → 남쪽 도보 10분" }
         ]},
       { time: "14:30", end: "17:30", title: "🏛️ 미술관 택1 — MoMA 또는 The Met", type: "highlight", location: "Museum of Modern Art / Metropolitan Museum", address: "MoMA: 11 W 53rd St / The Met: 1000 5th Ave",
-        description: "오후 미술관 — 둘 중 취향대로 선택!\n\n🏛️ The Met (메트로폴리탄) — 추천\n• 입장료: $30/인\n• 이집트관 덴두르 신전, 인상파, 5월 루프탑 가든\n• 금요일 10AM~9PM (늦게까지 운영, Columbus Circle에서 1 line 5분)\n• 센트럴파크 산책 직후라 위치 최적\n\n🎨 MoMA (현대미술관)\n• 입장료: $30/인 (첫째 금요일 16:00~20:00 무료)\n• 고흐, 피카소, 워홀, 모네\n• 미드타운 53rd St (Columbus Circle에서 N/R line 약 10분)\n\n💡 센트럴파크 옆 The Met이 동선상 자연스러움",
+        description: "오후 미술관 — 둘 중 취향대로 선택!\n\n🏛️ The Met (메트로폴리탄) — 추천\n• 입장료: $30/인\n• 이집트관 덴두르 신전, 인상파, 5월 루프탑 가든\n• ✅ 토요일 10AM~9PM (늦게까지 운영)\n• Columbus Circle에서 1 line 5분, 센트럴파크 산책 직후 동선 최적\n• 휴관일 없음 (연중 정상 운영)\n\n🎨 MoMA (현대미술관)\n• 입장료: $30/인\n• 고흐, 피카소, 워홀, 모네\n• ✅ 토요일 10:30AM~5:30PM (정시 마감)\n• 미드타운 53rd St (Columbus Circle에서 N/R line 약 10분)\n• ⚠️ 일부 휴관일 있을 수 있어 moma.org 사전 확인\n\n💡 늦게까지 보고 싶으면 The Met (9PM까지)\n💡 둘 다 5월 16일(토) 정상 운영 확인됨 — 예매 추천",
         photo: "https://images.unsplash.com/photo-1739021424458-fb31d89c424b?w=600&h=300&fit=crop&auto=format",
         links: [
           { icon: "🎟️", label: "The Met 티켓", href: "https://www.metmuseum.org/visit/plan-your-visit" },
@@ -221,7 +221,7 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 17일", day: "토요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
+    date: "5월 17일", day: "일요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
       { time: "09:00", end: "10:00", title: "숙소 → SoHo 이동", type: "transport", location: "숙소 → SoHo", address: "5303 JFK Blvd East → Broadway & Prince St",
         description: "🎯 최적 동선: SoHo → West Village → Greenwich Village\n\n도보 흐름 (총 1.2km):\n1️⃣ SoHo (Prince/Broadway) — 모닝 쇼핑\n2️⃣ → 서쪽 도보 10분 → West Village (Bleecker St) — 점심\n3️⃣ → 동쪽 도보 5~10분 → Greenwich Village (Washington Sq) — 휴식\n\n💡 SoHo 매장은 보통 10:30~11:00 오픈, 오전이 한적함",
@@ -273,7 +273,7 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 18일", day: "일요일", title: "Hudson Yards · 하이라인 · Little Island", emoji: "🌆", accent: "#cf6a45",
+    date: "5월 18일", day: "월요일", title: "Hudson Yards · 하이라인 · Little Island", emoji: "🌆", accent: "#cf6a45",
     events: [
       { time: "09:30", end: "10:30", title: "숙소 → Hudson Yards 이동", type: "transport", location: "숙소 → Hudson Yards", address: "5303 JFK Blvd East → 20 Hudson Yards, NY 10001",
         description: "마지막 관광일! 짐 정리도 미리 해두세요.\n북→남 도보 동선으로 효율적으로 즐기기.\n\n3가지 옵션:\n🚌 158번 직행 (가성비)\n⛴️ 페리 (뷰 + 분위기)\n🚗 Uber (편의/짐 많을 때)",
@@ -306,7 +306,7 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "북→남 방향 (34th St → Gansevoort St)\n23rd St 잔디밭 · 17th St 10th Ave 전망대\n· Chelsea Thicket · 약 45분" }
         ]},
       { time: "13:30", end: "17:00", title: "Meatpacking District 산책 + 자유시간", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
-        description: "Hudson Yards 브런치로 이미 든든하니, 천천히 둘러보는 오후.\n\n🛍️ 산책/쇼핑\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상 (탁 트인 뷰)\n• Gansevoort St 자갈길 사진 포인트\n\n🏛️ 미술관 옵션\n• Whitney Museum 외관/입장 ($30)\n• 옥상에서 하이라인 + 허드슨강 뷰\n\n☕ 카페/와인 옵션\n• Pastis (52 Gansevoort St) - 와인/커피\n• Bubby's High Line - 가벼운 스낵\n• 또는 그냥 벤치/공원에서 휴식\n\n💡 일몰 전 여유로운 산책 + 휴식 시간",
+        description: "Hudson Yards 브런치로 이미 든든하니, 천천히 둘러보는 오후.\n\n🛍️ 산책/쇼핑\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상 (탁 트인 뷰)\n• Gansevoort St 자갈길 사진 포인트\n\n🏛️ 미술관 옵션\n• Whitney Museum 외관/입장 ($30)\n• 옥상에서 하이라인 + 허드슨강 뷰\n• ⏰ 운영: 수~월 10:30~18:00 (화요일 휴관)\n• ✅ 5월 18일 월요일 정상 운영\n\n☕ 카페/와인 옵션\n• Pastis (52 Gansevoort St) - 와인/커피\n• Bubby's High Line - 가벼운 스낵\n• 또는 그냥 벤치/공원에서 휴식\n\n💡 일몰 전 여유로운 산책 + 휴식 시간",
         photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
         tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰가 압권!",
         links: [
@@ -339,16 +339,16 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 19일", day: "월요일", title: "귀국", emoji: "🛫", accent: "#7b8a9e",
+    date: "5월 19일", day: "화요일", title: "귀국", emoji: "🛫", accent: "#7b8a9e",
     events: [
       { time: "08:00", end: "09:00", title: "기상 & 최종 준비", type: "rest", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ",
         description: "체크아웃 · 마지막 스카이라인 감상",
         tip: "여권, 탑승권, 충전기 최종 체크!",
         transit: null },
       { time: "09:00", end: "10:30", title: "숙소 → JFK 공항 (3명)", type: "transport", location: "Uber/Lyft → JFK Airport", address: "West New York, NJ → JFK, Queens, NY",
-        description: "⚡ 3명 이동 (모두 함께)\n\n🚗 Uber/Lyft로 JFK 직행\n• 비용: $140~160 → 1인당 약 $47~53\n• 소요: 70~90분 (월요일 러시아워)\n• 11:00까지 공항 도착 목표\n• UberXL/Comfort 추천 (3명+캐리어)\n\n💡 Uber Reserve로 전날 밤 미리 예약!",
+        description: "⚡ 3명 이동 (모두 함께)\n\n🚗 Uber/Lyft로 JFK 직행\n• 비용: $140~160 → 1인당 약 $47~53\n• 소요: 70~90분 (화요일 러시아워)\n• 11:00까지 공항 도착 목표\n• UberXL/Comfort 추천 (3명+캐리어)\n\n💡 Uber Reserve로 전날 밤 미리 예약!",
         photo: "https://images.unsplash.com/photo-1436491865332-7a61a109db05?w=600&h=300&fit=crop",
-        tip: "3명+캐리어는 UberXL이 안전. 월요일 러시아워 대비 일찍 출발!",
+        tip: "3명+캐리어는 UberXL이 안전. 화요일 러시아워 대비 일찍 출발!",
         transit: [
           { mode: "car", icon: "🚗", label: "UberXL/Comfort (추천)", detail: "숙소 → JFK 직행 · 70~90분 · $140~160 (1인 $47~53)\nLincoln Tunnel → BQE → Belt Pkwy → JFK\n3명+캐리어는 큰 차량 필수" },
           { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "NJ Bus 165/166 → Port Authority → A train → JFK AirTrain\n약 2.5시간 · $15/인 · 짐 많으면 비추천" }
@@ -463,11 +463,11 @@ export default function App() {
   useEffect(() => {
     let cancelled = false;
     const fetchWeather = () => {
-      fetch("https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m&temperature_unit=celsius&timezone=America/New_York")
+      fetch("https://api.open-meteo.com/v1/forecast?latitude=40.7128&longitude=-74.0060&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m&hourly=temperature_2m,weather_code,precipitation_probability&daily=temperature_2m_max,temperature_2m_min,weather_code,precipitation_probability_max&temperature_unit=celsius&timezone=America/New_York&forecast_days=7")
         .then(r => r.json())
         .then(j => {
           if (cancelled) return;
-          setWeather({ loading: false, error: false, data: j.current });
+          setWeather({ loading: false, error: false, data: j });
         })
         .catch(() => { if (!cancelled) setWeather({ loading: false, error: true, data: null }); });
     };
@@ -475,6 +475,21 @@ export default function App() {
     const id = setInterval(fetchWeather, 10 * 60 * 1000);
     return () => { cancelled = true; clearInterval(id); };
   }, []);
+
+  const [weatherExpanded, setWeatherExpanded] = useState(false);
+  const getNextHours = (data, n = 12) => {
+    if (!data?.hourly || !data?.current) return [];
+    const prefix = data.current.time.slice(0, 13);
+    let idx = data.hourly.time.findIndex(t => t.startsWith(prefix));
+    if (idx < 0) idx = 0;
+    idx += 1;
+    return data.hourly.time.slice(idx, idx + n).map((t, i) => ({
+      time: t,
+      temp: data.hourly.temperature_2m[idx + i],
+      code: data.hourly.weather_code[idx + i],
+      precip: data.hourly.precipitation_probability?.[idx + i] ?? 0,
+    }));
+  };
 
   const memoKey = (di, ei) => `${di}-${ei}`;
   const startEdit = (k) => { setDraft(memos[k] || ""); setEditing(k); };
@@ -512,24 +527,90 @@ export default function App() {
         <p style={{ fontSize:16, color:"#999", marginBottom:16 }}>씨오 코파운더가 함께하는 5박 6일</p>
 
         {/* 실시간 뉴욕 날씨 */}
-        <div style={{ display:"flex", alignItems:"center", gap:12, padding:"12px 16px", borderRadius:8, background:`linear-gradient(135deg, ${d.accent}10, ${d.accent}05)`, border:`1px solid ${d.accent}20` }}>
+        <div style={{ borderRadius:8, background:`linear-gradient(135deg, ${d.accent}10, ${d.accent}05)`, border:`1px solid ${d.accent}20`, overflow:"hidden" }}>
           {weather.loading ? (
-            <p style={{ fontSize:15, color:"#aaa" }}>🌎 뉴욕 날씨 불러오는 중...</p>
+            <p style={{ fontSize:15, color:"#aaa", padding:"12px 16px" }}>🌎 뉴욕 날씨 불러오는 중...</p>
           ) : weather.error || !weather.data ? (
-            <p style={{ fontSize:15, color:"#aaa" }}>🌎 날씨 정보를 불러올 수 없습니다</p>
+            <p style={{ fontSize:15, color:"#aaa", padding:"12px 16px" }}>🌎 날씨 정보를 불러올 수 없습니다</p>
           ) : (
             <>
-              <span style={{ fontSize:38}}>{wxInfo(weather.data.weather_code).icon}</span>
-              <div style={{ flex:1 }}>
-                <p style={{ fontSize:12, fontWeight:700, color:d.accent, letterSpacing:1.2, marginBottom:2 }}>NYC NOW · 실시간</p>
-                <div style={{ display:"flex", alignItems:"baseline", gap:6 }}>
-                  <span style={{ fontSize:25, fontWeight:800, color:"#111" }}>{Math.round(weather.data.temperature_2m)}°</span>
-                  <span style={{ fontSize:15, color:"#666", fontWeight:500 }}>{wxInfo(weather.data.weather_code).label}</span>
+              <button onClick={()=>setWeatherExpanded(!weatherExpanded)} style={{
+                width:"100%", display:"flex", alignItems:"center", gap:12, padding:"12px 16px",
+                border:"none", background:"transparent", cursor:"pointer", textAlign:"left",
+              }}>
+                <span style={{ fontSize:38 }}>{wxInfo(weather.data.current.weather_code).icon}</span>
+                <div style={{ flex:1, minWidth:0 }}>
+                  <p style={{ fontSize:12, fontWeight:700, color:d.accent, letterSpacing:1.2, marginBottom:2 }}>NYC NOW · 실시간</p>
+                  <div style={{ display:"flex", alignItems:"baseline", gap:6 }}>
+                    <span style={{ fontSize:25, fontWeight:800, color:"#111" }}>{Math.round(weather.data.current.temperature_2m)}°</span>
+                    <span style={{ fontSize:15, color:"#666", fontWeight:500 }}>{wxInfo(weather.data.current.weather_code).label}</span>
+                  </div>
+                  <p style={{ fontSize:12, color:"#999", marginTop:2 }}>
+                    습도 {Math.round(weather.data.current.relative_humidity_2m)}% · 바람 {Math.round(weather.data.current.wind_speed_10m)}km/h
+                  </p>
                 </div>
-                <p style={{ fontSize:12, color:"#999", marginTop:2 }}>
-                  습도 {Math.round(weather.data.relative_humidity_2m)}% · 바람 {Math.round(weather.data.wind_speed_10m)}km/h
-                </p>
-              </div>
+                <svg width="14" height="14" viewBox="0 0 10 10" style={{ transform:weatherExpanded?"rotate(180deg)":"", transition:"transform 0.2s", opacity:0.4, flexShrink:0 }}>
+                  <path d="M2 3.5L5 6.5L8 3.5" stroke={d.accent} strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+                </svg>
+              </button>
+
+              {weatherExpanded && (
+                <>
+                  <div style={{ borderTop:`1px solid ${d.accent}20`, padding:"10px 16px 12px" }}>
+                    <p style={{ fontSize:11, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>⏰ 시간별 (다음 12시간)</p>
+                    <div style={{ display:"flex", overflowX:"auto", gap:6, scrollbarWidth:"none", margin:"0 -4px", padding:"0 4px" }}>
+                      {getNextHours(weather.data, 12).map((h)=>{
+                        const hr = h.time.slice(11, 13);
+                        return (
+                          <div key={h.time} style={{
+                            flex:"0 0 auto", minWidth:54, padding:"7px 8px", borderRadius:5,
+                            background:"#fff", border:`1px solid ${d.accent}15`,
+                            display:"flex", flexDirection:"column", alignItems:"center", gap:2,
+                          }}>
+                            <span style={{ fontSize:11, color:"#888", fontWeight:600 }}>{hr}시</span>
+                            <span style={{ fontSize:18 }}>{wxInfo(h.code).icon}</span>
+                            <span style={{ fontSize:13, fontWeight:700, color:"#222" }}>{Math.round(h.temp)}°</span>
+                            {h.precip >= 30 && <span style={{ fontSize:10, color:"#3b7dd8", fontWeight:600 }}>💧{h.precip}%</span>}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  <div style={{ borderTop:`1px solid ${d.accent}20`, padding:"10px 16px 12px" }}>
+                    <p style={{ fontSize:11, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>📅 주간 예보 (7일)</p>
+                    <div style={{ display:"flex", flexDirection:"column", gap:4 }}>
+                      {weather.data.daily.time.map((t, i) => {
+                        const dt = new Date(t + "T12:00");
+                        const dayName = ["일","월","화","수","목","금","토"][dt.getDay()];
+                        const dateStr = `${dt.getMonth()+1}/${dt.getDate()}`;
+                        const isToday = i === 0;
+                        const code = weather.data.daily.weather_code[i];
+                        const tmax = Math.round(weather.data.daily.temperature_2m_max[i]);
+                        const tmin = Math.round(weather.data.daily.temperature_2m_min[i]);
+                        const precip = weather.data.daily.precipitation_probability_max?.[i] ?? 0;
+                        return (
+                          <div key={t} style={{
+                            display:"flex", alignItems:"center", gap:8, padding:"6px 10px", borderRadius:5,
+                            background: isToday ? `${d.accent}12` : "#fff",
+                            border: `1px solid ${d.accent}15`,
+                          }}>
+                            <span style={{ fontSize:13, fontWeight:700, color: isToday?d.accent:"#444", width:38 }}>
+                              {isToday ? "오늘" : dayName}
+                            </span>
+                            <span style={{ fontSize:11, color:"#999", width:34 }}>{dateStr}</span>
+                            <span style={{ fontSize:18, width:24, textAlign:"center" }}>{wxInfo(code).icon}</span>
+                            <span style={{ flex:1, fontSize:12, color:"#888", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{wxInfo(code).label}</span>
+                            {precip >= 30 && <span style={{ fontSize:11, color:"#3b7dd8", fontWeight:600 }}>💧{precip}%</span>}
+                            <span style={{ fontSize:13, fontWeight:700, color:"#222" }}>{tmax}°</span>
+                            <span style={{ fontSize:12, color:"#aaa" }}>{tmin}°</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </>
+              )}
             </>
           )}
         </div>
