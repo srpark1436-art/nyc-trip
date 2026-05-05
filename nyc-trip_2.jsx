@@ -392,10 +392,66 @@ const TRANSPORT = {
     { name: "대중교통", detail: "AirTrain + NJ Transit Bus", info: ["JFK AirTrain ($8.25) → Jamaica Station", "E train ($2.90) → Penn Station", "Penn Station → Port Authority 도보 5분", "NJ Transit Bus 165/166 ($3.50) → Blvd East", "총 약 2시간 · $15/인"] }
   ]},
   ferry: { title: "뉴저지 → 맨해튼 페리", icon: "⛴️", routes: [
+    { name: "📱 NY Waterway 앱 다운로드", detail: "모바일 티켓 구매 + QR 스캔 탑승", info: [
+      "현장 부스 줄 서지 않고 즉시 구매",
+      "신용카드 등록 한 번 → 매번 클릭 한 번에 구매",
+      "QR 코드 화면을 게이트에 스캔",
+      "운행 시간표 + 실시간 출발 안내"
+    ], links: [
+      { icon: "🍎", label: "iOS App Store", href: "https://apps.apple.com/us/app/ny-waterway/id1042575849" },
+      { icon: "🤖", label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.movmi.nywwferry" },
+      { icon: "🌐", label: "공식 사이트", href: "https://www.nywaterway.com/" }
+    ]},
     { name: "Wall St 행 (평일)", detail: "Port Imperial → Pier 11 · 25분 · $9", info: ["AM 6:20~ / PM ~7:00 운행", "허드슨 강에서 자유의 여신상 조망", "숙소→Port Imperial: 158번(10분) 또는 Uber(8분)"] },
-    { name: "Midtown 행 (매일)", detail: "Port Imperial → W. 39th St · 8분 · $9", info: ["주말 포함 매일 운행", "무료 셔틀버스 미드타운 연결", "도착 후 도보 10분이면 타임스퀘어"] }
+    { name: "Midtown 행 (매일)", detail: "Port Imperial → W. 39th St · 8분 · $9", info: ["주말 포함 매일 운행", "무료 셔틀버스 미드타운 연결", "도착 후 도보 10분이면 타임스퀘어"] },
+    { name: "🎫 현장 티켓 구매", detail: "터미널 부스 또는 자판기", info: [
+      "Port Imperial 터미널: 4800 Avenue at Port Imperial, Weehawken NJ",
+      "W. 39th St 터미널: Pier 79, W 39th St & 12th Ave",
+      "Pier 11: South St & Wall St area",
+      "카드/현금 모두 가능 · 출발 5~10분 전 도착 권장"
+    ]}
+  ]},
+  subway: { title: "NYC 지하철 (OMNY)", icon: "🚇", routes: [
+    { name: "✅ 앱 다운로드 불필요!", detail: "Apple Pay / Google Pay로 그냥 탭하면 끝", info: [
+      "핸드폰/스마트워치를 OMNY 리더기에 탭",
+      "자동으로 $2.90 차감 (지하철 + 시내버스 동일)",
+      "Contactless 신용카드(📶 마크)도 직접 탭 가능",
+      "여러 명이라도 각자 다른 핸드폰/카드로 탭"
+    ]},
+    { name: "💰 자동 주간 패스 (Fare Capping)", detail: "7일 12회 이용 후 무료", info: [
+      "같은 카드/기기로 7일간 12회 이용",
+      "13회째부터 자동 무료 (주간권 살 필요 없음)",
+      "월~일 기준 매주 리셋",
+      "지하철 + 시내버스 합산"
+    ]},
+    { name: "📱 OMNY 앱 (선택사항)", detail: "잔액/이용내역 확인용 — 결제는 앱 없이도 가능", info: [
+      "결제 자체는 앱 다운로드 불필요",
+      "이용 내역, 잔액, 분실 신고 등 관리 용도",
+      "여행자는 보통 다운로드 안 해도 OK"
+    ], links: [
+      { icon: "🍎", label: "iOS App Store", href: "https://apps.apple.com/us/app/omny/id1500341682" },
+      { icon: "🤖", label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.cubic.metnyct" },
+      { icon: "🌐", label: "OMNY 공식", href: "https://omny.info/" }
+    ]},
+    { name: "⚠️ 주의 — OMNY가 안 되는 시스템", detail: "별도 결제 필요", info: [
+      "🚌 NJ Transit 158번 → NJ Transit 앱 또는 현금",
+      "⛴️ NY Waterway 페리 → NY Waterway 앱 또는 부스",
+      "🚇 PATH (NJ↔맨해튼) → 별도 PATH SmartLink 또는 MetroCard",
+      "OMNY는 NYC 지하철 + 시내버스만 적용"
+    ]}
   ]},
   bus158: { title: "NJ Transit 158번 (직행 버스)", icon: "🚌", routes: [
+    { name: "📱 NJ Transit 모바일 앱 다운로드", detail: "버스/기차 모두 모바일 티켓 가능", info: [
+      "현금 정확한 잔돈 준비할 필요 없음",
+      "신용카드 등록 한 번 → 클릭 한 번에 구매",
+      "탑승 시 화면 표시만으로 OK",
+      "버스/기차 시간표 + 실시간 도착 정보",
+      "실시간 운행 지연/우회 알림"
+    ], links: [
+      { icon: "🍎", label: "iOS App Store", href: "https://apps.apple.com/us/app/nj-transit-mobile-app/id942617997" },
+      { icon: "🤖", label: "Google Play", href: "https://play.google.com/store/apps/details?id=com.njtransit.njtapp" },
+      { icon: "🌐", label: "공식 사이트", href: "https://www.njtransit.com/mobile-app" }
+    ]},
     { name: "숙소 → 미드타운 직행", detail: "JFK Blvd East → Port Authority · 25~35분 · $3.50", info: [
       "환승 없이 맨해튼 42nd St까지 한 번에",
       "Lincoln Tunnel 경유 · 평일 5~15분 간격",
@@ -535,30 +591,30 @@ export default function App() {
       `}</style>
 
       <header style={{ padding:"40px 18px 0" }}>
-        <p style={{ fontSize:12, letterSpacing:4, color:d.accent, fontWeight:700, marginBottom:12, transition:"color 0.4s" }}>NEW YORK · MAY 2026</p>
-        <h1 style={{ fontSize:30, fontWeight:800, color:"#111", letterSpacing:-0.8, marginBottom:6 }}>뉴욕 여행 스케줄</h1>
-        <p style={{ fontSize:16, color:"#999", marginBottom:16 }}>씨오 코파운더가 함께하는 5박 6일</p>
+        <p style={{ fontSize:14, letterSpacing:4, color:d.accent, fontWeight:700, marginBottom:12, transition:"color 0.4s" }}>NEW YORK · MAY 2026</p>
+        <h1 style={{ fontSize:34, fontWeight:800, color:"#111", letterSpacing:-0.8, marginBottom:6 }}>뉴욕 여행 스케줄</h1>
+        <p style={{ fontSize:18, color:"#999", marginBottom:16 }}>씨오 코파운더가 함께하는 5박 6일</p>
 
         {/* 실시간 뉴욕 날씨 */}
         <div style={{ borderRadius:8, background:`linear-gradient(135deg, ${d.accent}10, ${d.accent}05)`, border:`1px solid ${d.accent}20`, overflow:"hidden" }}>
           {weather.loading ? (
-            <p style={{ fontSize:15, color:"#aaa", padding:"12px 16px" }}>🌎 뉴욕 날씨 불러오는 중...</p>
+            <p style={{ fontSize:17, color:"#aaa", padding:"12px 16px" }}>🌎 뉴욕 날씨 불러오는 중...</p>
           ) : weather.error || !weather.data ? (
-            <p style={{ fontSize:15, color:"#aaa", padding:"12px 16px" }}>🌎 날씨 정보를 불러올 수 없습니다</p>
+            <p style={{ fontSize:17, color:"#aaa", padding:"12px 16px" }}>🌎 날씨 정보를 불러올 수 없습니다</p>
           ) : (
             <>
               <button onClick={()=>setWeatherExpanded(!weatherExpanded)} style={{
                 width:"100%", display:"flex", alignItems:"center", gap:12, padding:"12px 16px",
                 border:"none", background:"transparent", cursor:"pointer", textAlign:"left",
               }}>
-                <span style={{ fontSize:38 }}>{wxInfo(weather.data.current.weather_code).icon}</span>
+                <span style={{ fontSize:42}}>{wxInfo(weather.data.current.weather_code).icon}</span>
                 <div style={{ flex:1, minWidth:0 }}>
-                  <p style={{ fontSize:12, fontWeight:700, color:d.accent, letterSpacing:1.2, marginBottom:2 }}>NYC NOW · 실시간</p>
+                  <p style={{ fontSize:14, fontWeight:700, color:d.accent, letterSpacing:1.2, marginBottom:2 }}>NYC NOW · 실시간</p>
                   <div style={{ display:"flex", alignItems:"baseline", gap:6 }}>
-                    <span style={{ fontSize:25, fontWeight:800, color:"#111" }}>{Math.round(weather.data.current.temperature_2m)}°</span>
-                    <span style={{ fontSize:15, color:"#666", fontWeight:500 }}>{wxInfo(weather.data.current.weather_code).label}</span>
+                    <span style={{ fontSize:28, fontWeight:800, color:"#111" }}>{Math.round(weather.data.current.temperature_2m)}°</span>
+                    <span style={{ fontSize:17, color:"#666", fontWeight:500 }}>{wxInfo(weather.data.current.weather_code).label}</span>
                   </div>
-                  <p style={{ fontSize:12, color:"#999", marginTop:2 }}>
+                  <p style={{ fontSize:14, color:"#999", marginTop:2 }}>
                     습도 {Math.round(weather.data.current.relative_humidity_2m)}% · 바람 {Math.round(weather.data.current.wind_speed_10m)}km/h
                   </p>
                 </div>
@@ -570,7 +626,7 @@ export default function App() {
               {weatherExpanded && (
                 <>
                   <div style={{ borderTop:`1px solid ${d.accent}20`, padding:"10px 16px 12px" }}>
-                    <p style={{ fontSize:11, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>⏰ 시간별 (다음 12시간)</p>
+                    <p style={{ fontSize:13, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>⏰ 시간별 (다음 12시간)</p>
                     <div style={{ display:"flex", overflowX:"auto", gap:6, scrollbarWidth:"none", margin:"0 -4px", padding:"0 4px" }}>
                       {getNextHours(weather.data, 12).map((h)=>{
                         const hr = h.time.slice(11, 13);
@@ -580,10 +636,10 @@ export default function App() {
                             background:"#fff", border:`1px solid ${d.accent}15`,
                             display:"flex", flexDirection:"column", alignItems:"center", gap:2,
                           }}>
-                            <span style={{ fontSize:11, color:"#888", fontWeight:600 }}>{hr}시</span>
+                            <span style={{ fontSize:13, color:"#888", fontWeight:600 }}>{hr}시</span>
                             <span style={{ fontSize:18 }}>{wxInfo(h.code).icon}</span>
-                            <span style={{ fontSize:13, fontWeight:700, color:"#222" }}>{Math.round(h.temp)}°</span>
-                            {h.precip >= 30 && <span style={{ fontSize:10, color:"#3b7dd8", fontWeight:600 }}>💧{h.precip}%</span>}
+                            <span style={{ fontSize:15, fontWeight:700, color:"#222" }}>{Math.round(h.temp)}°</span>
+                            {h.precip >= 30 && <span style={{ fontSize:12, color:"#3b7dd8", fontWeight:600 }}>💧{h.precip}%</span>}
                           </div>
                         );
                       })}
@@ -591,7 +647,7 @@ export default function App() {
                   </div>
 
                   <div style={{ borderTop:`1px solid ${d.accent}20`, padding:"10px 16px 12px" }}>
-                    <p style={{ fontSize:11, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>📅 주간 예보 (7일)</p>
+                    <p style={{ fontSize:13, fontWeight:700, color:"#888", letterSpacing:0.8, marginBottom:8 }}>📅 주간 예보 (7일)</p>
                     <div style={{ display:"flex", flexDirection:"column", gap:4 }}>
                       {weather.data.daily.time.map((t, i) => {
                         const dt = new Date(t + "T12:00");
@@ -608,15 +664,15 @@ export default function App() {
                             background: isToday ? `${d.accent}12` : "#fff",
                             border: `1px solid ${d.accent}15`,
                           }}>
-                            <span style={{ fontSize:13, fontWeight:700, color: isToday?d.accent:"#444", width:38 }}>
+                            <span style={{ fontSize:15, fontWeight:700, color: isToday?d.accent:"#444", width:38 }}>
                               {isToday ? "오늘" : dayName}
                             </span>
-                            <span style={{ fontSize:11, color:"#999", width:34 }}>{dateStr}</span>
-                            <span style={{ fontSize:18, width:24, textAlign:"center" }}>{wxInfo(code).icon}</span>
-                            <span style={{ flex:1, fontSize:12, color:"#888", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{wxInfo(code).label}</span>
-                            {precip >= 30 && <span style={{ fontSize:11, color:"#3b7dd8", fontWeight:600 }}>💧{precip}%</span>}
-                            <span style={{ fontSize:13, fontWeight:700, color:"#222" }}>{tmax}°</span>
-                            <span style={{ fontSize:12, color:"#aaa" }}>{tmin}°</span>
+                            <span style={{ fontSize:13, color:"#999", width:34 }}>{dateStr}</span>
+                            <span style={{ fontSize:20, width:24, textAlign:"center" }}>{wxInfo(code).icon}</span>
+                            <span style={{ flex:1, fontSize:14, color:"#888", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{wxInfo(code).label}</span>
+                            {precip >= 30 && <span style={{ fontSize:13, color:"#3b7dd8", fontWeight:600 }}>💧{precip}%</span>}
+                            <span style={{ fontSize:15, fontWeight:700, color:"#222" }}>{tmax}°</span>
+                            <span style={{ fontSize:14, color:"#aaa" }}>{tmin}°</span>
                           </div>
                         );
                       })}
@@ -635,9 +691,9 @@ export default function App() {
           padding:"9px 4px", borderRadius:7, minWidth:0, cursor:"pointer", transition:"all 0.3s", border:"none",
           background:on?dd.accent:"transparent", color:on?"#fff":"#aaa",
         }}>
-          <span style={{ fontSize:20, filter:on?"brightness(10)":"none", lineHeight:1 }}>{dd.emoji}</span>
-          <span style={{ fontSize:13, fontWeight:on?700:500, whiteSpace:"nowrap" }}>{dd.date.replace("5월 ","")}</span>
-          <span style={{ fontSize:10, opacity:0.7 }}>{dd.day}</span>
+          <span style={{ fontSize:22, filter:on?"brightness(10)":"none", lineHeight:1 }}>{dd.emoji}</span>
+          <span style={{ fontSize:15, fontWeight:on?700:500, whiteSpace:"nowrap" }}>{dd.date.replace("5월 ","")}</span>
+          <span style={{ fontSize:12, opacity:0.7 }}>{dd.day}</span>
         </button>})}
       </nav>
 
@@ -660,9 +716,9 @@ export default function App() {
                 background: on ? d.accent : "#f5f5f3",
                 color: on ? "#fff" : d.accent,
                 display:"flex", alignItems:"center", justifyContent:"center",
-                fontSize:14, fontWeight:800, transition:"all 0.25s",
+                fontSize:16, fontWeight:800, transition:"all 0.25s",
               }}>{b.ic}</div>
-              <span style={{ flex:1, minWidth:0, fontSize:15, fontWeight:700, color: on ? d.accent : "#333", lineHeight:1, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{b.l}</span>
+              <span style={{ flex:1, minWidth:0, fontSize:17, fontWeight:700, color: on ? d.accent : "#333", lineHeight:1, whiteSpace:"nowrap", overflow:"hidden", textOverflow:"ellipsis" }}>{b.l}</span>
               <svg width="10" height="10" viewBox="0 0 10 10" style={{ transform: on ? "rotate(180deg)" : "", transition:"transform 0.2s", flexShrink:0, opacity:0.4 }}>
                 <path d="M2 3.5L5 6.5L8 3.5" stroke={on?d.accent:"#999"} strokeWidth="1.5" fill="none" strokeLinecap="round"/>
               </svg>
@@ -673,16 +729,16 @@ export default function App() {
 
       {panel==="transport"&&<div style={{ padding:"0 16px 20px", animation:"fin 0.3s" }}>
         {Object.values(TRANSPORT).map((s,si)=><div key={si} style={{ marginBottom:16 }}>
-          <p style={{ fontSize:16, fontWeight:700, color:"#333", marginBottom:10 }}>{s.icon} {s.title}</p>
+          <p style={{ fontSize:18, fontWeight:700, color:"#333", marginBottom:10 }}>{s.icon} {s.title}</p>
           {s.routes.map((r,ri)=><div key={ri} style={{ background:"#fafaf8", borderRadius:8, padding:"16px 18px", marginBottom:8, border:"1px solid #f0efe8" }}>
-            <p style={{ fontSize:16, fontWeight:700, color:"#222", marginBottom:2 }}>{r.name}</p>
-            <p style={{ fontSize:13, color:"#aaa", marginBottom:10 }}>{r.detail}</p>
-            {r.info.map((t,ti)=><p key={ti} style={{ fontSize:15, color:"#666", lineHeight:1.7, paddingLeft:10, borderLeft:`2px solid ${d.accent}30` }}>{t}</p>)}
+            <p style={{ fontSize:18, fontWeight:700, color:"#222", marginBottom:2 }}>{r.name}</p>
+            <p style={{ fontSize:15, color:"#aaa", marginBottom:10 }}>{r.detail}</p>
+            {r.info.map((t,ti)=><p key={ti} style={{ fontSize:17, color:"#666", lineHeight:1.7, paddingLeft:10, borderLeft:`2px solid ${d.accent}30` }}>{t}</p>)}
             {r.links && r.links.length > 0 && (
               <div style={{ display:"flex", gap:6, marginTop:10, flexWrap:"wrap" }}>
                 {r.links.map((ln,li)=>(
                   <a key={li} href={ln.href} target="_blank" rel="noopener noreferrer" style={{
-                    fontSize:13, fontWeight:600, padding:"7px 11px", borderRadius:6,
+                    fontSize:15, fontWeight:600, padding:"7px 11px", borderRadius:6,
                     background:"#fff", border:`1px solid ${d.accent}33`, color:d.accent,
                     textDecoration:"none", display:"inline-flex", alignItems:"center", gap:4,
                     whiteSpace:"nowrap",
@@ -704,7 +760,7 @@ export default function App() {
             onKeyDown={e=>{ if(e.key==="Enter") addTodo(); }}
             placeholder="새 할 일 입력 후 Enter 또는 추가"
             style={{
-              flex:1, padding:"12px 14px", borderRadius:7, fontSize:16,
+              flex:1, padding:"12px 14px", borderRadius:7, fontSize:18,
               border:`1.5px solid ${d.accent}33`, background:"#fff", color:"#333",
               fontFamily:"inherit", outline:"none",
             }}
@@ -712,7 +768,7 @@ export default function App() {
             onBlur={e=>e.currentTarget.style.borderColor=`${d.accent}33`}
           />
           <button onClick={addTodo} disabled={!todoInput.trim()} style={{
-            padding:"0 16px", borderRadius:7, fontSize:15, fontWeight:700,
+            padding:"0 16px", borderRadius:7, fontSize:17, fontWeight:700,
             cursor: todoInput.trim() ? "pointer" : "not-allowed",
             border:"none", background: todoInput.trim() ? d.accent : "#e7e7e3",
             color:"#fff", transition:"all 0.15s",
@@ -724,19 +780,19 @@ export default function App() {
         {allTodos.length > 0 && (
           <div style={{ marginBottom:10, padding:"10px 14px", borderRadius:7, background:`${d.accent}08`, display:"flex", alignItems:"center", gap:10 }}>
             <div style={{ flex:1 }}>
-              <p style={{ fontSize:13, color:"#888", fontWeight:600, marginBottom:5 }}>진행 {doneCount}/{allTodos.length}</p>
+              <p style={{ fontSize:15, color:"#888", fontWeight:600, marginBottom:5 }}>진행 {doneCount}/{allTodos.length}</p>
               <div style={{ height:5, borderRadius:2, background:"#eee", overflow:"hidden" }}>
                 <div style={{ height:"100%", width: `${(doneCount/allTodos.length)*100}%`, background:d.accent, transition:"width 0.3s" }}/>
               </div>
             </div>
-            <span style={{ fontSize:13, fontWeight:700, color:d.accent }}>{Math.round((doneCount/allTodos.length)*100)}%</span>
+            <span style={{ fontSize:15, fontWeight:700, color:d.accent }}>{Math.round((doneCount/allTodos.length)*100)}%</span>
           </div>
         )}
 
         {/* 항목 리스트 */}
         <div style={{ display:"flex", flexDirection:"column", gap:6 }}>
           {allTodos.length === 0 && (
-            <div style={{ padding:"32px 16px", textAlign:"center", color:"#bbb", fontSize:16, background:"#fafaf8", borderRadius:8, border:"1px dashed #e7e7e3" }}>
+            <div style={{ padding:"32px 16px", textAlign:"center", color:"#bbb", fontSize:18, background:"#fafaf8", borderRadius:8, border:"1px dashed #e7e7e3" }}>
               할 일이 비어 있습니다.<br/>위에서 새 항목을 추가하세요.
             </div>
           )}
@@ -750,18 +806,18 @@ export default function App() {
                 cursor:"pointer", transition:"all 0.15s",
               }}>
                 <div style={{
-                  width:34, height:34, borderRadius:6, flexShrink:0, fontSize:20,
+                  width:34, height:34, borderRadius:6, flexShrink:0, fontSize:22,
                   background: done ? "#ececea" : `${d.accent}10`,
                   display:"flex", alignItems:"center", justifyContent:"center",
                   filter: done ? "grayscale(0.6) opacity(0.6)" : "none",
                 }}>{c.ic}</div>
                 <div style={{ flex:1, minWidth:0 }}>
-                  <p style={{ fontSize:16, fontWeight:700, color: done?"#aaa":"#222", textDecoration: done?"line-through":"none", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{c.t}</p>
-                  <p style={{ fontSize:13, color:"#aaa", marginTop:2, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{c.s}</p>
+                  <p style={{ fontSize:18, fontWeight:700, color: done?"#aaa":"#222", textDecoration: done?"line-through":"none", overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{c.t}</p>
+                  <p style={{ fontSize:15, color:"#aaa", marginTop:2, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>{c.s}</p>
                 </div>
                 <button onClick={(e)=>{e.stopPropagation(); removeTodo(c.id, !!c.custom);}} title="삭제" style={{
                   width:22, height:22, borderRadius:4, border:"none", background:"transparent",
-                  color:"#ccc", fontSize:19, cursor:"pointer", flexShrink:0, padding:0, lineHeight:1,
+                  color:"#ccc", fontSize:21, cursor:"pointer", flexShrink:0, padding:0, lineHeight:1,
                 }}
                   onMouseEnter={e=>e.currentTarget.style.color="#c44"}
                   onMouseLeave={e=>e.currentTarget.style.color="#ccc"}
@@ -771,7 +827,7 @@ export default function App() {
                   background: done ? d.accent : "#fff",
                   border: `1.5px solid ${done?d.accent:"#ddd"}`,
                   display:"flex", alignItems:"center", justifyContent:"center",
-                  fontSize:13, color:"#fff", fontWeight:700, transition:"all 0.15s",
+                  fontSize:15, color:"#fff", fontWeight:700, transition:"all 0.15s",
                 }}>{done && "✓"}</div>
               </div>
             );
@@ -781,15 +837,15 @@ export default function App() {
         {/* 기본 항목 복원 */}
         {todoState.removed?.length > 0 && (
           <button onClick={restoreDefaults} style={{
-            marginTop:10, width:"100%", padding:"9px 0", borderRadius:6, fontSize:14, fontWeight:600,
+            marginTop:10, width:"100%", padding:"9px 0", borderRadius:6, fontSize:16, fontWeight:600,
             border:"1px dashed #ddd", background:"transparent", color:"#888", cursor:"pointer",
           }}>↺ 삭제한 기본 항목 복원 ({todoState.removed.length}개)</button>
         )}
       </div>}
 
       <div style={{ padding:"4px 18px 2px", display:"flex", alignItems:"baseline", gap:10 }}>
-        <span style={{ fontSize:23, fontWeight:800, color:"#111" }}>{d.date}</span>
-        <span style={{ fontSize:15, color:d.accent, fontWeight:500 }}>{d.title}</span>
+        <span style={{ fontSize:26, fontWeight:800, color:"#111" }}>{d.date}</span>
+        <span style={{ fontSize:17, color:d.accent, fontWeight:500 }}>{d.title}</span>
       </div>
 
       <div style={{ padding:"10px 12px 130px 12px" }}>
@@ -806,8 +862,8 @@ export default function App() {
               border:"none", background:"transparent",
             }}>
               <div style={{ width:38, flexShrink:0, textAlign:"right", paddingTop:1 }}>
-                <div style={{ fontSize:17, fontWeight:700, color:"#bbb", fontVariantNumeric:"tabular-nums", letterSpacing:-0.5 }}>{ev.time}</div>
-                {ev.end&&<div style={{ fontSize:12, color:"#ddd", marginTop:1, fontVariantNumeric:"tabular-nums" }}>{ev.end}</div>}
+                <div style={{ fontSize:19, fontWeight:700, color:"#bbb", fontVariantNumeric:"tabular-nums", letterSpacing:-0.5 }}>{ev.time}</div>
+                {ev.end&&<div style={{ fontSize:14, color:"#ddd", marginTop:1, fontVariantNumeric:"tabular-nums" }}>{ev.end}</div>}
               </div>
               <div style={{ display:"flex", flexDirection:"column", alignItems:"center", paddingTop:6, width:10, flexShrink:0 }}>
                 <div style={{ width:6, height:6, borderRadius:"50%", background:col+"44" }}/>
@@ -815,10 +871,10 @@ export default function App() {
               </div>
               <div style={{ flex:1, minWidth:0 }}>
                 <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-                  <span style={{ flex:1, fontSize:17, fontWeight:500, color:"#444", lineHeight:1.4 }}>{ev.title}</span>
+                  <span style={{ flex:1, fontSize:19, fontWeight:500, color:"#444", lineHeight:1.4 }}>{ev.title}</span>
                   <svg width="10" height="10" viewBox="0 0 10 10" style={{ transform:isO?"rotate(180deg)":"", transition:"transform 0.2s", flexShrink:0, opacity:0.2 }}><path d="M2 3.5L5 6.5L8 3.5" stroke="#333" strokeWidth="1.5" fill="none" strokeLinecap="round"/></svg>
                 </div>
-                <p style={{ fontSize:14, color:"#aaa", marginTop:3, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
+                <p style={{ fontSize:16, color:"#aaa", marginTop:3, overflow:"hidden", textOverflow:"ellipsis", whiteSpace:"nowrap" }}>
                   {memos[memoKey(day,i)] && <span style={{ marginRight:5 }}>📝</span>}
                   {ev.location}
                 </p>
@@ -829,20 +885,20 @@ export default function App() {
                     <span style={{ fontSize:60, opacity:0.45, position:"absolute", filter:"grayscale(0.2)" }}>{d.emoji}</span>
                     <img src={ev.photo} alt="" loading="lazy" referrerPolicy="no-referrer" style={{ width:"100%", height:"100%", objectFit:"cover", display:"block", position:"relative", zIndex:1 }} onError={e=>{e.currentTarget.style.display="none"}}/>
                   </div>}
-                  <p style={{ fontSize:14, color:"#aaa", marginBottom:10, display:"flex", gap:5, lineHeight:1.5 }}>
+                  <p style={{ fontSize:16, color:"#aaa", marginBottom:10, display:"flex", gap:5, lineHeight:1.5 }}>
                     <span style={{ color:d.accent }}>⌖</span>{ev.address}
                   </p>
 
                   {/* 구글 지도 버튼 */}
                   <div style={{ display:"flex", gap:6, marginBottom:ev.links?.length ? 8 : 12 }}>
                     <a href={mapsUrl(ev.address, ev.location)} target="_blank" rel="noopener noreferrer" style={{
-                      flex:1, padding:"10px 8px", borderRadius:6, fontSize:13, fontWeight:600,
+                      flex:1, padding:"10px 8px", borderRadius:6, fontSize:15, fontWeight:600,
                       background:"#fff", border:`1px solid ${d.accent}33`, color:d.accent,
                       textAlign:"center", textDecoration:"none", display:"flex", alignItems:"center", justifyContent:"center", gap:4,
                       whiteSpace:"nowrap", minWidth:0,
                     }}>📍 지도</a>
                     <a href={directionsUrl(ev.address, ev.location)} target="_blank" rel="noopener noreferrer" style={{
-                      flex:1, padding:"10px 8px", borderRadius:6, fontSize:13, fontWeight:600,
+                      flex:1, padding:"10px 8px", borderRadius:6, fontSize:15, fontWeight:600,
                       background:d.accent, border:`1px solid ${d.accent}`, color:"#fff",
                       textAlign:"center", textDecoration:"none", display:"flex", alignItems:"center", justifyContent:"center", gap:4,
                       whiteSpace:"nowrap", minWidth:0,
@@ -854,7 +910,7 @@ export default function App() {
                     <div style={{ display:"flex", gap:6, flexWrap:"wrap", marginBottom:12 }}>
                       {ev.links.map((ln, li) => (
                         <a key={li} href={ln.href} target="_blank" rel="noopener noreferrer" style={{
-                          flex:"1 1 auto", padding:"10px 12px", borderRadius:6, fontSize:13, fontWeight:600,
+                          flex:"1 1 auto", padding:"10px 12px", borderRadius:6, fontSize:15, fontWeight:600,
                           background:`${d.accent}10`, border:`1px solid ${d.accent}40`, color:d.accent,
                           textAlign:"center", textDecoration:"none", display:"inline-flex", alignItems:"center", justifyContent:"center", gap:5,
                           whiteSpace:"nowrap",
@@ -863,12 +919,12 @@ export default function App() {
                     </div>
                   )}
 
-                  <p style={{ fontSize:16, color:"#555", lineHeight:1.9, whiteSpace:"pre-line" }}>{ev.description}</p>
+                  <p style={{ fontSize:18, color:"#555", lineHeight:1.9, whiteSpace:"pre-line" }}>{ev.description}</p>
 
                   {/* ── TRANSIT INFO ── */}
                   {ev.transit && ev.transit.length > 0 && (
                     <div style={{ marginTop:14, background:"#f8f8f6", borderRadius:7, padding:"14px 16px", border:"1px solid #f0efe8" }}>
-                      <p style={{ fontSize:13, fontWeight:700, color:"#888", marginBottom:10, letterSpacing:0.5 }}>🧭 이동 경로</p>
+                      <p style={{ fontSize:15, fontWeight:700, color:"#888", marginBottom:10, letterSpacing:0.5 }}>🧭 이동 경로</p>
                       <div style={{ display:"flex", flexDirection:"column", gap:8 }}>
                         {ev.transit.map((tr,ti)=>(
                           <div key={ti} style={{ display:"flex", gap:10, alignItems:"flex-start" }}>
@@ -877,15 +933,15 @@ export default function App() {
                               background: `${MI[tr.mode]||"#888"}12`,
                               border: `1px solid ${MI[tr.mode]||"#888"}25`,
                               display:"flex", alignItems:"center", justifyContent:"center",
-                              fontSize:17,
+                              fontSize:19,
                             }}>{tr.icon}</div>
                             <div style={{ flex:1, minWidth:0 }}>
-                              <p style={{ fontSize:15, fontWeight:700, color:"#444", marginBottom:2 }}>{tr.label}</p>
-                              <p style={{ fontSize:14, color:"#888", lineHeight:1.65, whiteSpace:"pre-line" }}>{tr.detail}</p>
+                              <p style={{ fontSize:17, fontWeight:700, color:"#444", marginBottom:2 }}>{tr.label}</p>
+                              <p style={{ fontSize:16, color:"#888", lineHeight:1.65, whiteSpace:"pre-line" }}>{tr.detail}</p>
                               {tr.stop && (
                                 <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(tr.stop)}&travelmode=walking`} target="_blank" rel="noopener noreferrer" style={{
                                   display:"inline-flex", alignItems:"center", gap:4, marginTop:6,
-                                  fontSize:12, fontWeight:600, padding:"5px 10px", borderRadius:5,
+                                  fontSize:14, fontWeight:600, padding:"5px 10px", borderRadius:5,
                                   background:"#fff", border:`1px solid ${MI[tr.mode]||"#888"}40`, color: MI[tr.mode]||"#666",
                                   textDecoration:"none", whiteSpace:"nowrap",
                                 }}>🚏 {tr.mode==="subway"?"역 입구":tr.mode==="bus"?"정류장":tr.mode==="ferry"?"터미널":"위치"} 길찾기</a>
@@ -897,7 +953,7 @@ export default function App() {
                     </div>
                   )}
 
-                  {ev.tip&&<div style={{ marginTop:12, padding:"11px 14px", background:`${d.accent}08`, borderRadius:7, fontSize:15, color:d.accent, lineHeight:1.6, display:"flex", gap:6, fontWeight:500 }}>
+                  {ev.tip&&<div style={{ marginTop:12, padding:"11px 14px", background:`${d.accent}08`, borderRadius:7, fontSize:17, color:d.accent, lineHeight:1.6, display:"flex", gap:6, fontWeight:500 }}>
                     <span style={{ flexShrink:0 }}>💡</span><span>{ev.tip}</span>
                   </div>}
 
@@ -912,30 +968,30 @@ export default function App() {
                         {!isEdit && has && (
                           <div style={{ padding:"12px 14px", background:"#fffbe9", border:"1px solid #f3e7b8", borderRadius:7, position:"relative" }}>
                             <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom:6 }}>
-                              <span style={{ fontSize:13, fontWeight:700, color:"#a07b1e", letterSpacing:0.3 }}>📝 내 메모</span>
-                              {flash && <span style={{ fontSize:12, color:"#3a9a4f", fontWeight:600 }}>저장됨 ✓</span>}
+                              <span style={{ fontSize:15, fontWeight:700, color:"#a07b1e", letterSpacing:0.3 }}>📝 내 메모</span>
+                              {flash && <span style={{ fontSize:14, color:"#3a9a4f", fontWeight:600 }}>저장됨 ✓</span>}
                               <span style={{ flex:1 }} />
                               <button onClick={()=>startEdit(k)} title="편집" style={{
-                                background:"transparent", border:"none", color:"#bbb", fontSize:13, fontWeight:500,
+                                background:"transparent", border:"none", color:"#bbb", fontSize:15, fontWeight:500,
                                 cursor:"pointer", padding:"2px 4px", opacity:0.6, transition:"opacity 0.2s",
                               }}
                                 onMouseEnter={e=>e.currentTarget.style.opacity=1}
                                 onMouseLeave={e=>e.currentTarget.style.opacity=0.6}
                               >편집</button>
                             </div>
-                            <p style={{ fontSize:16, color:"#5a4a1d", lineHeight:1.7, whiteSpace:"pre-wrap", wordBreak:"break-word" }}>{memos[k]}</p>
+                            <p style={{ fontSize:18, color:"#5a4a1d", lineHeight:1.7, whiteSpace:"pre-wrap", wordBreak:"break-word" }}>{memos[k]}</p>
                           </div>
                         )}
                         {!isEdit && !has && (
                           <button onClick={()=>startEdit(k)} style={{
-                            width:"100%", padding:"11px 14px", borderRadius:7, fontSize:15, fontWeight:600,
+                            width:"100%", padding:"11px 14px", borderRadius:7, fontSize:17, fontWeight:600,
                             border:`1px dashed ${d.accent}55`, background:`${d.accent}06`, color:d.accent, cursor:"pointer",
                             display:"flex", alignItems:"center", justifyContent:"center", gap:6,
                           }}>📝 메모 추가</button>
                         )}
                         {isEdit && (
                           <div style={{ padding:"12px 14px", background:"#fffbe9", border:"1px solid #f3e7b8", borderRadius:7 }}>
-                            <p style={{ fontSize:13, fontWeight:700, color:"#a07b1e", letterSpacing:0.3, marginBottom:8 }}>📝 메모 작성</p>
+                            <p style={{ fontSize:15, fontWeight:700, color:"#a07b1e", letterSpacing:0.3, marginBottom:8 }}>📝 메모 작성</p>
                             <textarea
                               value={draft}
                               onChange={e=>setDraft(e.target.value)}
@@ -943,17 +999,17 @@ export default function App() {
                               autoFocus
                               style={{
                                 width:"100%", minHeight:80, resize:"vertical", padding:"10px 12px",
-                                fontSize:16, fontFamily:"inherit", lineHeight:1.6, color:"#3a2f10",
+                                fontSize:18, fontFamily:"inherit", lineHeight:1.6, color:"#3a2f10",
                                 border:"1px solid #e7d99a", borderRadius:5, background:"#fff", outline:"none",
                               }}
                             />
                             <div style={{ display:"flex", gap:6, marginTop:10, alignItems:"center" }}>
                               {has && (
-                                <button onClick={()=>deleteMemo(k)} style={{ padding:"7px 11px", borderRadius:5, border:"1px solid #f0d3d3", background:"#fff", color:"#c44", fontSize:14, fontWeight:600, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>삭제</button>
+                                <button onClick={()=>deleteMemo(k)} style={{ padding:"7px 11px", borderRadius:5, border:"1px solid #f0d3d3", background:"#fff", color:"#c44", fontSize:16, fontWeight:600, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>삭제</button>
                               )}
                               <span style={{ flex:1 }} />
-                              <button onClick={cancelEdit} style={{ padding:"7px 13px", borderRadius:5, border:"1px solid #ddd", background:"#fff", color:"#666", fontSize:14, fontWeight:600, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>취소</button>
-                              <button onClick={()=>saveMemo(k)} style={{ padding:"7px 13px", borderRadius:5, border:"none", background:d.accent, color:"#fff", fontSize:14, fontWeight:700, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>저장</button>
+                              <button onClick={cancelEdit} style={{ padding:"7px 13px", borderRadius:5, border:"1px solid #ddd", background:"#fff", color:"#666", fontSize:16, fontWeight:600, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>취소</button>
+                              <button onClick={()=>saveMemo(k)} style={{ padding:"7px 13px", borderRadius:5, border:"none", background:d.accent, color:"#fff", fontSize:16, fontWeight:700, cursor:"pointer", whiteSpace:"nowrap", flexShrink:0 }}>저장</button>
                             </div>
                           </div>
                         )}
