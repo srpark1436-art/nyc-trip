@@ -137,19 +137,19 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "브릿지 출구에서 도보", detail: "다리 하차 → Washington St 사진 포인트 도보 5분\n→ Brooklyn Bridge Park 도보 3분\n→ Jane's Carousel 도보 2분" }
         ]},
-      { time: "19:30", end: "21:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
-        description: "브루클린 최고의 가성비 스테이크!\n• Butcher's Steak $34\n• 1인 예산: $60~80\n• 예약 필수 (Resy)",
+      { time: "21:00", end: "22:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
+        description: "✅ 예약 완료 (Resy)\n• 일시: 5월 15일(금) 21:00\n• 인원: 3명\n• 좌석: Heated Patio\n• 취소 정책: 5월 14일 21:00 전 무료\n💳 결제 카드 끝자리 0766\n\n🍽️ 3명 추천 주문 (가성비 + 다양성)\n\n🍷 애피타이저 (1~2개 셰어)\n• Bone Marrow + Toast — 시그니처, 꼭!\n• 또는 Oysters (반다스)\n\n🥩 메인 (각 1개씩, 3명 → 3종 셰어 가능)\n• Butcher's Steak $34 — 시그니처, 1개는 필수\n• Lamb Saddle Chops — 다른 풍미 추가\n• Bone-in Ribeye 또는 Roast Chicken (취향)\n\n🥗 사이드 (2~3개 셰어)\n• Grilled Asparagus\n• Mashed Potatoes 또는 Roasted Potatoes\n• Creamed Spinach\n\n🍷 음료\n• Red Wine 1병 (Pinot Noir / Cabernet)\n• 또는 크래프트 맥주\n\n💰 1인 예산: $70~90 (팁 포함, 와인 별도)",
         photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGAeF8DR8bA22P1R9BNuJg81LgCMSLliF3tGNYD92OlYp-MtkIyTdUY2hs2vutn30xge1eS2_WbsLvByuaLyI5OVpAYTp_6vPNSRnGKC4ZDXRBnHqQ8APLHrYjEUPCPdyRaI13N=w600-h300-n-k-no",
         links: [
-          { icon: "📅", label: "Resy 예약", href: "https://resy.com/cities/ny/st-anselm" },
+          { icon: "📅", label: "Resy 예약 관리", href: "https://resy.com/cities/ny/st-anselm" },
           { icon: "🌐", label: "공식 사이트", href: "https://stanselm.nyc/" }
         ],
-        tip: "Butcher's Steak 반드시 주문!",
+        tip: "Butcher's Steak 반드시 주문! Patio 자리니 5월 밤 쌀쌀할 수 있어 가벼운 겉옷 추천",
         transit: [
           { mode: "subway", icon: "🚇", label: "DUMBO → Williamsburg", detail: "York St역 (F line) → East Broadway 환승 → Lorimer St역 하차\n또는 DUMBO에서 Uber · 약 10분 · $12~15" },
           { mode: "walk", icon: "🚶", label: "Lorimer St역 → St. Anselm", detail: "역에서 Metropolitan Ave 방향 도보 · 약 5분" }
         ]},
-      { time: "22:00", title: "Williamsburg & 숙소 복귀", type: "transport", location: "Williamsburg → 숙소", address: "Bedford Ave, Brooklyn",
+      { time: "22:30", title: "Williamsburg & 숙소 복귀", type: "transport", location: "Williamsburg → 숙소", address: "Bedford Ave, Brooklyn",
         description: "Bedford Ave 바 거리 산책 후 Uber로 복귀",
         tip: "뉴욕에서 가장 트렌디한 동네",
         transit: [
@@ -258,17 +258,19 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "West Village → Greenwich", detail: "Bleecker St → 동쪽 도보 약 5~10분\nMacDougal St 따라가면 Washington Square 도착" }
         ]},
-      { time: "18:00", end: "21:00", title: "🏡 Dian's House Dinner Invitation", type: "highlight", location: "Dian's House", address: "[Dian에게 주소 확인]",
+      { time: "17:00", end: "21:00", title: "🏡 Dian's House Dinner Invitation", type: "highlight", location: "Dian's House", address: "300 E 59th St, New York, NY",
         description: "Dian의 집 디너 초대 — 이날의 하이라이트!\n\n🎁 손님 매너 체크리스트\n• 와인 (red/white 1병씩) 또는 꽃다발 지참\n• 한국 디저트/티/전통주 선물 옵션\n• 드레스 코드: 깔끔한 캐주얼\n• 알레르기/식단 제한 미리 공유\n\n💬 미국식 디너 매너\n• 5~10분 정도만 늦는 정도 OK\n• 식사 후 정리 도와주기 제안\n• 머무르는 시간: 식사 후 1~2시간 정도\n• 다음 날 감사 메시지/카드 보내기\n\n🎉 이런 시간이 진짜 뉴욕 추억",
         tip: "Dian에게 알레르기, 도착 시간, 선물 호불호 미리 확인!",
         transit: [
-          { mode: "car", icon: "🚗", label: "Greenwich Village → Dian's House", detail: "Washington Square Park 옆에서 Uber 호출\n시간/비용은 Dian의 위치에 따라 달라짐" }
+          { mode: "subway", icon: "🚇", label: "Greenwich Village → Dian's House", detail: "W 4th St-Washington Sq역 → A/C/E line 북쪽 → 59 St-Columbus Cir\n또는 R/W → Lexington Av/59 St역 (Dian's House 근처)\n약 15~20분 · $2.90" },
+          { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "Washington Sq → 300 E 59th St\n약 12~18분 · $15~22 (1인 $5~7)" }
         ]},
-      { time: "21:00", title: "숙소 복귀", type: "transport", location: "Dian's House → 숙소", address: "Uber/Lyft",
-        description: "Dian의 집에서 숙소로 복귀.\n저녁 시간은 Uber가 가장 편안하고 안전!",
+      { time: "21:00", title: "숙소 복귀", type: "transport", location: "Dian's House → 숙소", address: "300 E 59th St → 5303 JFK Blvd East",
+        description: "Dian의 집(300 E 59th St)에서 숙소로 복귀.\n저녁 시간은 Uber가 가장 편안하고 안전!",
         tip: "내일 일정 위해 적당한 시간에 마무리",
         transit: [
-          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Dian's House → 숙소 직행\n시간/비용은 위치에 따라 달라짐 (예상 $25~50)" }
+          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "300 E 59th St → 숙소\n약 20~30분 · $30~40 (1인 $10~13)\nQueensboro Bridge 또는 Lincoln Tunnel 경로" },
+          { mode: "subway", icon: "🚇", label: "지하철 + 158번 (가성비)", detail: "Lexington Av/59 St역 → N/R/W 또는 4/5/6 → Times Sq\n→ Port Authority → 158번 → 숙소\n약 50~60분 · $6.40" }
         ]}
     ]
   },
