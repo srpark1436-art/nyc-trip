@@ -43,7 +43,7 @@ const DAYS = [
         tip: "2명이면 UberX로도 충분. 짐 넣고 편하게 이동하세요",
         transit: [
           { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "JFK → 숙소 직행 · 70~80분 · $130~150 (1인 $65~75)" },
-          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "AirTrain($8.25) → Jamaica Station → E train($2.90) → Penn Station → NJ Transit Bus 165/166($3.50) · 약 2시간 · $15/인" }
+          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "AirTrain($8.25) → Jamaica Station → E train($2.90) → Penn Station → NJ Transit Bus 165/166($3.50) · 약 2시간 · $15/인", stop: "JFK AirTrain station JFK Airport NY" }
         ]},
       { time: "14:00", end: "15:30", title: "숙소 체크인 & 휴식", type: "rest", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
         description: "짐 풀고 간단히 정리.\nBoulevard East에서 맨해튼 스카이라인 조망!",
@@ -55,8 +55,8 @@ const DAYS = [
         photo: "https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?w=600&h=300&fit=crop",
         tip: "첫날엔 환승 없는 158번 직행 버스 추천!",
         transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (추천)", detail: "숙소 앞 Blvd East 정류장 → Port Authority 42nd St\n약 25~35분 · $3.50 · Lincoln Tunnel 경유\n하차 후 타임스퀘어 도보 5분" },
-          { mode: "ferry", icon: "⛴️", label: "페리 옵션 (뷰)", detail: "숙소 → Port Imperial(도보/Uber 8분) → 페리 8분 · $9\nW. 39th St 하차 후 타임스퀘어 도보 10분" },
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (추천)", detail: "숙소 앞 Blvd East 정류장 → Port Authority 42nd St\n약 25~35분 · $3.50 · Lincoln Tunnel 경유\n하차 후 타임스퀘어 도보 5분", stop: "Blvd East at JFK Blvd, West New York NJ bus stop 158" },
+          { mode: "ferry", icon: "⛴️", label: "페리 옵션 (뷰)", detail: "숙소 → Port Imperial(도보/Uber 8분) → 페리 8분 · $9\nW. 39th St 하차 후 타임스퀘어 도보 10분", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
           { mode: "car", icon: "🚗", label: "Uber 직행", detail: "숙소 → 타임스퀘어 · 약 15~25분 · $25~35 (1인 $8~12)" }
         ]},
       { time: "17:00", end: "18:30", title: "타임스퀘어 & 미드타운 산책", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, Manhattan, NY 10036",
@@ -67,9 +67,14 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "도보 산책", detail: "타임스퀘어 → 록펠러센터(도보 5분) → 5번가(도보 3분)" }
         ]},
       { time: "18:30", end: "19:45", title: "브라이언파크 맥주 한잔", type: "highlight", location: "The Porch at Bryant Park", address: "41 W 40th St, New York, NY 10018",
-        description: "스트링 라이트 아래 나무 데크에서 맥주!\n크래프트 맥주, 위스키, 칵테일\n영업: 12:00~21:00\n\n🍺 도착 첫날 환영주 — 시차 풀고 가볍게!",
+        description: "🍺 도착 첫날 환영주 — 시차 풀고 가볍게!\n\n⭐ 1순위: The Porch at Bryant Park\n• 41 W 40th St (공원 안)\n• 스트링 라이트 + 나무 데크 야외석\n• 크래프트 맥주, 위스키, 칵테일\n• 영업: 12:00~21:00\n• 캐주얼 / 워크인 가능\n\n🍻 대안 (도보 5~10분 이내)\n\n• Public House (140 E 41st St) - 도보 6분\n  → 아일랜드 펍 분위기, 생맥주, 스포츠 캐주얼\n\n• Heartland Brewery (127 W 43rd St) - 도보 7분\n  → 자체 양조 미국 브루어리, 시그니처 IPA\n\n• The Ginger Man (11 E 36th St) - 도보 10분\n  → 70+ 종 생맥주 / 100+ 종 병맥주, 맥주 매니아\n\n• Rattle N Hum (14 E 33rd St) - 도보 12분\n  → 크래프트 비어 전문, 미국 로컬 IPA 다수\n\n💰 1인 $15~25 (맥주 1~2잔 + 가벼운 안주)",
         photo: "https://thumbs.dreamstime.com/b/bryant-park-night-midtown-manhattan-new-york-city-147362561.jpg",
-        tip: "그네 의자에 앉아 코파운더들과 도착 인사 + 일정 미팅 최적",
+        links: [
+          { icon: "🌐", label: "The Porch", href: "https://www.bryantpark.org/amenities/the-porch" },
+          { icon: "🍺", label: "Heartland Brewery", href: "https://www.heartlandbrewery.com/" },
+          { icon: "🍻", label: "The Ginger Man", href: "https://www.gingermanny.com/" }
+        ],
+        tip: "날씨 좋으면 The Porch 야외석 1순위! 비/추우면 Public House 또는 Ginger Man",
         transit: [
           { mode: "walk", icon: "🚶", label: "타임스퀘어 → Bryant Park", detail: "타임스퀘어 → 6th Ave & 40th St · 도보 약 7분" }
         ]},
@@ -77,8 +82,8 @@ const DAYS = [
         description: "Bryant Park에서 숙소로 복귀.\n페리 W. 39th St이 가깝습니다 (도보 5분).",
         tip: "페리 또는 158번 직행 — 마지막 시간 확인",
         transit: [
-          { mode: "ferry", icon: "⛴️", label: "페리 (가까움)", detail: "Bryant Park 도보 → W. 39th St 페리 터미널 (약 8분)\n→ Port Imperial · 8분 · $9 · 막차 시간 체크" },
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행", detail: "Bryant Park 도보 → Port Authority (약 5분)\n→ 158번 → JFK Blvd East · 약 25~35분 · $3.50" },
+          { mode: "ferry", icon: "⛴️", label: "페리 (가까움)", detail: "Bryant Park 도보 → W. 39th St 페리 터미널 (약 8분)\n→ Port Imperial · 8분 · $9 · 막차 시간 체크", stop: "Midtown Ferry Terminal W 39th St NYC" },
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행", detail: "Bryant Park 도보 → Port Authority (약 5분)\n→ 158번 → JFK Blvd East · 약 25~35분 · $3.50", stop: "Port Authority Bus Terminal NYC" },
           { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "미드타운 → 숙소 · 약 15~20분 · $25~35 (1인 $8~12)" }
         ]},
       { time: "20:00", end: "21:00", title: "Food Bazaar 장보기 (한남마트 옵션)", type: "food", location: "Food Bazaar Supermarket / 한남마트", address: "Bergenline Ave, West New York / Fort Lee, NJ",
@@ -105,8 +110,8 @@ const DAYS = [
         photo: "https://images.unsplash.com/photo-1669221190861-beb5200a2ca5?w=600&h=300&fit=crop&auto=format",
         tip: "페리 우측 자리에 앉으면 자유의 여신상이 보입니다!",
         transit: [
-          { mode: "bus", icon: "🚌", label: "숙소 → Port Imperial", detail: "NJ Transit Bus 158 탑승 (Boulevard East) · 약 10분" },
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → Pier 11/Wall St", detail: "NY Waterway 페리 · 약 25분 · $9 · 평일 AM 운행" }
+          { mode: "bus", icon: "🚌", label: "숙소 → Port Imperial", detail: "NJ Transit Bus 158 탑승 (Boulevard East) · 약 10분", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
+          { mode: "ferry", icon: "⛴️", label: "Port Imperial → Pier 11/Wall St", detail: "NY Waterway 페리 · 약 25분 · $9 · 평일 AM 운행", stop: "Port Imperial Ferry Terminal Weehawken NJ" }
         ]},
       { time: "10:30", end: "12:30", title: "월스트리트 워킹 투어", type: "sightseeing", location: "Wall Street Financial District", address: "Wall St & Broad St, New York, NY 10005",
         description: "• Charging Bull (황소 동상) - Broadway & Morris St\n• Federal Hall - 26 Wall St\n• NYSE 외관 · Trinity Church\n• 9/11 Memorial & Museum ($29/인)",
@@ -138,7 +143,7 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "브릿지 출구에서 도보", detail: "다리 하차 → Washington St 사진 포인트 도보 5분\n→ Brooklyn Bridge Park 도보 3분\n→ Jane's Carousel 도보 2분" }
         ]},
       { time: "21:00", end: "22:30", title: "St. Anselm 스테이크 디너", type: "highlight", location: "St. Anselm", address: "355 Metropolitan Ave, Brooklyn, NY 11211 (Williamsburg)",
-        description: "✅ 예약 완료 (Resy)\n• 일시: 5월 15일(금) 21:00\n• 인원: 3명\n• 좌석: Heated Patio\n• 취소 정책: 5월 14일 21:00 전 무료\n💳 결제 카드 끝자리 0766\n\n🍽️ 3명 추천 주문 (가성비 + 다양성)\n\n🍷 애피타이저 (1~2개 셰어)\n• Bone Marrow + Toast — 시그니처, 꼭!\n• 또는 Oysters (반다스)\n\n🥩 메인 (각 1개씩, 3명 → 3종 셰어 가능)\n• Butcher's Steak $34 — 시그니처, 1개는 필수\n• Lamb Saddle Chops — 다른 풍미 추가\n• Bone-in Ribeye 또는 Roast Chicken (취향)\n\n🥗 사이드 (2~3개 셰어)\n• Grilled Asparagus\n• Mashed Potatoes 또는 Roasted Potatoes\n• Creamed Spinach\n\n🍷 음료\n• Red Wine 1병 (Pinot Noir / Cabernet)\n• 또는 크래프트 맥주\n\n💰 1인 예산: $70~90 (팁 포함, 와인 별도)",
+        description: "✅ 예약 완료 (Resy)\n• 일시: 5월 15일(금) 21:00\n• 인원: 3명\n• 좌석: Heated Patio\n• 취소 정책: 5월 14일 21:00 전 무료\n💳 결제 카드 끝자리 0766\n\n🍽️ 3명 추천 주문\n\n🥩 메인 (각 1개씩, 3종 셰어)\n• Butcher's Steak $34 — 시그니처, 1개는 필수\n• Lamb Saddle Chops — 다른 풍미 추가\n• Bone-in Ribeye 또는 Roast Chicken (취향)\n\n🥗 사이드 (2~3개 셰어)\n• Grilled Asparagus\n• Mashed Potatoes 또는 Roasted Potatoes\n• Creamed Spinach\n\n🍷 음료\n• Red Wine 1병 (Pinot Noir / Cabernet)\n• 또는 크래프트 맥주\n\n💰 1인 예산: $70~90 (팁 포함, 와인 별도)",
         photo: "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGAeF8DR8bA22P1R9BNuJg81LgCMSLliF3tGNYD92OlYp-MtkIyTdUY2hs2vutn30xge1eS2_WbsLvByuaLyI5OVpAYTp_6vPNSRnGKC4ZDXRBnHqQ8APLHrYjEUPCPdyRaI13N=w600-h300-n-k-no",
         links: [
           { icon: "📅", label: "Resy 예약 관리", href: "https://resy.com/cities/ny/st-anselm" },
@@ -146,7 +151,7 @@ const DAYS = [
         ],
         tip: "Butcher's Steak 반드시 주문! Patio 자리니 5월 밤 쌀쌀할 수 있어 가벼운 겉옷 추천",
         transit: [
-          { mode: "subway", icon: "🚇", label: "DUMBO → Williamsburg", detail: "York St역 (F line) → East Broadway 환승 → Lorimer St역 하차\n또는 DUMBO에서 Uber · 약 10분 · $12~15" },
+          { mode: "subway", icon: "🚇", label: "DUMBO → Williamsburg", detail: "York St역 (F line) → East Broadway 환승 → Lorimer St역 하차\n또는 DUMBO에서 Uber · 약 10분 · $12~15", stop: "York St subway station Brooklyn NY F line" },
           { mode: "walk", icon: "🚶", label: "Lorimer St역 → St. Anselm", detail: "역에서 Metropolitan Ave 방향 도보 · 약 5분" }
         ]},
       { time: "22:30", title: "Williamsburg & 숙소 복귀", type: "transport", location: "Williamsburg → 숙소", address: "Bedford Ave, Brooklyn",
@@ -165,8 +170,8 @@ const DAYS = [
         description: "페리 + 지하철로 센트럴파크 남쪽 입구까지",
         tip: "토요일 아침 페리는 여유로워요",
         transit: [
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9" },
-          { mode: "subway", icon: "🚇", label: "미드타운 → 센트럴파크", detail: "42nd St-Times Sq역 → N/R line 북쪽 → 5th Ave-59th St역 하차\n약 10분 · 센트럴파크 남동쪽 입구 바로 앞" }
+          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
+          { mode: "subway", icon: "🚇", label: "미드타운 → 센트럴파크", detail: "42nd St-Times Sq역 → N/R line 북쪽 → 5th Ave-59th St역 하차\n약 10분 · 센트럴파크 남동쪽 입구 바로 앞", stop: "Times Square 42nd Street subway station NYC" }
         ]},
       { time: "10:00", end: "13:00", title: "센트럴파크 워킹 투어", type: "highlight", location: "Central Park", address: "59th St → Belvedere Castle",
         description: "추천 루트 (약 2~3시간):\n① Gapstow Bridge\n② The Mall & Literary Walk\n③ Bethesda Terrace & Fountain\n④ Bow Bridge\n⑤ Strawberry Fields - 'IMAGINE'\n⑥ Belvedere Castle",
@@ -190,16 +195,16 @@ const DAYS = [
         ],
         tip: "동선 베스트는 The Met (Columbus Circle에서 1 line 직행)",
         transit: [
-          { mode: "subway", icon: "🚇", label: "Columbus Circle → The Met", detail: "59th St-Columbus Cir역 → 1 line 북쪽 → 86th St역 하차\n→ 5th Ave 방향 동쪽 도보 10분 · 또는 M86 버스" },
+          { mode: "subway", icon: "🚇", label: "Columbus Circle → The Met", detail: "59th St-Columbus Cir역 → 1 line 북쪽 → 86th St역 하차\n→ 5th Ave 방향 동쪽 도보 10분 · 또는 M86 버스", stop: "59 St Columbus Circle subway station NYC" },
           { mode: "walk", icon: "🚶", label: "Met — 공원 내 도보", detail: "Columbus Circle → 공원 East Drive → The Met\n약 30분 산책 (날씨 좋을 때)" },
-          { mode: "subway", icon: "🚇", label: "Columbus Circle → MoMA", detail: "59th St-Columbus Cir역 → N/R line 동쪽 → 5 Av/53 St역 하차\n도보 1분 · 약 10분" }
+          { mode: "subway", icon: "🚇", label: "Columbus Circle → MoMA", detail: "59th St-Columbus Cir역 → N/R line 동쪽 → 5 Av/53 St역 하차\n도보 1분 · 약 10분", stop: "59 St Columbus Circle subway station NYC" }
         ]},
       { time: "18:00", end: "19:00", title: "Columbus Circle", type: "sightseeing", location: "Columbus Circle", address: "10 Columbus Cir, NY 10019",
         description: "The Shops에서 쇼핑 · Dizzy's Club 준비",
         photo: "https://images.unsplash.com/photo-1587162147120-430be9b33be3?w=600&h=300&fit=crop&auto=format",
         tip: "Jazz at Lincoln Center가 바로 이 건물 5층!",
         transit: [
-          { mode: "subway", icon: "🚇", label: "The Met → Columbus Circle", detail: "86th St역 → 1 line 남쪽 → 59th St-Columbus Cir역\n약 10분" }
+          { mode: "subway", icon: "🚇", label: "The Met → Columbus Circle", detail: "86th St역 → 1 line 남쪽 → 59th St-Columbus Cir역\n약 10분", stop: "86 St subway station 1 line Upper East Side NYC" }
         ]},
       { time: "19:30", end: "22:00", title: "Dizzy's Club 재즈 디너", type: "highlight", location: "Dizzy's Club", address: "10 Columbus Cir, 5FL, NY 10019",
         description: "센트럴파크 뷰 + 월드클래스 재즈!\n• 커버차지: $20~45\n• 1인 예산: $80~120\n• 7:30PM / 9:30PM 2회 공연",
@@ -223,23 +228,23 @@ const DAYS = [
   {
     date: "5월 17일", day: "일요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
-      { time: "09:00", end: "10:00", title: "숙소 → SoHo 이동", type: "transport", location: "숙소 → SoHo", address: "5303 JFK Blvd East → Broadway & Prince St",
-        description: "🎯 최적 동선: SoHo → West Village → Greenwich Village\n\n도보 흐름 (총 1.2km):\n1️⃣ SoHo (Prince/Broadway) — 모닝 쇼핑\n2️⃣ → 서쪽 도보 10분 → West Village (Bleecker St) — 점심\n3️⃣ → 동쪽 도보 5~10분 → Greenwich Village (Washington Sq) — 휴식\n\n💡 SoHo 매장은 보통 10:30~11:00 오픈, 오전이 한적함",
-        tip: "🟢 158번 + N/R/W line이 SoHo Prince St 직결",
+      { time: "09:00", end: "10:00", title: "숙소 → 그리니치 빌리지 이동", type: "transport", location: "숙소 → Washington Square Park", address: "5303 JFK Blvd East → W 4th St-Washington Sq",
+        description: "🎯 최적 동선: GV → WV → SoHo → Dian's (300 E 59th St)\n\n오늘은 다운타운 도보 한 바퀴 → SoHo 6 line으로 Dian's 직행!\n\n도보 흐름 (총 1.5km):\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 서쪽 도보 5~10분 → West Village (Bleecker) — 점심\n3️⃣ → 동남쪽 도보 10~15분 → SoHo (Prince/Broadway) — 쇼핑\n4️⃣ → 6 line (Spring St → 59 St) → Dian's House\n\n💡 SoHo Spring St역 6 line이 Lex Av/59 St까지 직행 — Dian's 도보 5분",
+        tip: "🟢 158번 + A/C/E line이 Washington Square 직결",
         transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 + N/R/W (추천 · 가성비)", detail: "STEP 1: 숙소 앞 Blvd East → 158번 직행 → Port Authority\n약 25~35분 · $3.50\n\nSTEP 2: 42nd St-Times Sq역 → N/R/W line 남쪽 → Prince St 하차\n약 12분 · $2.90\n\n총 40~50분 · $6.40\n하차 즉시 SoHo 한복판" },
-          { mode: "subway", icon: "🚇", label: "🚇 PATH 직행 (빠름)", detail: "STEP 1: 숙소 → Hoboken Terminal\n• 22번 버스 또는 Lyft 약 10~15분 ($2.25 / $10~15)\n\nSTEP 2: PATH (HOB-WTC line) → Christopher St 하차\n약 10분 · $2.75\n\nSTEP 3: Christopher St → SoHo 도보 약 12분 (남쪽)\n또는 1 line 한 정거장 → Houston St\n\n총 30~40분 · $5~18" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 (뷰 옵션)", detail: "STEP 1: 숙소 → Port Imperial · Bus 158/159 약 10분\n\nSTEP 2: Port Imperial → W. 39th St · NY Waterway 8분 · $9\n\nSTEP 3: 42nd St역 → N/R/W 남쪽 → Prince St · 약 12분\n\n총 약 50분 · $14" },
-          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → SoHo Broadway/Prince 직행\n약 20~25분 · $30~40 (3인 $10~13)" }
+          { mode: "bus", icon: "🚌", label: "🟢 158번 + A/C/E (추천 · 가성비)", detail: "STEP 1: 숙소 앞 Blvd East → 158번 직행 → Port Authority\n약 25~35분 · $3.50\n\nSTEP 2: PABT 지하 → A/C/E line 남쪽 → W 4th St-Washington Sq 하차\n약 8분 · $2.90\n\n총 35~45분 · $6.40\n하차 즉시 Washington Square Park 도보 1분", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
+          { mode: "subway", icon: "🚇", label: "🚇 PATH 직행 (빠름)", detail: "STEP 1: 숙소 → Hoboken Terminal\n• 22번 버스 또는 Lyft 약 10~15분 ($2.25 / $10~15)\n\nSTEP 2: PATH (HOB-WTC) → Christopher St 하차\n약 10분 · $2.75\n\nSTEP 3: Christopher St → Washington Sq Park 도보 7분\n\n총 25~35분 · $5~18", stop: "Hoboken Terminal PATH station NJ" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 (뷰 옵션)", detail: "STEP 1: 숙소 → Port Imperial · Bus 158/159 약 10분\n\nSTEP 2: Port Imperial → W. 39th St · NY Waterway 8분 · $9\n\nSTEP 3: 42nd St역 → A/C/E 남쪽 → W 4th St · 약 12분\n\n총 약 50분 · $14", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Washington Square Park 직행\n약 20~25분 · $30~40 (3인 $10~13)" }
         ]},
-      { time: "10:00", end: "12:00", title: "SoHo 모닝 쇼핑", type: "sightseeing", location: "SoHo", address: "Broadway & Prince St, NY 10012",
-        description: "캐스트 아이언 건축물 + 부티크 숍 (오전 한적)\n• Broadway 메인 쇼핑 거리\n• Prince St · Spring St · Mercer St\n• Aimé Leon Dore, Kith, MoMA Design Store\n• 갤러리 + 부티크 인테리어 샵",
-        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
-        tip: "Mercer St에 숨은 갤러리/하이엔드 부티크 多",
+      { time: "10:00", end: "11:30", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
+        description: "워싱턴 스퀘어 파크 + NYU 캠퍼스\n• Washington Square Arch (개선문 + 분수)\n• 거리 공연/체스 두는 사람 구경\n• MacDougal St 보헤미안 거리\n• Comedy Cellar (코미디 클럽 외관)",
+        photo: "https://plus.unsplash.com/premium_photo-1681868376745-0565b18b4c8c?w=600&h=300&fit=crop&auto=format",
+        tip: "Washington Square Arch 앞이 사진 명소!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "Prince St역에서", detail: "Prince St역 → Broadway 출구 · 도보 1분\n바로 SoHo 한복판" }
+          { mode: "walk", icon: "🚶", label: "W 4th St역에서 도보", detail: "W 4th St-Washington Sq역 → 공원 도보 3분" }
         ]},
-      { time: "12:00", end: "14:00", title: "West Village 점심 & 카페", type: "food", location: "West Village", address: "Bleecker St, NY 10014",
+      { time: "11:30", end: "13:30", title: "West Village 점심 & 카페", type: "food", location: "West Village", address: "Bleecker St, NY 10014",
         description: "🍽️ 점심 추천\n• Buvette (42 Grove St) - 프렌치 비스트로 (예약 추천)\n• Joe's Pizza (7 Carmine St) - 클래식 슬라이스 (워크인)\n• Joseph Leonard (170 Waverly Pl) - 미국식 브런치 (예약 추천)\n\n☕ 카페/디저트\n• Magnolia Bakery (401 Bleecker) - 컵케이크\n• Dante (79 MacDougal) - 네그로니",
         photo: "https://images.unsplash.com/photo-1634874495432-cb368c167e9b?w=600&h=300&fit=crop&auto=format",
         links: [
@@ -249,28 +254,32 @@ const DAYS = [
         ],
         tip: "Buvette의 Croque Monsieur + 라떼 강추!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "SoHo → West Village", detail: "Broadway/Prince → 서쪽 도보 약 10분\nHouston St 건너 → Bleecker St 진입" }
+          { mode: "walk", icon: "🚶", label: "Washington Sq → West Village", detail: "공원에서 서쪽 방향 도보\nMacDougal St · Bleecker St · Grove St\n모두 도보 5~10분" }
         ]},
-      { time: "14:00", end: "15:30", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
-        description: "워싱턴 스퀘어 파크 + NYU 캠퍼스\n• Washington Square Arch (개선문 + 분수)\n• 거리 공연/체스 두는 사람 구경\n• MacDougal St 보헤미안 거리\n• Comedy Cellar (코미디 클럽 외관)\n\n💡 Dian's House 출발 전 휴식 명소",
-        photo: "https://plus.unsplash.com/premium_photo-1681868376745-0565b18b4c8c?w=600&h=300&fit=crop&auto=format",
-        tip: "Washington Square Arch 앞이 사진 명소! 벤치에서 잠시 쉬어가기",
+      { time: "13:30", end: "16:00", title: "SoHo 쇼핑 & 자유시간", type: "sightseeing", location: "SoHo", address: "Broadway & Prince St, NY 10012",
+        description: "캐스트 아이언 건축물 + 부티크 숍\n• Broadway 메인 쇼핑 거리\n• Prince St · Spring St · Mercer St\n• Aimé Leon Dore, Kith, MoMA Design Store\n• 갤러리 + 부티크 인테리어 샵\n\n💡 16:00경 Spring St역 6 line으로 Dian's House 출발",
+        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
+        tip: "쇼핑 + 카페 휴식 (Dian's 출발 전 마지막 여유)",
         transit: [
-          { mode: "walk", icon: "🚶", label: "West Village → Greenwich", detail: "Bleecker St → 동쪽 도보 약 5~10분\nMacDougal St 따라가면 Washington Square 도착" }
+          { mode: "walk", icon: "🚶", label: "West Village → SoHo", detail: "Bleecker St → 동남쪽 도보 약 10~15분\nHouston St 건너 → Broadway/Prince" }
+        ]},
+      { time: "16:00", end: "17:00", title: "SoHo → Dian's House 이동", type: "transport", location: "SoHo → Dian's House", address: "Spring St → 300 E 59th St",
+        description: "🚇 6 line이 가장 빠르고 편함\nLexington Av/59 St역 = Dian's 집 도보 5분\n\n예상 도착: 16:30~16:45 (Dian's 17:00 시작 직전)",
+        tip: "16:00경 출발하면 17:00 도착 여유 충분",
+        transit: [
+          { mode: "subway", icon: "🚇", label: "🟢 6 line 직행 (추천)", detail: "Spring St역 → 6 line 북쪽 → 59 St 하차\n약 18분 · $2.90 · 환승 없음\n\nLex Av/59 St역 → 1st Ave 방향 동쪽 도보 약 5분\n→ 300 E 59th St 도착", stop: "Spring St subway station 6 line SoHo NYC" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft", detail: "SoHo → 300 E 59th St 직행\n약 15~25분 · $20~28 (1인 $7~10)\n주말 트래픽에 따라 시간 변동" }
         ]},
       { time: "17:00", end: "21:00", title: "🏡 Dian's House Dinner Invitation", type: "highlight", location: "Dian's House", address: "300 E 59th St, New York, NY",
         description: "Dian의 집 디너 초대 — 이날의 하이라이트!\n\n🎁 손님 매너 체크리스트\n• 와인 (red/white 1병씩) 또는 꽃다발 지참\n• 한국 디저트/티/전통주 선물 옵션\n• 드레스 코드: 깔끔한 캐주얼\n• 알레르기/식단 제한 미리 공유\n\n💬 미국식 디너 매너\n• 5~10분 정도만 늦는 정도 OK\n• 식사 후 정리 도와주기 제안\n• 머무르는 시간: 식사 후 1~2시간 정도\n• 다음 날 감사 메시지/카드 보내기\n\n🎉 이런 시간이 진짜 뉴욕 추억",
         tip: "Dian에게 알레르기, 도착 시간, 선물 호불호 미리 확인!",
-        transit: [
-          { mode: "subway", icon: "🚇", label: "Greenwich Village → Dian's House", detail: "W 4th St-Washington Sq역 → A/C/E line 북쪽 → 59 St-Columbus Cir\n또는 R/W → Lexington Av/59 St역 (Dian's House 근처)\n약 15~20분 · $2.90" },
-          { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "Washington Sq → 300 E 59th St\n약 12~18분 · $15~22 (1인 $5~7)" }
-        ]},
+        transit: null},
       { time: "21:00", title: "숙소 복귀", type: "transport", location: "Dian's House → 숙소", address: "300 E 59th St → 5303 JFK Blvd East",
         description: "Dian의 집(300 E 59th St)에서 숙소로 복귀.\n저녁 시간은 Uber가 가장 편안하고 안전!",
         tip: "내일 일정 위해 적당한 시간에 마무리",
         transit: [
           { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "300 E 59th St → 숙소\n약 20~30분 · $30~40 (1인 $10~13)\nQueensboro Bridge 또는 Lincoln Tunnel 경로" },
-          { mode: "subway", icon: "🚇", label: "지하철 + 158번 (가성비)", detail: "Lexington Av/59 St역 → N/R/W 또는 4/5/6 → Times Sq\n→ Port Authority → 158번 → 숙소\n약 50~60분 · $6.40" }
+          { mode: "subway", icon: "🚇", label: "지하철 + 158번 (가성비)", detail: "Lexington Av/59 St역 → N/R/W 또는 4/5/6 → Times Sq\n→ Port Authority → 158번 → 숙소\n약 50~60분 · $6.40", stop: "Lexington Av 59 St subway station NYC" }
         ]}
     ]
   },
@@ -281,9 +290,9 @@ const DAYS = [
         description: "마지막 관광일! 짐 정리도 미리 해두세요.\n북→남 도보 동선으로 효율적으로 즐기기.\n\n3가지 옵션:\n🚌 158번 직행 (가성비)\n⛴️ 페리 (뷰 + 분위기)\n🚗 Uber (편의/짐 많을 때)",
         tip: "마지막 날 분위기는 페리 루트가 최고!",
         transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (가성비)", detail: "숙소 앞 Blvd East → Port Authority Bus Terminal\n약 25~35분 · $3.50 · 환승 없음\n하차 후 7 line 한 정거장 → 34th St-Hudson Yards" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 1/3 — 숙소 → Port Imperial", detail: "Port Imperial Ferry Terminal까지\n• NJ Bus 158/159 (Blvd East) · 약 10분 · $2.25\n• 또는 Uber · 약 8분 · $8~12\n• 또는 도보 · 약 15분 (날씨 좋으면 강추)" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 2/3 — Port Imperial → W. 39th St", detail: "NY Waterway 페리 · 약 8분 · $9 (편도)\n주말 운행 시간 6:20~21:00 (확인)\n허드슨강 위에서 맨해튼 스카이라인 + 자유의 여신상 조망" },
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (가성비)", detail: "숙소 앞 Blvd East → Port Authority Bus Terminal\n약 25~35분 · $3.50 · 환승 없음\n하차 후 7 line 한 정거장 → 34th St-Hudson Yards", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 1/3 — 숙소 → Port Imperial", detail: "Port Imperial Ferry Terminal까지\n• NJ Bus 158/159 (Blvd East) · 약 10분 · $2.25\n• 또는 Uber · 약 8분 · $8~12\n• 또는 도보 · 약 15분 (날씨 좋으면 강추)", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 2/3 — Port Imperial → W. 39th St", detail: "NY Waterway 페리 · 약 8분 · $9 (편도)\n주말 운행 시간 6:20~21:00 (확인)\n허드슨강 위에서 맨해튼 스카이라인 + 자유의 여신상 조망", stop: "Midtown Ferry Terminal W 39th St NYC" },
           { mode: "walk", icon: "🚶", label: "⛴️ 페리 3/3 — W. 39th St → Hudson Yards", detail: "W. 39th St 터미널 → Hudson Yards\n12th Ave 따라 남쪽 도보 약 7~10분\n도착지: Vessel/Edge 입구 광장" },
           { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Hudson Yards · 약 15~20분\n$25~35 (1인 $8~12)\n짐 많거나 날씨 안 좋을 때 추천" }
         ]},
@@ -336,7 +345,7 @@ const DAYS = [
         tip: "내일 9시 출발 — 일찍 자고 짐 미리 정리!",
         transit: [
           { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Little Island → 숙소 · 약 15분 · $25~35 (1인 $8~12)\n야간 Uber가 가장 편함" },
-          { mode: "ferry", icon: "⛴️", label: "페리 대안", detail: "도보로 W. 39th St 페리(약 30분) → Port Imperial 8분\n도보로 짐 무거우면 비추" }
+          { mode: "ferry", icon: "⛴️", label: "페리 대안", detail: "도보로 W. 39th St 페리(약 30분) → Port Imperial 8분\n도보로 짐 무거우면 비추", stop: "Midtown Ferry Terminal W 39th St NYC" }
         ]}
     ]
   },
@@ -353,7 +362,7 @@ const DAYS = [
         tip: "3명+캐리어는 UberXL이 안전. 화요일 러시아워 대비 일찍 출발!",
         transit: [
           { mode: "car", icon: "🚗", label: "UberXL/Comfort (추천)", detail: "숙소 → JFK 직행 · 70~90분 · $140~160 (1인 $47~53)\nLincoln Tunnel → BQE → Belt Pkwy → JFK\n3명+캐리어는 큰 차량 필수" },
-          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "NJ Bus 165/166 → Port Authority → A train → JFK AirTrain\n약 2.5시간 · $15/인 · 짐 많으면 비추천" }
+          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "NJ Bus 165/166 → Port Authority → A train → JFK AirTrain\n약 2.5시간 · $15/인 · 짐 많으면 비추천", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" }
         ]},
       { time: "11:00", end: "13:00", title: "JFK 공항 & 체크인", type: "transport", location: "JFK International Airport", address: "Queens, NY 11430",
         description: "체크인, 보안검색, 면세점",
@@ -400,15 +409,7 @@ const TRANSPORT = {
   ]}
 };
 
-const CHECKS = [
-  { id: "default-jazz",     t: "재즈 공연 + 디너",   s: "Day4 Dizzy's Club",            ic: "🎷" },
-  { id: "default-ferry",    t: "페리로 월스트리트",   s: "Day2 Port Imperial → Pier 11", ic: "⛴️" },
-  { id: "default-steak",    t: "브루클린 스테이크",   s: "Day2 St. Anselm, Williamsburg",ic: "🥩" },
-  { id: "default-park",     t: "센트럴파크 산책",     s: "Day4 Bethesda · Bow Bridge",   ic: "🌿" },
-  { id: "default-museum",   t: "뮤지엄 2곳",          s: "Day3 MoMA + Day4 The Met",     ic: "🏛️" },
-  { id: "default-bryant",   t: "브라이언파크 맥주",   s: "Day3 The Porch",               ic: "🍺" },
-  { id: "default-brunch",   t: "브런치",              s: "Day3 Balthazar, SoHo",         ic: "🥞" },
-];
+const CHECKS = [];
 
 const TODO_KEY = "nyc-trip-todos-v1";
 const loadTodos = () => {
@@ -871,6 +872,14 @@ export default function App() {
                             <div style={{ flex:1, minWidth:0 }}>
                               <p style={{ fontSize:15, fontWeight:700, color:"#444", marginBottom:2 }}>{tr.label}</p>
                               <p style={{ fontSize:14, color:"#888", lineHeight:1.65, whiteSpace:"pre-line" }}>{tr.detail}</p>
+                              {tr.stop && (
+                                <a href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(tr.stop)}&travelmode=walking`} target="_blank" rel="noopener noreferrer" style={{
+                                  display:"inline-flex", alignItems:"center", gap:4, marginTop:6,
+                                  fontSize:12, fontWeight:600, padding:"5px 10px", borderRadius:5,
+                                  background:"#fff", border:`1px solid ${MI[tr.mode]||"#888"}40`, color: MI[tr.mode]||"#666",
+                                  textDecoration:"none", whiteSpace:"nowrap",
+                                }}>🚏 {tr.mode==="subway"?"역 입구":tr.mode==="bus"?"정류장":tr.mode==="ferry"?"터미널":"위치"} 길찾기</a>
+                              )}
                             </div>
                           </div>
                         ))}
