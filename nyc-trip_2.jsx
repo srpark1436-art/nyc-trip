@@ -43,7 +43,14 @@ const DAYS = [
         tip: "2명이면 UberX로도 충분. 짐 넣고 편하게 이동하세요",
         transit: [
           { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "JFK → 숙소 직행 · 70~80분 · $130~150 (1인 $65~75)" },
-          { mode: "bus", icon: "🚌", label: "대중교통 대안", detail: "AirTrain($8.25) → Jamaica Station → E train($2.90) → Penn Station → NJ Transit Bus 165/166($3.50) · 약 2시간 · $15/인", stop: "JFK AirTrain station JFK Airport NY" }
+          { mode: "bus", icon: "🚌", label: "🚌 STEP 1: Express Bus → Port Authority", detail: "JFK → Port Authority Bus Terminal (Manhattan)\n• NYC Airport Express Bus (Coach USA / GO Airlink 등)\n• 약 60~80분 · 1인 $20~22\n• JFK 5/7/8 터미널 픽업\n• 사전 온라인 예약 추천 (당일 매진 가능)\n• 짐 무게 제한 적음 (큰 캐리어 가능)", stop: "Port Authority Bus Terminal NYC" },
+          { mode: "walk", icon: "🚶", label: "🚶 STEP 2: PABT 9th Ave 출구로 이동", detail: "PABT 도착 후 Uber 픽업 좋은 출구:\n• ⭐ 9th Avenue & W 41st St 출구 (추천)\n  → 8th Ave보다 한산해서 차 정차 쉬움\n  → 서쪽 방향 = NJ Lincoln Tunnel 자연스럽게 진입\n• 또는 W 42nd St & 9th Ave 코너\n• 8th Avenue 쪽은 일반 차량/택시 혼잡 (피하기)", stop: "Port Authority Bus Terminal 9th Avenue exit NYC" },
+          { mode: "car", icon: "🚗", label: "🚗 STEP 3: Uber → 숙소", detail: "9th Ave 출구에서 Uber 호출\n• PABT → 숙소 · 약 15~20분 · $25~35\n• 3명 분담 시 1인 $8~12\n• Lincoln Tunnel 경유\n\n총 약 90~110분 · 1인 약 $30~35\n(Uber 직행 대비 절반 비용)" }
+        ],
+        links: [
+          { icon: "🎫", label: "GO Airlink 예약", href: "https://booking.goairlinkshuttle.com" },
+          { icon: "🔍", label: "다른 셔틀 검색", href: "https://www.google.com/search?q=JFK+Airport+Express+Bus+to+Port+Authority+booking" },
+          { icon: "📞", label: "GO Airlink 24/7", href: "tel:+12128129000" }
         ]},
       { time: "14:00", end: "15:30", title: "숙소 체크인 & 휴식", type: "rest", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
         description: "짐 풀고 간단히 정리.\nBoulevard East에서 맨해튼 스카이라인 조망!",
@@ -83,21 +90,23 @@ const DAYS = [
         tip: "페리 또는 158번 직행 — 마지막 시간 확인",
         transit: [
           { mode: "ferry", icon: "⛴️", label: "페리 (가까움)", detail: "Bryant Park 도보 → W. 39th St 페리 터미널 (약 8분)\n→ Port Imperial · 8분 · $9 · 막차 시간 체크", stop: "Midtown Ferry Terminal W 39th St NYC" },
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행", detail: "Bryant Park 도보 → Port Authority (약 5분)\n→ 158번 → JFK Blvd East · 약 25~35분 · $3.50", stop: "Port Authority Bus Terminal NYC" },
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (총 30~40분 / $3.50)", detail: "STEP 1~3 단계별 길찾기 아래 참고\n총 비용 $3.50 · 환승 없음 · NJ Transit 앱 또는 현금" },
+          { mode: "walk", icon: "🚶", label: "🚶 STEP 1: Bryant Park → Port Authority", detail: "Bryant Park (40th St & 6th Ave)\n→ 6th Ave 북쪽 → 42nd St 좌회전 → 8th Ave\n→ Port Authority Bus Terminal\n도보 약 5~7분 (약 0.5km)\n\n📍 PABT 진입: 42nd St 입구 → 3층 Bus Gate Area로 이동\n→ Gate 218~223 (158번 게이트)", stop: "Port Authority Bus Terminal Gate 218 NYC" },
+          { mode: "bus", icon: "🚌", label: "🚌 STEP 2: 158번 탑승 → JFK Blvd East 하차", detail: "Gate 218~223번 근처에서 158번 탑승 (Edgewater 방향)\n• 약 25~30분 · $3.50\n• Lincoln Tunnel → JFK Blvd East 따라 정차\n• 하차 정류장: \"Blvd East at JFK Blvd\"\n• 운전기사에게 \"5303 JFK Blvd East\" 또는 \"JFK Blvd 정류장\" 알려두면 안내해줌\n\n💡 NJ Transit 앱으로 모바일 티켓 미리 구매 추천" },
+          { mode: "walk", icon: "🚶", label: "🚶 STEP 3: 정류장 → 숙소 (도보 1~3분)", detail: "Blvd East at JFK Blvd 정류장 하차\n→ JFK Blvd East 도보 (남쪽 또는 북쪽 1~2 블록)\n→ 5303 JFK Blvd East 도착\n도보 약 1~3분 (약 100~200m)\n\n💡 정류장이 숙소와 거의 동일 위치 — 길 건너기만 하면 됨", stop: "5303 JFK Blvd East West New York NJ" },
           { mode: "car", icon: "🚗", label: "Uber/Lyft", detail: "미드타운 → 숙소 · 약 15~20분 · $25~35 (1인 $8~12)" }
         ]},
-      { time: "20:00", end: "21:00", title: "Food Bazaar 장보기 (한남마트 옵션)", type: "food", location: "Food Bazaar Supermarket / 한남마트", address: "Bergenline Ave, West New York / Fort Lee, NJ",
-        description: "🛒 Food Bazaar Supermarket (가까움 · 도보 가능)\n• 주소: 5901 Bergenline Ave, West New York, NJ\n• 숙소에서 도보 12~15분 또는 Uber 5분 ($6~9)\n• 영업: 보통 24시간 또는 ~24:00까지\n• 다국적 식료품 · 즉석 조리식 · 한국 라면도 일부 있음\n\n🇰🇷 한남마트 (Hannam Chain) - 한국 식재료 풀라인\n• 주소: 25 Lemoine Ave, Fort Lee, NJ 07024\n• 숙소에서 차량 12~18분 ($12~16)\n• 김치/반찬/즉석국/도시락/한국 빵\n• 한국 라면, 즉석밥, 컵밥 풍부\n\n💰 1인 $15~25 예산\n메뉴 추천: 즉석국+밥+반찬, 라면+김밥, 또는 즉석 회/도시락",
+      { time: "20:00", end: "21:00", title: "Food Bazaar 장보기", type: "food", location: "Food Bazaar Supermarket", address: "5901 Bergenline Ave, West New York, NJ 07093",
+        description: "🛒 Food Bazaar Supermarket\n• 주소: 5901 Bergenline Ave, West New York, NJ\n• 숙소에서 도보 12~15분 (편도 약 1km)\n• 또는 Uber 5분 ($6~9)\n• 영업: 보통 24시간 또는 ~24:00까지\n• 다국적 식료품 · 즉석 조리식 · 한국 라면 일부\n\n🛍️ 추천 쇼핑 리스트\n• 맥주/와인 (안주용)\n• 치즈/햄/크래커 (간편 안주)\n• 과일 (스낵)\n• 즉석국/라면/김밥 (야식)\n• 생수/탄산수\n\n💰 1인 $15~25 예산",
         photo: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&h=300&fit=crop",
-        tip: "한국 음식 그리울 땐 한남마트, 빠르게 사고 싶으면 Food Bazaar!",
+        tip: "장 보고 도보 복귀 시 짐 분담 — 무거우면 Uber 호출 (왕복 $12~18)",
         transit: [
-          { mode: "walk", icon: "🚶", label: "Food Bazaar 도보", detail: "숙소 → 5901 Bergenline Ave\n도보 12~15분 · 무료 · 짐 많으면 비추" },
-          { mode: "car", icon: "🚗", label: "Food Bazaar Uber", detail: "숙소 → Food Bazaar 약 5분 · $6~9\n장보고 돌아올 때도 Uber 호출" },
-          { mode: "car", icon: "🚗", label: "한남마트 Uber", detail: "숙소 → 한남마트 (Fort Lee) 약 12~18분\n$12~16 (편도) · 왕복 $25~32" },
-          { mode: "bus", icon: "🚌", label: "한남마트 버스 대안", detail: "Bus 156 또는 158 (북쪽 방향) → Fort Lee\n환승 필요 · 약 30~40분 · 비추" }
+          { mode: "walk", icon: "🚶", label: "🚶 숙소 → Food Bazaar (갈 때)", detail: "5303 JFK Blvd East → 5901 Bergenline Ave\n도보 약 12~15분 · 1km · 평지\n경로: JFK Blvd East 동쪽 → 60th St → Bergenline Ave 북쪽", stop: "Food Bazaar 5901 Bergenline Ave West New York NJ" },
+          { mode: "walk", icon: "🚶", label: "🚶 Food Bazaar → 숙소 (도보 복귀)", detail: "5901 Bergenline Ave → 5303 JFK Blvd East\n도보 약 12~15분 · 1km\n경로: Bergenline Ave 남쪽 → 60th St → JFK Blvd East 서쪽\n💡 짐 무거우면 Uber 추천 (왕복 합산 $12~18)", stop: "5303 JFK Blvd East West New York NJ" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 옵션", detail: "Uber 편도 약 5분 · $6~9\n• 갈 때만 도보 + 올 때 Uber (짐 무게에 따라)\n• 또는 왕복 모두 Uber ($12~18)" }
         ]},
       { time: "21:00", end: "22:30", title: "🍺 숙소에서 맥주 타임", type: "highlight", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
-        description: "첫날 도착 환영 맥주 타임!\nBoulevard East에서 맨해튼 스카이라인 야경 + 맥주.\n\n🍻 추천 안주\n• Food Bazaar에서 사 온 치즈/햄/올리브\n• 한국 라면 야식\n• 즉석 핫윙/감자튀김\n• 컵라면 + 맥주 클래식\n\n🍺 맥주 추천\n• 미국 크래프트 (Brooklyn Lager, Sam Adams)\n• 한국 (한남마트 가져온 카스/테라)\n• Mexican (Modelo, Corona)\n\n🌃 보너스: 서로 도착 인사 + 내일 일정 가볍게 확인",
+        description: "첫날 도착 환영 맥주 타임!\nBoulevard East에서 맨해튼 스카이라인 야경 + 맥주.\n\n🍻 추천 안주\n• Food Bazaar에서 사 온 치즈/햄/올리브\n• 즉석 핫윙/감자튀김\n• 컵라면 + 맥주 클래식\n\n🍺 맥주 추천\n• 미국 크래프트 (Brooklyn Lager, Sam Adams)\n• Mexican (Modelo, Corona)\n• 한국산 (Food Bazaar에서 카스/테라 일부 구매 가능)\n\n🌃 보너스: 서로 도착 인사 + 내일 일정 가볍게 확인",
         tip: "시차 적응 + 첫날 친목 + 야경 = 완벽한 마무리!",
         transit: null }
     ]
@@ -494,6 +503,30 @@ export default function App() {
   const [draft, setDraft] = useState("");
   const [editing, setEditing] = useState(null);
   const [savedFlash, setSavedFlash] = useState(null);
+  const [copiedAddr, setCopiedAddr] = useState(null);
+  const copyAddress = (addr, key) => {
+    if (!addr) return;
+    const flash = () => {
+      setCopiedAddr(key);
+      setTimeout(()=>setCopiedAddr(c=>c===key?null:c), 1500);
+    };
+    const legacyCopy = () => {
+      const ta = document.createElement("textarea");
+      ta.value = addr;
+      ta.style.position = "fixed";
+      ta.style.left = "-9999px";
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      try { document.execCommand("copy"); } catch(e) {}
+      document.body.removeChild(ta);
+      flash();
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(addr).then(flash).catch(legacyCopy);
+    } else {
+      legacyCopy();
+    }
+  };
   const [weather, setWeather] = useState({ loading: true, error: false, data: null });
   const [todoState, setTodoState] = useState(loadTodos);
   const [todoInput, setTodoInput] = useState("");
@@ -885,9 +918,25 @@ export default function App() {
                     <span style={{ fontSize:60, opacity:0.45, position:"absolute", filter:"grayscale(0.2)" }}>{d.emoji}</span>
                     <img src={ev.photo} alt="" loading="lazy" referrerPolicy="no-referrer" style={{ width:"100%", height:"100%", objectFit:"cover", display:"block", position:"relative", zIndex:1 }} onError={e=>{e.currentTarget.style.display="none"}}/>
                   </div>}
-                  <p style={{ fontSize:16, color:"#aaa", marginBottom:10, display:"flex", gap:5, lineHeight:1.5 }}>
-                    <span style={{ color:d.accent }}>⌖</span>{ev.address}
-                  </p>
+                  <button
+                    type="button"
+                    onClick={(e)=>{ e.stopPropagation(); copyAddress(ev.address, `${day}-${i}`); }}
+                    title="주소 복사"
+                    style={{
+                      width:"100%", display:"flex", alignItems:"center", gap:8, marginBottom:10,
+                      padding:"10px 12px", borderRadius:6,
+                      background: copiedAddr === `${day}-${i}` ? `${d.accent}15` : "#fafaf8",
+                      border: `1px solid ${copiedAddr === `${day}-${i}` ? d.accent : "#eee"}`,
+                      cursor:"pointer", textAlign:"left", transition:"all 0.2s",
+                      fontFamily:"inherit",
+                    }}
+                  >
+                    <span style={{ color:d.accent, flexShrink:0, fontSize:16 }}>⌖</span>
+                    <span style={{ flex:1, fontSize:16, color:"#666", lineHeight:1.5, wordBreak:"break-word", minWidth:0 }}>{ev.address}</span>
+                    <span style={{ flexShrink:0, fontSize:13, fontWeight:600, color: copiedAddr === `${day}-${i}` ? d.accent : "#999", whiteSpace:"nowrap" }}>
+                      {copiedAddr === `${day}-${i}` ? "✓ 복사됨" : "📋 복사"}
+                    </span>
+                  </button>
 
                   {/* 구글 지도 버튼 */}
                   <div style={{ display:"flex", gap:6, marginBottom:ev.links?.length ? 8 : 12 }}>
