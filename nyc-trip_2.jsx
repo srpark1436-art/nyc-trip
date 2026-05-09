@@ -85,6 +85,18 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "타임스퀘어 → Bryant Park", detail: "타임스퀘어 → 6th Ave & 40th St · 도보 약 7분" }
         ]},
+      { time: "19:19", end: "19:50", title: "✈️ 김정수 이사 LGA 도착", type: "transport", location: "LaGuardia Airport Terminal B", address: "LaGuardia Airport, Queens, NY 11371",
+        description: "✅ 항공편 도착 (3번째 합류)\n\n✈️ 항공편 정보\n• 항공사: American Airlines (AA4521)\n• 예약번호: EEEJNK\n• 출발: 15:42 세인트루이스 램버트 국제공항 T1 (STL)\n• 도착: 19:19 뉴욕 라과디아 공항 Terminal B (LGA)\n• 비행시간: 2시간 37분\n\n🛂 도착 후 절차\n• Domestic 입국 (별도 입국심사 없음)\n• 수하물 수취: B 터미널 도착층\n• 약 20~30분 소요",
+        tip: "도착하면 박상혁 코파운더에게 카톡 — 21:00 맥주 타임 합류 예정",
+        transit: null },
+      { time: "19:50", end: "20:45", title: "✈️ 김정수 이사 LGA → 숙소 이동", type: "transport", location: "LGA → 숙소", address: "LaGuardia Airport → 5303 JFK Blvd East, West New York, NJ",
+        description: "🚗 Uber/Lyft 직행 (1인 이동 추천)\n• 약 30~50분 · $50~80\n• Lincoln Tunnel 또는 Triborough Bridge 경유\n• 픽업 위치: B 터미널 도착층 외부 \"Ride App Pick Up\" 존\n• 도착 예상: 약 20:30~20:45 (21:00 맥주 타임 직전)\n\n💡 시간/비용 절약: NYC Express Bus + Uber 조합도 가능",
+        tip: "Uber Reserve로 사전 예약 시 항공편 지연 자동 조정 + 픽업 보장",
+        transit: [
+          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft 직행 (추천)", detail: "LGA Terminal B → 숙소\n• 약 30~50분 · $50~80\n• UberX (기본): $50~65\n• UberXL/Comfort (캐리어 여유): $70~90\n• 픽업: B 터미널 도착층 외부 'Ride App Pick Up' 존" },
+          { mode: "bus", icon: "🚌", label: "🚌 Express Bus + Uber (가성비)", detail: "STEP 1: LGA → Manhattan Express Bus\n• 약 45~75분 · $20~22\n\nSTEP 2: 맨해튼 도착지 → 숙소\n• Uber 약 15~20분 · $25~35\n\n총 약 60~95분 · 약 $45~55", stop: "LaGuardia Airport Terminal B Ground Transportation NY" },
+          { mode: "bus", icon: "🚌", label: "🚌 무료 Q70 LGA Link + 지하철 (저렴)", detail: "STEP 1: Q70 SBS (무료) → 74 St-Roosevelt Av · 8~15분\nSTEP 2: 지하철 → Times Square → A/C/E 또는 PABT\nSTEP 3: 158번 또는 Uber → 숙소\n\n총 약 90~120분 · 1인 $5~30 (가성비, 짐 적을 때)", stop: "LaGuardia Airport Q70 SBS bus stop NY" }
+        ]},
       { time: "20:00", end: "20:45", title: "숙소 복귀", type: "transport", location: "미드타운 → 숙소", address: "Bryant Park → 5303 JFK Blvd East",
         description: "Bryant Park에서 숙소로 복귀.\n페리 W. 39th St이 가깝습니다 (도보 5분).",
         tip: "페리 또는 158번 직행 — 마지막 시간 확인",
@@ -105,8 +117,8 @@ const DAYS = [
           { mode: "walk", icon: "🚶", label: "🚶 Food Bazaar → 숙소 (도보 복귀)", detail: "5901 Bergenline Ave → 5303 JFK Blvd East\n도보 약 12~15분 · 1km\n경로: Bergenline Ave 남쪽 → 60th St → JFK Blvd East 서쪽\n💡 짐 무거우면 Uber 추천 (왕복 합산 $12~18)", stop: "5303 JFK Blvd East West New York NJ" },
           { mode: "car", icon: "🚗", label: "🚗 Uber 옵션", detail: "Uber 편도 약 5분 · $6~9\n• 갈 때만 도보 + 올 때 Uber (짐 무게에 따라)\n• 또는 왕복 모두 Uber ($12~18)" }
         ]},
-      { time: "21:00", end: "22:30", title: "🍺 숙소에서 맥주 타임", type: "highlight", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
-        description: "첫날 도착 환영 맥주 타임!\nBoulevard East에서 맨해튼 스카이라인 야경 + 맥주.\n\n🍻 추천 안주\n• Food Bazaar에서 사 온 치즈/햄/올리브\n• 즉석 핫윙/감자튀김\n• 컵라면 + 맥주 클래식\n\n🍺 맥주 추천\n• 미국 크래프트 (Brooklyn Lager, Sam Adams)\n• Mexican (Modelo, Corona)\n• 한국산 (Food Bazaar에서 카스/테라 일부 구매 가능)\n\n🌃 보너스: 서로 도착 인사 + 내일 일정 가볍게 확인",
+      { time: "21:00", end: "22:30", title: "🍺 숙소에서 맥주 타임 (3명 전원 합류)", type: "highlight", location: "숙소", address: "5303 JFK Blvd East, West New York, NJ 07093",
+        description: "첫날 도착 환영 맥주 타임!\nBoulevard East에서 맨해튼 스카이라인 야경 + 맥주.\n\n👥 합류 멤버\n• 박상혁 + 동료 1 (JFK 도착 → 미드타운 → 숙소)\n• 김정수 이사 (LGA 도착 → Uber 직행 → 숙소)\n• 3명 전원 21:00 숙소 모임\n\n🍻 추천 안주\n• Food Bazaar에서 사 온 치즈/햄/올리브\n• 즉석 핫윙/감자튀김\n• 컵라면 + 맥주 클래식\n\n🍺 맥주 추천\n• 미국 크래프트 (Brooklyn Lager, Sam Adams)\n• Mexican (Modelo, Corona)\n• 한국산 (Food Bazaar에서 카스/테라 일부 구매 가능)\n\n🌃 보너스: 서로 도착 인사 + 내일 일정 가볍게 확인",
         tip: "시차 적응 + 첫날 친목 + 야경 = 완벽한 마무리!",
         transit: null }
     ]
