@@ -186,73 +186,7 @@ const DAYS = [
     ]
   },
   {
-    date: "5월 16일", day: "토요일", title: "Hudson Yards · 하이라인 · Little Island", emoji: "🌆", accent: "#cf6a45",
-    events: [
-      { time: "09:30", end: "10:30", title: "숙소 → Hudson Yards 이동", type: "transport", location: "숙소 → Hudson Yards", address: "5303 JFK Blvd East → 20 Hudson Yards, NY 10001",
-        description: "Hudson Yards로 이동.\n북→남 도보 동선으로 효율적으로 즐기기.\n\n3가지 옵션:\n🚌 158번 직행 (가성비)\n⛴️ 페리 (뷰 + 분위기)\n🚗 Uber (편의/짐 많을 때)",
-        tip: "토요일 분위기는 페리 루트가 최고!",
-        transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (가성비)", detail: "숙소 앞 Blvd East → Port Authority Bus Terminal\n약 25~35분 · $3.50 · 환승 없음\n하차 후 7 line 한 정거장 → 34th St-Hudson Yards", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 1/3 — 숙소 → Port Imperial", detail: "Port Imperial Ferry Terminal까지\n• NJ Bus 158/159 (Blvd East) · 약 10분 · $2.25\n• 또는 Uber · 약 8분 · $8~12\n• 또는 도보 · 약 15분 (날씨 좋으면 강추)", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 2/3 — Port Imperial → W. 39th St", detail: "NY Waterway 페리 · 약 8분 · $9 (편도)\n주말 운행 시간 확인 필요\n허드슨강 위에서 맨해튼 스카이라인 + 자유의 여신상 조망", stop: "Midtown Ferry Terminal W 39th St NYC" },
-          { mode: "walk", icon: "🚶", label: "⛴️ 페리 3/3 — W. 39th St → Hudson Yards", detail: "W. 39th St 터미널 → Hudson Yards\n12th Ave 따라 남쪽 도보 약 7~10분\n도착지: Vessel/Edge 입구 광장" },
-          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Hudson Yards · 약 15~20분\n$25~35 (1인 $8~12)\n짐 많거나 날씨 안 좋을 때 추천" }
-        ]},
-      { time: "10:30", end: "12:00", title: "Hudson Yards 브런치 & Edge", type: "highlight", location: "Hudson Yards", address: "20 Hudson Yards, NY 10001",
-        description: "🍳 브런치 추천\n• Mercado Little Spain (José Andrés의 스페인 푸드 코트)\n• Bar Wayō (일식 브런치)\n• Citarella Gourmet Market 카페\n• Whole Foods 데일리 메뉴\n\n🏙️ Edge 전망대 (옵션)\n• $44/인 · 100층 야외 전망대\n• Hudson Yards 빌딩 5층 통해 진입\n\n💰 브런치 예산: 1인 $25~40",
-        photo: "https://kr.img.news.koreanair.com/wp-content/uploads/2019/08/NR201908_living_JFK_3-768x509.png",
-        links: [
-          { icon: "🥘", label: "Mercado Little Spain", href: "https://www.littlespain.com/" },
-          { icon: "🏙️", label: "Edge 전망대 예매", href: "https://www.edgenyc.com/" },
-          { icon: "🌐", label: "Hudson Yards", href: "https://www.hudsonyardsnewyork.com/" }
-        ],
-        tip: "Mercado Little Spain의 하몽+상그리아가 최고!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "34th St-Hudson Yards역 → 광장", detail: "역 출구 바로 앞 · Vessel 광장 · 도보 1~2분" }
-        ]},
-      { time: "12:00", end: "13:30", title: "하이라인 공원 산책 (북→남)", type: "highlight", location: "The High Line", address: "34th St → Gansevoort St",
-        description: "폐 고가 철도 위 공원!\n• 2.3km · 45분~1시간\n• 5월 꽃이 만발하는 최적 시즌\n• 북쪽(Hudson Yards) → 남쪽(Gansevoort) 방향",
-        photo: "https://images.unsplash.com/photo-1701353592956-3247fd68d999?w=600&h=300&fit=crop&auto=format",
-        tip: "10th Ave 전망대(17th St)에서 풍경 감상!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Hudson Yards → 하이라인 진입", detail: "Hudson Yards 광장에서 하이라인 직결 · 도보 0분" },
-          { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "북→남 방향 (34th St → Gansevoort St)\n23rd St 잔디밭 · 17th St 10th Ave 전망대\n· Chelsea Thicket · 약 45분" }
-        ]},
-      { time: "13:30", end: "17:00", title: "Meatpacking District 산책 + 자유시간", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
-        description: "Hudson Yards 브런치로 이미 든든하니, 천천히 둘러보는 오후.\n\n🛍️ 산책/쇼핑\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상 (탁 트인 뷰)\n• Gansevoort St 자갈길 사진 포인트\n\n🏛️ 미술관 옵션\n• Whitney Museum 외관/입장 ($30)\n• 옥상에서 하이라인 + 허드슨강 뷰\n• ⏰ 운영: 수~월 10:30~18:00 (화요일 휴관)\n• ✅ 5월 16일 토요일 정상 운영\n\n☕ 카페/와인 옵션\n• Pastis (52 Gansevoort St) - 와인/커피\n• Bubby's High Line - 가벼운 스낵\n• 또는 그냥 벤치/공원에서 휴식\n\n💡 일몰 전 여유로운 산책 + 휴식 시간",
-        photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
-        tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰가 압권!",
-        links: [
-          { icon: "🏛️", label: "Whitney Museum", href: "https://whitney.org/visit" },
-          { icon: "☕", label: "Pastis 카페", href: "https://resy.com/cities/ny/pastis-9" }
-        ],
-        transit: [
-          { mode: "walk", icon: "🚶", label: "하이라인 끝 → Meatpacking", detail: "하이라인 남쪽 끝 (Gansevoort St 출구)\n→ Meatpacking 지구 도보 0~3분" }
-        ]},
-      { time: "17:30", end: "20:30", title: "Little Island 일몰 & 저녁", type: "highlight", location: "Little Island at Pier 55", address: "Pier 55, Hudson River Park (W 13th St & 11th Ave)",
-        description: "🌅 허드슨강 위 떠 있는 인공 섬 공원!\n• 입장 무료 · 06:00~24:00 운영\n• 132개 튤립 모양 콘크리트 기둥 위 정원\n• The Glade 야외극장 (주말 무료 공연)\n• 일몰 뷰 명소 (5월 일몰 ~20:00)\n\n🍽️ 저녁 옵션\n• The Play Ground 푸드 카트 (피자/타코/맥주)\n• 또는 근처 Pastis(52 Gansevoort St) / Catch(21 9th Ave) 식당\n• 또는 Meatpacking 동네 식당 포장 → 피크닉\n\n💰 1인 $25~50 (옵션에 따라)",
-        photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
-        links: [
-          { icon: "🌐", label: "Little Island 공식", href: "https://littleisland.org/" },
-          { icon: "🎭", label: "공연 일정", href: "https://littleisland.org/whats-on" },
-          { icon: "📅", label: "Pastis 예약", href: "https://resy.com/cities/ny/pastis-9" },
-          { icon: "📅", label: "Catch 예약", href: "https://resy.com/cities/ny/catch-nyc" }
-        ],
-        tip: "토요일은 The Glade 무료 공연 가능 — 일정 확인!\n5월 일몰 시간(~20:00)에 맞춰 도착하면 인생샷!",
-        transit: [
-          { mode: "walk", icon: "🚶", label: "Meatpacking → Little Island", detail: "Gansevoort St → 서쪽 끝 (Hudson River Park)\n도보 5~7분 · 입구는 W 13th St 다리" }
-        ]},
-      { time: "21:00", title: "숙소 복귀", type: "transport", location: "맨해튼 → 숙소", address: "Little Island → 5303 JFK Blvd East",
-        description: "Uber로 편하게 복귀.",
-        tip: "내일 일정 위해 적당히",
-        transit: [
-          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Little Island → 숙소 · 약 15분 · $25~35 (1인 $8~12)\n야간 Uber가 가장 편함" },
-          { mode: "ferry", icon: "⛴️", label: "페리 대안", detail: "도보로 W. 39th St 페리(약 30분) → Port Imperial 8분\n도보로 짐 무거우면 비추", stop: "Midtown Ferry Terminal W 39th St NYC" }
-        ]}
-    ]
-  },
-  {
-    date: "5월 17일", day: "일요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
+    date: "5월 16일", day: "토요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
       { time: "09:00", end: "10:00", title: "숙소 → 그리니치 빌리지 이동", type: "transport", location: "숙소 → Washington Square Park", address: "5303 JFK Blvd East → W 4th St-Washington Sq",
         description: "🎯 최적 동선: GV → WV → SoHo → Dian's (300 E 59th St)\n\n오늘은 다운타운 도보 한 바퀴 → SoHo 6 line으로 Dian's 직행!\n\n도보 흐름 (총 1.5km):\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 서쪽 도보 5~10분 → West Village (Bleecker) — 점심\n3️⃣ → 동남쪽 도보 10~15분 → SoHo (Prince/Broadway) — 쇼핑\n4️⃣ → 6 line (Spring St → 59 St) → Dian's House\n\n💡 SoHo Spring St역 6 line이 Lex Av/59 St까지 직행 — Dian's 도보 5분",
@@ -306,6 +240,72 @@ const DAYS = [
         transit: [
           { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "300 E 59th St → 숙소\n약 20~30분 · $30~40 (1인 $10~13)\nQueensboro Bridge 또는 Lincoln Tunnel 경로" },
           { mode: "subway", icon: "🚇", label: "지하철 + 158번 (가성비)", detail: "Lexington Av/59 St역 → N/R/W 또는 4/5/6 → Times Sq\n→ Port Authority → 158번 → 숙소\n약 50~60분 · $6.40", stop: "Lexington Av 59 St subway station NYC" }
+        ]}
+    ]
+  },
+  {
+    date: "5월 17일", day: "일요일", title: "Hudson Yards · 하이라인 · Little Island", emoji: "🌆", accent: "#cf6a45",
+    events: [
+      { time: "09:30", end: "10:30", title: "숙소 → Hudson Yards 이동", type: "transport", location: "숙소 → Hudson Yards", address: "5303 JFK Blvd East → 20 Hudson Yards, NY 10001",
+        description: "Hudson Yards로 이동.\n북→남 도보 동선으로 효율적으로 즐기기.\n\n3가지 옵션:\n🚌 158번 직행 (가성비)\n⛴️ 페리 (뷰 + 분위기)\n🚗 Uber (편의/짐 많을 때)",
+        tip: "일요일 분위기는 페리 루트가 최고!",
+        transit: [
+          { mode: "bus", icon: "🚌", label: "🟢 158번 직행 (가성비)", detail: "숙소 앞 Blvd East → Port Authority Bus Terminal\n약 25~35분 · $3.50 · 환승 없음\n하차 후 7 line 한 정거장 → 34th St-Hudson Yards", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 1/3 — 숙소 → Port Imperial", detail: "Port Imperial Ferry Terminal까지\n• NJ Bus 158/159 (Blvd East) · 약 10분 · $2.25\n• 또는 Uber · 약 8분 · $8~12\n• 또는 도보 · 약 15분 (날씨 좋으면 강추)", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
+          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 2/3 — Port Imperial → W. 39th St", detail: "NY Waterway 페리 · 약 8분 · $9 (편도)\n주말 운행 시간 확인 필요\n허드슨강 위에서 맨해튼 스카이라인 + 자유의 여신상 조망", stop: "Midtown Ferry Terminal W 39th St NYC" },
+          { mode: "walk", icon: "🚶", label: "⛴️ 페리 3/3 — W. 39th St → Hudson Yards", detail: "W. 39th St 터미널 → Hudson Yards\n12th Ave 따라 남쪽 도보 약 7~10분\n도착지: Vessel/Edge 입구 광장" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Hudson Yards · 약 15~20분\n$25~35 (1인 $8~12)\n짐 많거나 날씨 안 좋을 때 추천" }
+        ]},
+      { time: "10:30", end: "12:00", title: "Hudson Yards 브런치 & Edge", type: "highlight", location: "Hudson Yards", address: "20 Hudson Yards, NY 10001",
+        description: "🍳 브런치 추천\n• Mercado Little Spain (José Andrés의 스페인 푸드 코트)\n• Bar Wayō (일식 브런치)\n• Citarella Gourmet Market 카페\n• Whole Foods 데일리 메뉴\n\n🏙️ Edge 전망대 (옵션)\n• $44/인 · 100층 야외 전망대\n• Hudson Yards 빌딩 5층 통해 진입\n\n💰 브런치 예산: 1인 $25~40",
+        photo: "https://kr.img.news.koreanair.com/wp-content/uploads/2019/08/NR201908_living_JFK_3-768x509.png",
+        links: [
+          { icon: "🥘", label: "Mercado Little Spain", href: "https://www.littlespain.com/" },
+          { icon: "🏙️", label: "Edge 전망대 예매", href: "https://www.edgenyc.com/" },
+          { icon: "🌐", label: "Hudson Yards", href: "https://www.hudsonyardsnewyork.com/" }
+        ],
+        tip: "Mercado Little Spain의 하몽+상그리아가 최고!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "34th St-Hudson Yards역 → 광장", detail: "역 출구 바로 앞 · Vessel 광장 · 도보 1~2분" }
+        ]},
+      { time: "12:00", end: "13:30", title: "하이라인 공원 산책 (북→남)", type: "highlight", location: "The High Line", address: "34th St → Gansevoort St",
+        description: "폐 고가 철도 위 공원!\n• 2.3km · 45분~1시간\n• 5월 꽃이 만발하는 최적 시즌\n• 북쪽(Hudson Yards) → 남쪽(Gansevoort) 방향",
+        photo: "https://images.unsplash.com/photo-1701353592956-3247fd68d999?w=600&h=300&fit=crop&auto=format",
+        tip: "10th Ave 전망대(17th St)에서 풍경 감상!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "Hudson Yards → 하이라인 진입", detail: "Hudson Yards 광장에서 하이라인 직결 · 도보 0분" },
+          { mode: "walk", icon: "🚶", label: "하이라인 산책 루트", detail: "북→남 방향 (34th St → Gansevoort St)\n23rd St 잔디밭 · 17th St 10th Ave 전망대\n· Chelsea Thicket · 약 45분" }
+        ]},
+      { time: "13:30", end: "17:00", title: "Meatpacking District 산책 + 자유시간", type: "sightseeing", location: "Meatpacking District", address: "Gansevoort St & 9th Ave 일대",
+        description: "Hudson Yards 브런치로 이미 든든하니, 천천히 둘러보는 오후.\n\n🛍️ 산책/쇼핑\n• Diane von Furstenberg 플래그십\n• Restoration Hardware 옥상 (탁 트인 뷰)\n• Gansevoort St 자갈길 사진 포인트\n\n🏛️ 미술관 옵션\n• Whitney Museum 외관/입장 ($30)\n• 옥상에서 하이라인 + 허드슨강 뷰\n• ⏰ 운영: 수~월 10:30~18:00 (화요일 휴관)\n• ✅ 5월 17일 일요일 정상 운영\n\n☕ 카페/와인 옵션\n• Pastis (52 Gansevoort St) - 와인/커피\n• Bubby's High Line - 가벼운 스낵\n• 또는 그냥 벤치/공원에서 휴식\n\n💡 일몰 전 여유로운 산책 + 휴식 시간",
+        photo: "https://image.newyork.kr/wp-content/uploads/2012/06/Meatpacking-District-in-New-York.jpg.webp",
+        tip: "Whitney Museum 옥상에서 하이라인+허드슨강 뷰가 압권!",
+        links: [
+          { icon: "🏛️", label: "Whitney Museum", href: "https://whitney.org/visit" },
+          { icon: "☕", label: "Pastis 카페", href: "https://resy.com/cities/ny/pastis-9" }
+        ],
+        transit: [
+          { mode: "walk", icon: "🚶", label: "하이라인 끝 → Meatpacking", detail: "하이라인 남쪽 끝 (Gansevoort St 출구)\n→ Meatpacking 지구 도보 0~3분" }
+        ]},
+      { time: "17:30", end: "20:30", title: "Little Island 일몰 & 저녁", type: "highlight", location: "Little Island at Pier 55", address: "Pier 55, Hudson River Park (W 13th St & 11th Ave)",
+        description: "🌅 허드슨강 위 떠 있는 인공 섬 공원!\n• 입장 무료 · 06:00~24:00 운영\n• 132개 튤립 모양 콘크리트 기둥 위 정원\n• The Glade 야외극장 (주말 무료 공연)\n• 일몰 뷰 명소 (5월 일몰 ~20:00)\n\n🍽️ 저녁 옵션\n• The Play Ground 푸드 카트 (피자/타코/맥주)\n• 또는 근처 Pastis(52 Gansevoort St) / Catch(21 9th Ave) 식당\n• 또는 Meatpacking 동네 식당 포장 → 피크닉\n\n💰 1인 $25~50 (옵션에 따라)",
+        photo: "https://kor.theasian.asia/wp-content/uploads/2021/11/K-town.jpg",
+        links: [
+          { icon: "🌐", label: "Little Island 공식", href: "https://littleisland.org/" },
+          { icon: "🎭", label: "공연 일정", href: "https://littleisland.org/whats-on" },
+          { icon: "📅", label: "Pastis 예약", href: "https://resy.com/cities/ny/pastis-9" },
+          { icon: "📅", label: "Catch 예약", href: "https://resy.com/cities/ny/catch-nyc" }
+        ],
+        tip: "일요일은 The Glade 무료 공연 가능 — 일정 확인!\n5월 일몰 시간(~20:00)에 맞춰 도착하면 인생샷!",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "Meatpacking → Little Island", detail: "Gansevoort St → 서쪽 끝 (Hudson River Park)\n도보 5~7분 · 입구는 W 13th St 다리" }
+        ]},
+      { time: "21:00", title: "숙소 복귀", type: "transport", location: "맨해튼 → 숙소", address: "Little Island → 5303 JFK Blvd East",
+        description: "Uber로 편하게 복귀.",
+        tip: "내일 일정 위해 적당히",
+        transit: [
+          { mode: "car", icon: "🚗", label: "Uber/Lyft (추천)", detail: "Little Island → 숙소 · 약 15분 · $25~35 (1인 $8~12)\n야간 Uber가 가장 편함" },
+          { mode: "ferry", icon: "⛴️", label: "페리 대안", detail: "도보로 W. 39th St 페리(약 30분) → Port Imperial 8분\n도보로 짐 무거우면 비추", stop: "Midtown Ferry Terminal W 39th St NYC" }
         ]}
     ]
   },
