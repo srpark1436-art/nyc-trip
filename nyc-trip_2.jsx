@@ -126,45 +126,45 @@ const DAYS = [
   {
     date: "5월 15일", day: "금요일", title: "센트럴파크 & 재즈의 밤", emoji: "🌳", accent: "#3a9a4f",
     events: [
-      { time: "09:00", end: "09:45", title: "숙소 → 센트럴파크", type: "transport", location: "Port Imperial → Central Park", address: "59th St & 5th Ave",
-        description: "페리 + 지하철로 센트럴파크 남쪽 입구까지",
-        tip: "금요일 아침 페리 — 평일 러시아워 시간 여유있게",
+      { time: "11:00", end: "11:45", title: "🚗 숙소 → 센트럴파크 (Uber)", type: "transport", location: "5303 JFK Blvd East → Central Park 59th St", address: "59th St & 5th Ave (Grand Army Plaza)",
+        description: "🚗 Uber/Lyft로 센트럴파크 남동쪽 입구까지 직행\n• 약 25~35분 · $40~55 (3인 $14~18)\n• Lincoln Tunnel 경유 → 5th Ave 북상\n• 드롭 오프 권장: 5th Ave & 59th St (Grand Army Plaza)\n\n💡 Uber Reserve로 사전 예약 추천 (10:50 호출)",
+        tip: "3명 이동 → Uber가 가성비 최고. UberX로 충분",
         transit: [
-          { mode: "ferry", icon: "⛴️", label: "Port Imperial → W. 39th St", detail: "NY Waterway · 8분 · $9", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
-          { mode: "subway", icon: "🚇", label: "미드타운 → 센트럴파크", detail: "42nd St-Times Sq역 → N/R line 북쪽 → 5th Ave-59th St역 하차\n약 10분 · 센트럴파크 남동쪽 입구 바로 앞", stop: "Times Square 42nd Street subway station NYC" }
+          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft (추천)", detail: "숙소 → 5th Ave & 59th St 직행\n약 25~35분 · $40~55 (3인 $14~18)\nLincoln Tunnel 경유 → 5th Ave 북상\n드롭: Grand Army Plaza / The Plaza Hotel 근처" },
+          { mode: "bus", icon: "🚌", label: "🚌 158번 + 지하철 (가성비)", detail: "STEP 1: 158번 → Port Authority · 25~35분 · $3.50\nSTEP 2: N/R line → 5 Av-59 St역 · 약 10분 · $2.90\n총 40~50분 · 1인 $6.40", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" }
         ]},
-      { time: "10:00", end: "13:00", title: "센트럴파크 워킹 투어", type: "highlight", location: "Central Park", address: "59th St → Belvedere Castle",
-        description: "추천 루트 (약 2~3시간):\n① Gapstow Bridge\n② The Mall & Literary Walk\n③ Bethesda Terrace & Fountain\n④ Bow Bridge\n⑤ Strawberry Fields - 'IMAGINE'\n⑥ Belvedere Castle",
+      { time: "12:00", end: "14:00", title: "센트럴파크 워킹 투어", type: "highlight", location: "Central Park", address: "59th St → Bethesda Fountain → Bow Bridge → 동쪽 출구",
+        description: "추천 루트 (약 2시간) — 메트로폴리탄 방향 동선:\n① Grand Army Plaza (59th & 5th) — 출발\n② Gapstow Bridge — 동쪽 호수 다리\n③ The Mall & Literary Walk — 가로수길\n④ Bethesda Terrace & Fountain (분수 + 천사상)\n⑤ Bow Bridge — 호수 위 우아한 다리\n⑥ Conservatory Water (모형 보트 호수)\n→ 5th Ave 동쪽 출구로 → The Met 방향 이동",
         photo: "https://images.unsplash.com/photo-1568515387631-8b650bbcdb90?w=600&h=300&fit=crop",
-        tip: "Bethesda Fountain에서 버스킹 공연을 즐기세요!",
+        tip: "Bethesda Fountain에서 버스킹 공연 + 5월 꽃 만발 시즌!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "공원 내 도보 루트", detail: "59th St 입구 → Gapstow Bridge(5분) → The Mall(10분)\n→ Bethesda Fountain(5분) → Bow Bridge(5분)\n→ Strawberry Fields(10분) → Belvedere Castle(15분)\n총 도보 약 3km · 쉬엄쉬엄 2~3시간" }
+          { mode: "walk", icon: "🚶", label: "공원 내 도보 루트", detail: "Grand Army Plaza(59th) → Gapstow Bridge(5분)\n→ The Mall(10분) → Bethesda Fountain(5분)\n→ Bow Bridge(5분) → Conservatory Water(10분)\n→ 5th Ave 동쪽 출구(5분)\n총 도보 약 2.5km · 2시간 여유" }
         ]},
-      { time: "13:00", end: "14:00", title: "점심", type: "food", location: "Columbus Circle 주변", address: "10 Columbus Cir",
-        description: "Shake Shack, Tavern on the Green, Sarabeth's",
-        tip: "Columbus Circle Shake Shack이 가장 가까워요",
+      { time: "14:00", end: "15:00", title: "🌭 점심 — 핫도그 또는 카페", type: "food", location: "센트럴파크 → The Met 가는 길", address: "5th Ave 80~84th St 일대",
+        description: "센트럴파크에서 메트로폴리탄 이동 중 가볍게 점심!\n\n🌭 핫도그 옵션 (캐주얼, 클래식 NY)\n• Sabrett 핫도그 카트 — 공원 곳곳/5th Ave\n• 1개 $4~6 · 비프 + 머스타드 + 사우어크라우트\n• 클래식 뉴욕 길거리 음식 체험\n\n☕ 카페 옵션 (착석 가능)\n• Cafe Sabarsky (1048 5th Ave, Neue Galerie)\n  → 비엔나 스타일 · 메트 도보 5분\n• Sant Ambroeus (1000 Madison Ave)\n  → 이탈리안 카페 · 메트 도보 7분\n• Le Pain Quotidien Central Park\n  → 공원 내 (Mineral Springs)\n• The Plaza Food Hall (5th & 59th)\n  → 다양한 옵션 · Grand Army Plaza 근처\n\n🥪 가벼운 식사\n• Pret A Manger (5th Ave 80th 근처) - 샌드위치\n• Joe Coffee — 커피 + 페이스트리\n\n💰 1인 $8~25",
+        photo: "https://images.unsplash.com/photo-1612392061787-2d078b3e573b?w=600&h=300&fit=crop",
+        tip: "시간 절약 → 핫도그 카트 / 휴식 원하면 → Cafe Sabarsky (메트 가는 길에 위치)",
         transit: [
-          { mode: "walk", icon: "🚶", label: "Belvedere Castle → Columbus Circle", detail: "공원 내 서쪽 방향 도보 · 약 15분\n또는 72nd St 출구 → 남쪽 도보 10분" }
+          { mode: "walk", icon: "🚶", label: "공원 출구 → 5th Ave 북쪽", detail: "Conservatory Water/공원 동쪽 → 5th Ave 따라 북쪽\n중간 핫도그 카트/카페 → 1000 5th Ave (The Met)\n도보 약 10~15분" }
         ]},
-      { time: "14:30", end: "17:30", title: "🏛️ 미술관 택1 — MoMA 또는 The Met", type: "highlight", location: "Museum of Modern Art / Metropolitan Museum", address: "MoMA: 11 W 53rd St / The Met: 1000 5th Ave",
-        description: "오후 미술관 — 둘 중 취향대로 선택!\n\n🏛️ The Met (메트로폴리탄) — 추천\n• 입장료: $30/인\n• 이집트관 덴두르 신전, 인상파, 5월 루프탑 가든\n• ✅ 금요일 10AM~9PM (늦게까지 운영)\n• Columbus Circle에서 1 line 5분, 센트럴파크 산책 직후 동선 최적\n• 휴관일 없음 (연중 정상 운영)\n\n🎨 MoMA (현대미술관)\n• 입장료: $30/인\n• 고흐, 피카소, 워홀, 모네\n• ✅ 금요일 10:30AM~5:30PM (정시 마감)\n• 미드타운 53rd St (Columbus Circle에서 N/R line 약 10분)\n• ⚠️ 일부 휴관일 있을 수 있어 moma.org 사전 확인\n\n💡 늦게까지 보고 싶으면 The Met (9PM까지)\n💡 둘 다 5월 15일(금) 정상 운영 확인됨 — 예매 추천",
+      { time: "15:00", end: "18:30", title: "🏛️ 메트로폴리탄 미술관 (The Met)", type: "highlight", location: "The Metropolitan Museum of Art", address: "1000 5th Ave, New York, NY 10028",
+        description: "✅ 5월 15일(금) 정상 운영 — 금/토 늦게까지 열림!\n\n🎫 입장료\n• 성인 일반: $30/인\n• 시니어 (65+): $22/인\n• 학생: $17/인\n• 16세 이하: 무료\n• NY State 거주자 / NY·NJ·CT 학생: Pay-what-you-wish (신분증)\n• 티켓 1장으로 3일간 The Met 본관 + Met Cloisters 입장 가능\n\n⏰ 운영 시간 (금/토)\n• 10:00 AM ~ 9:00 PM\n• 사진 30분 전 마감 (8:30 PM)\n• 갤러리 15분 전 마감 (8:45 PM)\n\n🎟️ 티켓 구매 방법\n1️⃣ 온라인 사전 예매 (추천)\n   → metmuseum.org/timed-entry\n   → Timed Entry 시간 지정 → 줄 안 서고 빠른 입장\n2️⃣ 현장 매표소 (메인 로비)\n   → 카드/현금 가능 · 주말 줄 길 수 있음\n3️⃣ CityPASS / NY Pass 통합권 보유 시 사용 가능\n\n🎨 추천 관람 (3.5h)\n① 이집트관 — 덴두르 신전 (필수!)\n② 유럽 회화 — Van Gogh, Monet, Vermeer\n③ American Wing\n④ 중세 무기/갑옷 갤러리\n⑤ 🌷 루프탑 가든 (5월 오픈! 와인 + 뷰 가능)\n\n💡 무료 오디오 가이드: Met 공식 앱 다운로드\n💡 옷장: 메인 로비 무료 보관",
         photo: "https://images.unsplash.com/photo-1739021424458-fb31d89c424b?w=600&h=300&fit=crop&auto=format",
         links: [
-          { icon: "🎟️", label: "The Met 티켓", href: "https://www.metmuseum.org/visit/plan-your-visit" },
-          { icon: "🎟️", label: "MoMA 티켓", href: "https://www.moma.org/tickets/" }
+          { icon: "🎟️", label: "Timed Entry 예매", href: "https://www.metmuseum.org/visit/plan-your-visit" },
+          { icon: "🌐", label: "공식 사이트", href: "https://www.metmuseum.org/" },
+          { icon: "📱", label: "Met 앱 (오디오)", href: "https://www.metmuseum.org/visit/audio-guide" }
         ],
-        tip: "동선 베스트는 The Met (Columbus Circle에서 1 line 직행)",
+        tip: "🌷 루프탑 가든 + 와인 한잔 강추 (날씨 좋으면 The Met 시그니처 경험)",
         transit: [
-          { mode: "subway", icon: "🚇", label: "Columbus Circle → The Met", detail: "59th St-Columbus Cir역 → 1 line 북쪽 → 86th St역 하차\n→ 5th Ave 방향 동쪽 도보 10분 · 또는 M86 버스", stop: "59 St Columbus Circle subway station NYC" },
-          { mode: "walk", icon: "🚶", label: "Met — 공원 내 도보", detail: "Columbus Circle → 공원 East Drive → The Met\n약 30분 산책 (날씨 좋을 때)" },
-          { mode: "subway", icon: "🚇", label: "Columbus Circle → MoMA", detail: "59th St-Columbus Cir역 → N/R line 동쪽 → 5 Av/53 St역 하차\n도보 1분 · 약 10분", stop: "59 St Columbus Circle subway station NYC" }
+          { mode: "walk", icon: "🚶", label: "점심 장소 → The Met", detail: "5th Ave 따라 북쪽 도보 · 약 5~10분\n→ 1000 5th Ave (메인 입구, 82nd St)" }
         ]},
-      { time: "18:00", end: "18:45", title: "Columbus Circle", type: "sightseeing", location: "Columbus Circle", address: "10 Columbus Cir, NY 10019",
-        description: "The Shops에서 쇼핑 · Dizzy's Club 준비\n19:00 예약 시간 맞춰 18:45 출발",
-        photo: "https://images.unsplash.com/photo-1587162147120-430be9b33be3?w=600&h=300&fit=crop&auto=format",
-        tip: "Jazz at Lincoln Center가 바로 이 건물 5층!\n예약 디너라 시간 엄수",
+      { time: "18:30", end: "19:00", title: "The Met → Dizzy's Club 이동", type: "transport", location: "The Met → Columbus Circle", address: "1000 5th Ave → 10 Columbus Cir",
+        description: "🚇 1 line이 가장 빠르고 환승 없음\n86th St역 → 59th St-Columbus Circle 직행 약 10분\n\n⏰ Dizzy's 19:00 예약 — 18:50 도착 목표",
+        tip: "주말 트래픽 고려해 지하철이 가장 정확",
         transit: [
-          { mode: "subway", icon: "🚇", label: "The Met → Columbus Circle", detail: "86th St역 → 1 line 남쪽 → 59th St-Columbus Cir역\n약 10분", stop: "86 St subway station 1 line Upper East Side NYC" }
+          { mode: "subway", icon: "🚇", label: "🟢 1 line 직행 (추천)", detail: "86th St역 → 1 line 남쪽 → 59 St-Columbus Cir 하차\n약 10분 · $2.90 · 환승 없음", stop: "86 St subway station 1 line Upper East Side NYC" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft", detail: "The Met → Columbus Circle\n약 10~15분 · $12~18 (3인 $4~6)\n트래픽 따라 변동" }
         ]},
       { time: "19:00", end: "21:30", title: "Dizzy's Club 재즈 디너", type: "highlight", location: "Dizzy's Club", address: "10 Columbus Cir, 5FL, NY 10019",
         description: "✅ 예약 완료\n• 일시: 5월 15일(금) 19:00 도착\n• 인원: 3명\n• 좌석: Table (다이닝 테이블)\n• 공연 시작: 19:30\n\n🎷 공연 — Marcus Roberts Trio: Rhythm in Blue 1\n• 마커스 로버츠 트리오 (피아노/베이스/드럼)\n• 마커스 로버츠 — 시각장애를 가진 거장 재즈 피아니스트, Wynton Marsalis 제자\n• 듀크 엘링턴 + 블루스 전통 기반의 스윙 재즈\n• 'Rhythm in Blue' 시리즈: 블루스 영향 중심 프로그램\n• 1세트 약 75~90분 (보통 21:00경 종료)\n\n⏰ 추천 도착 시간\n• 18:50~19:00 도착 → 안내받고 자리 안내\n• 19:00 식사/음료 주문 시작\n• 19:30 공연 시작 (조명 다운)\n• 음식은 공연 시작 전까지 받는 게 베스트\n\n💺 Table 좌석 안내 (3명)\n• Dining Room Tables: 무대 앞~중앙 정면 시야\n• 1열 (Premium): 무대 가장 가까움, 음향 + 시야 최고\n• 2열 (Center): 시야 좋음 + 약간의 거리감\n• Window Tables (2층): 센트럴파크 야경 + 무대 사선뷰\n• 도착 시 호스트에게 'Center, close to stage 가능?' 요청 가능\n\n🍽️ 다이닝 룸 규정\n• 커버차지: 1인 $70 (공연 입장료)\n• Food + Drink Minimum: 1인 $25 (음식 또는 음료로 충족)\n• 1인 예산: $130~180 (커버 + 코스 + 와인)\n• 메뉴: 비스트로 스타일 (스테이크, 파스타, 시푸드)\n\n👔 드레스 코드\n• Smart Casual / Cocktail Attire\n• 청바지 + 셔츠 OK, 슬리퍼/반바지 비추\n\n📸 매너\n• 공연 중 사진 촬영 자제 (플래시 금지)\n• 박수 타이밍: 솔로 끝, 곡 종료 후",
