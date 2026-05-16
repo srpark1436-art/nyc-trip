@@ -147,17 +147,17 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "공원 출구 → 5th Ave 북쪽", detail: "Conservatory Water/공원 동쪽 → 5th Ave 따라 북쪽\n중간 핫도그 카트/카페 → 1000 5th Ave (The Met)\n도보 약 10~15분" }
         ]},
-      { time: "15:00", end: "18:30", title: "🏛️ 메트로폴리탄 미술관 (The Met)", type: "highlight", location: "The Metropolitan Museum of Art", address: "1000 5th Ave, New York, NY 10028",
-        description: "✅ 5월 15일(금) 정상 운영 — 금/토 늦게까지 열림!\n\n🎫 입장료\n• 성인 일반: $30/인\n• 시니어 (65+): $22/인\n• 학생: $17/인\n• 16세 이하: 무료\n• NY State 거주자 / NY·NJ·CT 학생: Pay-what-you-wish (신분증)\n• 티켓 1장으로 3일간 The Met 본관 + Met Cloisters 입장 가능\n\n⏰ 운영 시간 (금/토)\n• 10:00 AM ~ 9:00 PM\n• 사진 30분 전 마감 (8:30 PM)\n• 갤러리 15분 전 마감 (8:45 PM)\n\n🎟️ 티켓 구매 방법\n1️⃣ 온라인 사전 예매 (추천)\n   → metmuseum.org/timed-entry\n   → Timed Entry 시간 지정 → 줄 안 서고 빠른 입장\n2️⃣ 현장 매표소 (메인 로비)\n   → 카드/현금 가능 · 주말 줄 길 수 있음\n3️⃣ CityPASS / NY Pass 통합권 보유 시 사용 가능\n\n🎨 추천 관람 (3.5h)\n① 이집트관 — 덴두르 신전 (필수!)\n② 유럽 회화 — Van Gogh, Monet, Vermeer\n③ American Wing\n④ 중세 무기/갑옷 갤러리\n⑤ 🌷 루프탑 가든 (5월 오픈! 와인 + 뷰 가능)\n\n💡 무료 오디오 가이드: Met 공식 앱 다운로드\n💡 옷장: 메인 로비 무료 보관",
+      { time: "15:00", end: "18:30", title: "🏛️ 메트로폴리탄 미술관 (The Met)", type: "highlight", location: "The Metropolitan Museum of Art", address: "81st Street Entrance · 5th Ave & E 81st St, NY 10028",
+        description: "✅ 5월 15일(금) 정상 운영 — 금/토 늦게까지 열림!\n\n🚪 입구 안내 — ⭐ 81번가 측면 입구 추천!\n• 위치: 5th Ave & E 81st St (메인 입구 한 블록 남쪽)\n• 메인 입구(82nd St Great Hall) 대비 줄 짧음 · 한산\n• 보안 검색 빠름 · 휠체어/유아차 접근 용이 (엘리베이터)\n• 같은 티켓으로 입장 가능 · 안에서 메인과 연결\n• 메인 입구 인파 피하기 = 시간 절약\n\n🎫 입장료\n• 성인 일반: $30/인\n• 시니어 (65+): $22/인\n• 학생: $17/인\n• 16세 이하: 무료\n• NY State 거주자 / NY·NJ·CT 학생: Pay-what-you-wish (신분증)\n• 티켓 1장으로 3일간 The Met 본관 + Met Cloisters 입장 가능\n\n⏰ 운영 시간 (금/토)\n• 10:00 AM ~ 9:00 PM\n• 사진 30분 전 마감 (8:30 PM)\n• 갤러리 15분 전 마감 (8:45 PM)\n\n🎟️ 티켓 구매 방법\n1️⃣ 온라인 사전 예매 (추천)\n   → metmuseum.org/timed-entry\n   → Timed Entry 시간 지정 → 줄 안 서고 빠른 입장\n   → 모바일 QR 보여주고 81번가 입구 진입\n2️⃣ 현장 매표소 (81번가 입구에도 있음)\n   → 카드/현금 가능\n3️⃣ CityPASS / NY Pass 통합권 보유 시 사용 가능\n\n🎨 추천 관람 (3.5h)\n① 이집트관 — 덴두르 신전 (필수!)\n② 유럽 회화 — Van Gogh, Monet, Vermeer\n③ American Wing\n④ 중세 무기/갑옷 갤러리\n⑤ 🌷 루프탑 가든 (5월 오픈! 와인 + 뷰 가능)\n\n💡 무료 오디오 가이드: Met 공식 앱 다운로드\n💡 옷장: 81번가 입구에도 무료 보관 가능",
         photo: "https://images.unsplash.com/photo-1739021424458-fb31d89c424b?w=600&h=300&fit=crop&auto=format",
         links: [
           { icon: "🎟️", label: "Timed Entry 예매", href: "https://www.metmuseum.org/visit/plan-your-visit" },
           { icon: "🌐", label: "공식 사이트", href: "https://www.metmuseum.org/" },
           { icon: "📱", label: "Met 앱 (오디오)", href: "https://www.metmuseum.org/visit/audio-guide" }
         ],
-        tip: "🌷 루프탑 가든 + 와인 한잔 강추 (날씨 좋으면 The Met 시그니처 경험)",
+        tip: "⭐ 81번가 측면 입구로 들어가면 메인 입구 인파 피하고 빠른 입장!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "점심 장소 → The Met", detail: "5th Ave 따라 북쪽 도보 · 약 5~10분\n→ 1000 5th Ave (메인 입구, 82nd St)" }
+          { mode: "walk", icon: "🚶", label: "점심 장소 → The Met (81번가 입구)", detail: "5th Ave 따라 북쪽 도보 · 약 5~10분\n→ 5th Ave & E 81st St 모서리\n→ 81번가 측면 입구 (메인 한 블록 남쪽, 한산)", stop: "Metropolitan Museum of Art 81st Street Entrance NYC" }
         ]},
       { time: "18:30", end: "19:00", title: "The Met → Dizzy's Club 이동", type: "transport", location: "The Met → Columbus Circle", address: "1000 5th Ave → 10 Columbus Cir",
         description: "🚇 1 line이 가장 빠르고 환승 없음\n86th St역 → 59th St-Columbus Circle 직행 약 10분\n\n⏰ Dizzy's 19:00 예약 — 18:50 도착 목표",
@@ -189,7 +189,7 @@ const DAYS = [
     date: "5월 16일", day: "토요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
       { time: "09:00", end: "10:00", title: "숙소 → 그리니치 빌리지 이동", type: "transport", location: "숙소 → Washington Square Park", address: "5303 JFK Blvd East → W 4th St-Washington Sq",
-        description: "🎯 최적 동선: GV → WV → SoHo → Dian's (300 E 59th St)\n\n오늘은 다운타운 도보 한 바퀴 → SoHo 6 line으로 Dian's 직행!\n\n도보 흐름 (총 1.5km):\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 서쪽 도보 5~10분 → West Village (Bleecker) — 점심\n3️⃣ → 동남쪽 도보 10~15분 → SoHo (Prince/Broadway) — 쇼핑\n4️⃣ → 6 line (Spring St → 59 St) → Dian's House\n\n💡 SoHo Spring St역 6 line이 Lex Av/59 St까지 직행 — Dian's 도보 5분",
+        description: "🎯 새 동선: Greenwich Village → POPUP BAGELS → Times Square → 5th Ave 랜드마크 → Dian's House\n\n오늘 흐름:\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 🥯 POPUP BAGELS (West Village 명물 베이글)\n3️⃣ → 지하철 → Times Square (브로드웨이 핵심)\n4️⃣ → 5th Ave 북상 (NYPL · Rockefeller · St Patrick's · Apple Store)\n5️⃣ → 도보 동쪽 → Dian's House (5th Ave 59th → E 59th)\n\n💡 5th Ave 59th St이 Dian's House 도보 7분 — 자연스러운 마무리",
         tip: "🟢 158번 + A/C/E line이 Washington Square 직결",
         transit: [
           { mode: "bus", icon: "🚌", label: "🟢 158번 + A/C/E (추천 · 가성비)", detail: "STEP 1: 숙소 앞 Blvd East → 158번 직행 → Port Authority\n약 25~35분 · $3.50\n\nSTEP 2: PABT 지하 → A/C/E line 남쪽 → W 4th St-Washington Sq 하차\n약 8분 · $2.90\n\n총 35~45분 · $6.40\n하차 즉시 Washington Square Park 도보 1분", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
@@ -204,31 +204,51 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "W 4th St역에서 도보", detail: "W 4th St-Washington Sq역 → 공원 도보 3분" }
         ]},
-      { time: "11:30", end: "13:30", title: "West Village 점심 & 카페", type: "food", location: "West Village", address: "Bleecker St, NY 10014",
-        description: "🍽️ 점심 추천\n• Buvette (42 Grove St) - 프렌치 비스트로 (예약 추천)\n• Joe's Pizza (7 Carmine St) - 클래식 슬라이스 (워크인)\n• Joseph Leonard (170 Waverly Pl) - 미국식 브런치 (예약 추천)\n\n☕ 카페/디저트\n• Magnolia Bakery (401 Bleecker) - 컵케이크\n• Dante (79 MacDougal) - 네그로니",
-        photo: "https://images.unsplash.com/photo-1634874495432-cb368c167e9b?w=600&h=300&fit=crop&auto=format",
+      { time: "11:30", end: "12:30", title: "🥯 POPUP BAGELS (West Village)", type: "food", location: "POPUP BAGELS", address: "177 Perry St, New York, NY 10014",
+        description: "✨ 뉴욕 화제의 베이글 가게 — 갓 구운 작은 베이글로 유명!\n\n🥯 메뉴 특징\n• 작은 사이즈의 hot, fresh 베이글\n• 다양한 schmear(스프레드): 플레인, 스캘리언, 트러플 등\n• 베이글 4개 묶음(half dozen) 또는 a dozen 단위\n• Drop-in walk-in 가능 (인기 시간엔 줄 있음)\n• 1인 $8~15 (베이글 + 스프레드)\n\n📍 West Village 본점\n• 177 Perry St (Washington St 교차점)\n• Washington Square에서 도보 약 12~15분 서쪽\n• 강가에 가까운 한적한 골목\n\n🎫 Pre-order 추천\n• popupbagels.com에서 사전 픽업 주문\n• 줄 안 서고 카운터에서 픽업\n\n💡 셰어 추천: 4명이서 half dozen(6개) + 2~3종 schmear 셰어",
+        photo: "https://images.unsplash.com/photo-1612205063850-7c08b53d4738?w=600&h=300&fit=crop&auto=format",
         links: [
-          { icon: "📅", label: "Buvette 예약", href: "https://resy.com/cities/ny/buvette" },
-          { icon: "📅", label: "Joseph Leonard", href: "https://resy.com/cities/ny/joseph-leonard" },
-          { icon: "🍕", label: "Joe's Pizza", href: "https://www.joespizzanyc.com/" }
+          { icon: "🌐", label: "POPUP BAGELS 공식", href: "https://www.popupbagels.com/" },
+          { icon: "🛒", label: "Pre-order", href: "https://www.popupbagels.com/order" }
         ],
-        tip: "Buvette의 Croque Monsieur + 라떼 강추!",
+        tip: "사전 주문하면 줄 안 서고 픽업 가능 — Washington Sq 출발 전 미리 주문!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "Washington Sq → West Village", detail: "공원에서 서쪽 방향 도보\nMacDougal St · Bleecker St · Grove St\n모두 도보 5~10분" }
+          { mode: "walk", icon: "🚶", label: "Washington Sq → POPUP BAGELS", detail: "Washington Square Park → 서쪽 도보\nW 4th St → Bleecker St → Perry St 방향\n약 12~15분 (약 1km)", stop: "POPUP BAGELS 177 Perry St West Village NYC" }
         ]},
-      { time: "13:30", end: "16:00", title: "SoHo 쇼핑 & 자유시간", type: "sightseeing", location: "SoHo", address: "Broadway & Prince St, NY 10012",
-        description: "캐스트 아이언 건축물 + 부티크 숍\n• Broadway 메인 쇼핑 거리\n• Prince St · Spring St · Mercer St\n• Aimé Leon Dore, Kith, MoMA Design Store\n• 갤러리 + 부티크 인테리어 샵\n\n💡 16:00경 Spring St역 6 line으로 Dian's House 출발",
-        photo: "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=600&h=300&fit=crop",
-        tip: "쇼핑 + 카페 휴식 (Dian's 출발 전 마지막 여유)",
+      { time: "12:30", end: "13:30", title: "POPUP BAGELS → 타임스퀘어 이동", type: "transport", location: "West Village → Times Square", address: "Perry St → Broadway & 42nd St",
+        description: "🚇 1 line이 가장 빠르고 간단\n14 St-7 Av역 → Times Sq-42 St 약 8분",
+        tip: "주말 지하철은 가끔 운행 변경 — 진입 전 노선도 확인",
         transit: [
-          { mode: "walk", icon: "🚶", label: "West Village → SoHo", detail: "Bleecker St → 동남쪽 도보 약 10~15분\nHouston St 건너 → Broadway/Prince" }
+          { mode: "walk", icon: "🚶", label: "POPUP BAGELS → Christopher St역", detail: "Perry St → Christopher St → 7th Ave & Christopher St역\n도보 약 5분" },
+          { mode: "subway", icon: "🚇", label: "🟢 1 line 북쪽 → Times Square", detail: "Christopher St역 → 1 line 북쪽 → Times Sq-42 St 하차\n약 8분 · $2.90 · 환승 없음", stop: "Christopher St Sheridan Square 1 line subway station NYC" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (트래픽 주의)", detail: "POPUP BAGELS → Times Square\n약 12~20분 · $15~22 (3인 $5~8)\n주말 미드타운 트래픽 多" }
         ]},
-      { time: "16:00", end: "17:00", title: "SoHo → Dian's House 이동", type: "transport", location: "SoHo → Dian's House", address: "Spring St → 300 E 59th St",
-        description: "🚇 6 line이 가장 빠르고 편함\nLexington Av/59 St역 = Dian's 집 도보 5분\n\n예상 도착: 16:30~16:45 (Dian's 17:00 시작 직전)",
-        tip: "16:00경 출발하면 17:00 도착 여유 충분",
+      { time: "13:30", end: "14:30", title: "🌃 타임스퀘어 관광", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, 42nd-47th St, NY",
+        description: "뉴욕의 심장! 브로드웨이 핵심\n\n📸 핵심 포인트\n• Red Steps (TKTS 부스 위 빨간 계단)\n• LED 빌보드 + 광고판\n• Broadway 극장가 (Lion King, Wicked, Hamilton 등)\n• Times Square 'Crossroads of the World' 표지판\n\n🛍️ 상점/체험\n• M&M Store (1600 Broadway)\n• Disney Store (1540 Broadway)\n• Hard Rock Cafe\n• TKTS 부스 (당일 브로드웨이 할인 티켓)\n\n💡 5월 토요일 오후는 인파 많음 — 사진 찍고 가볍게 통과\n💡 5th Ave 산책을 위해 동쪽으로 이동 준비",
+        photo: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=300&fit=crop",
+        tip: "Red Steps에서 사진 + LED 빌보드 인증샷! 소매치기 주의",
         transit: [
-          { mode: "subway", icon: "🚇", label: "🟢 6 line 직행 (추천)", detail: "Spring St역 → 6 line 북쪽 → 59 St 하차\n약 18분 · $2.90 · 환승 없음\n\nLex Av/59 St역 → 1st Ave 방향 동쪽 도보 약 5분\n→ 300 E 59th St 도착", stop: "Spring St subway station 6 line SoHo NYC" },
-          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft", detail: "SoHo → 300 E 59th St 직행\n약 15~25분 · $20~28 (1인 $7~10)\n주말 트래픽에 따라 시간 변동" }
+          { mode: "walk", icon: "🚶", label: "Times Square 내 도보", detail: "지하철 출구 → Broadway 광장 도보 1분\nTKTS Red Steps · 빌보드 사진 포인트 자유롭게" }
+        ]},
+      { time: "14:30", end: "16:30", title: "🏛️ 5th Avenue 랜드마크 워킹 (42nd → 59th)", type: "highlight", location: "5th Avenue 미드타운", address: "5th Ave 42nd St → 59th St (약 1.5km)",
+        description: "5th Ave를 따라 북쪽으로 산책 — 뉴욕 대표 랜드마크 줄줄이!\n\n🚶 도보 코스 (약 1.5km · 2시간 여유)\n\n① 42nd St — New York Public Library\n• 5th Ave & 42nd St\n• 사자상 (Patience & Fortitude)\n• Rose Reading Room (입장 가능, 무료)\n\n② Bryant Park (NYPL 뒤편)\n• 6th Ave & 40-42nd St\n• 정원 + 잔디밭 + 야외 카페\n• 잠깐 휴식 좋음\n\n③ 49-50th St — Rockefeller Center\n• 5th Ave & 50th St\n• Channel Gardens · 프로메테우스 동상\n• Top of the Rock 전망대 ($42, 선택)\n• Atlas 동상 (5th Ave 정면)\n\n④ 50th St — St. Patrick's Cathedral\n• 5th Ave & 50-51st St\n• 뉴욕 최대 가톨릭 성당 (1879)\n• 무료 입장 · 신고딕 건축\n\n⑤ 49-50th St — Saks Fifth Avenue\n• 5th Ave & 49-50th St\n• 럭셔리 백화점 플래그십\n\n⑥ 56th St — Trump Tower\n• 5th Ave & 56th St (외관만)\n\n⑦ 57th St — Tiffany & Co. / Bergdorf Goodman\n• 5th Ave & 57th St\n• Tiffany 본점 (Audrey Hepburn 영화)\n\n⑧ 59th St — Apple Store Fifth Avenue\n• 5th Ave & 59th St (GM Building 앞)\n• 유리 큐브 입구 (24시간 영업)\n• 플라자 호텔(Plaza Hotel) 바로 옆\n\n💡 시간 여유 따라 일부만 골라보기 OK\n💡 16:30경 5th Ave 59th에서 동쪽으로 출발",
+        photo: "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?w=600&h=300&fit=crop&auto=format",
+        links: [
+          { icon: "📚", label: "NYPL 정보", href: "https://www.nypl.org/locations/schwarzman" },
+          { icon: "⛪", label: "St Patrick's 정보", href: "https://saintpatrickscathedral.org/" },
+          { icon: "🏙️", label: "Top of the Rock", href: "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/" }
+        ],
+        tip: "토요일 오후 인파 多 — 핵심만 골라보고 사진 위주로 산책",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "Times Square → 5th Ave 42nd", detail: "Broadway 42nd St → 동쪽 도보 약 5분\n→ 5th Ave & 42nd St (NYPL 시작점)" },
+          { mode: "walk", icon: "🚶", label: "5th Ave 북상 (42nd → 59th)", detail: "5th Ave 따라 북쪽 도보\n총 약 1.5km · 천천히 2시간\n중간 랜드마크 각 5~15분씩 둘러보기" }
+        ]},
+      { time: "16:30", end: "17:00", title: "5th Ave 59th St → Dian's House", type: "transport", location: "5th Ave & 59th St → 300 E 59th St", address: "Apple Store Fifth Ave → 300 E 59th St",
+        description: "🚶 5th Ave & 59th St에서 동쪽 도보\n→ 300 E 59th St (Dian's House)\n약 7~10분 도보 (약 0.6km)\n\n경로: 59th St 따라 동쪽 → Madison Ave → Park Ave → Lexington Ave → 2nd Ave 방향 → E 59th St",
+        tip: "Dian's 17:00 시작 — 16:50까지 도착 목표 (선물 정리 시간)",
+        transit: [
+          { mode: "walk", icon: "🚶", label: "🚶 5th Ave → E 59th St (도보 추천)", detail: "Apple Store Fifth Ave (GM Building) 앞\n→ 59th St 따라 동쪽 도보\n→ Madison Ave → Park Ave → Lex Ave → 2nd Ave\n→ 300 E 59th St 도착\n약 7~10분 (0.6km) · 평지", stop: "300 E 59th St New York NY" },
+          { mode: "car", icon: "🚗", label: "🚗 Uber (피곤할 경우)", detail: "5th Ave 59th → 300 E 59th St\n약 5~10분 · $8~12 (3인 $3~4)\n트래픽에 따라 도보보다 늦을 수도" }
         ]},
       { time: "17:00", end: "21:00", title: "🏡 Dian's House Dinner Invitation", type: "highlight", location: "Dian's House", address: "300 E 59th St, New York, NY",
         description: "Dian의 집 디너 초대 — 이날의 하이라이트!\n\n🎁 손님 매너 체크리스트\n• 와인 (red/white 1병씩) 또는 꽃다발 지참\n• 한국 디저트/티/전통주 선물 옵션\n• 드레스 코드: 깔끔한 캐주얼\n• 알레르기/식단 제한 미리 공유\n\n💬 미국식 디너 매너\n• 5~10분 정도만 늦는 정도 OK\n• 식사 후 정리 도와주기 제안\n• 머무르는 시간: 식사 후 1~2시간 정도\n• 다음 날 감사 메시지/카드 보내기\n\n🎉 이런 시간이 진짜 뉴욕 추억",
