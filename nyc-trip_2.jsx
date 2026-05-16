@@ -188,23 +188,20 @@ const DAYS = [
   {
     date: "5월 16일", day: "토요일", title: "다운타운 빌리지 & Dian's Dinner", emoji: "🎨", accent: "#9b5fbf",
     events: [
-      { time: "09:00", end: "10:00", title: "숙소 → 그리니치 빌리지 이동", type: "transport", location: "숙소 → Washington Square Park", address: "5303 JFK Blvd East → W 4th St-Washington Sq",
-        description: "🎯 새 동선: Greenwich Village → POPUP BAGELS → Times Square → 5th Ave 랜드마크 → Dian's House\n\n오늘 흐름:\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 🥯 POPUP BAGELS (West Village 명물 베이글)\n3️⃣ → 지하철 → Times Square (브로드웨이 핵심)\n4️⃣ → 5th Ave 북상 (NYPL · Rockefeller · St Patrick's · Apple Store)\n5️⃣ → 도보 동쪽 → Dian's House (5th Ave 59th → E 59th)\n\n💡 5th Ave 59th St이 Dian's House 도보 7분 — 자연스러운 마무리",
-        tip: "🟢 158번 + A/C/E line이 Washington Square 직결",
+      { time: "11:00", end: "11:30", title: "🚗 숙소 → 그리니치 빌리지 (Uber)", type: "transport", location: "숙소 → Washington Square Park", address: "5303 JFK Blvd East → Washington Square Park, NY 10012",
+        description: "🚗 Uber/Lyft로 그리니치 빌리지 직행\n• 약 20~25분 · $30~40 (3인 $10~13)\n• Lincoln Tunnel 경유 → 다운타운\n• 드롭 오프: Washington Square Park 근처 (W 4th St or 5th Ave)\n\n🎯 오늘 동선: Greenwich Village → POPUP BAGELS → Times Square → 5th Ave 랜드마크 → Dian's House\n\n흐름:\n1️⃣ Greenwich Village (Washington Sq) — 시작\n2️⃣ → 🥯 POPUP BAGELS (West Village 명물 베이글)\n3️⃣ → 지하철 → Times Square (브로드웨이 핵심)\n4️⃣ → 5th Ave 북상 (NYPL · Rockefeller · St Patrick's · Apple Store)\n5️⃣ → 도보 동쪽 → Dian's House (5th Ave 59th → E 59th)\n\n💡 5th Ave 59th St이 Dian's House 도보 7분 — 자연스러운 마무리",
+        tip: "3명 이동 → Uber가 가성비 최고. Uber Reserve로 10:50 호출 추천",
         transit: [
-          { mode: "bus", icon: "🚌", label: "🟢 158번 + A/C/E (추천 · 가성비)", detail: "STEP 1: 숙소 앞 Blvd East → 158번 직행 → Port Authority\n약 25~35분 · $3.50\n\nSTEP 2: PABT 지하 → A/C/E line 남쪽 → W 4th St-Washington Sq 하차\n약 8분 · $2.90\n\n총 35~45분 · $6.40\n하차 즉시 Washington Square Park 도보 1분", stop: "Blvd East at JFK Blvd, West New York NJ bus stop" },
-          { mode: "subway", icon: "🚇", label: "🚇 PATH 직행 (빠름)", detail: "STEP 1: 숙소 → Hoboken Terminal\n• 22번 버스 또는 Lyft 약 10~15분 ($2.25 / $10~15)\n\nSTEP 2: PATH (HOB-WTC) → Christopher St 하차\n약 10분 · $2.75\n\nSTEP 3: Christopher St → Washington Sq Park 도보 7분\n\n총 25~35분 · $5~18", stop: "Hoboken Terminal PATH station NJ" },
-          { mode: "ferry", icon: "⛴️", label: "⛴️ 페리 (뷰 옵션)", detail: "STEP 1: 숙소 → Port Imperial · Bus 158/159 약 10분\n\nSTEP 2: Port Imperial → W. 39th St · NY Waterway 8분 · $9\n\nSTEP 3: 42nd St역 → A/C/E 남쪽 → W 4th St · 약 12분\n\n총 약 50분 · $14", stop: "Port Imperial Ferry Terminal Weehawken NJ" },
-          { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (편의)", detail: "숙소 → Washington Square Park 직행\n약 20~25분 · $30~40 (3인 $10~13)" }
+          { mode: "car", icon: "🚗", label: "🚗 Uber/Lyft (추천)", detail: "숙소 → Washington Square Park 직행\n약 20~25분 · $30~40 (3인 $10~13)\nLincoln Tunnel 경유 → W 4th St 또는 5th Ave & 8th St 드롭" }
         ]},
-      { time: "10:00", end: "11:30", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
-        description: "워싱턴 스퀘어 파크 + NYU 캠퍼스\n• Washington Square Arch (개선문 + 분수)\n• 거리 공연/체스 두는 사람 구경\n• MacDougal St 보헤미안 거리\n• Comedy Cellar (코미디 클럽 외관)",
+      { time: "11:30", end: "12:30", title: "Greenwich Village 산책", type: "sightseeing", location: "Greenwich Village", address: "Washington Square Park, NY 10012",
+        description: "워싱턴 스퀘어 파크 + NYU 캠퍼스 (1시간 짧게)\n• Washington Square Arch (개선문 + 분수)\n• 거리 공연/체스 두는 사람 구경\n• MacDougal St 보헤미안 거리\n• Comedy Cellar (코미디 클럽 외관)",
         photo: "https://plus.unsplash.com/premium_photo-1681868376745-0565b18b4c8c?w=600&h=300&fit=crop&auto=format",
         tip: "Washington Square Arch 앞이 사진 명소!",
         transit: [
-          { mode: "walk", icon: "🚶", label: "W 4th St역에서 도보", detail: "W 4th St-Washington Sq역 → 공원 도보 3분" }
+          { mode: "walk", icon: "🚶", label: "Uber 드롭 → 공원", detail: "W 4th St / 5th Ave 드롭 → Washington Square Park 도보 1~3분" }
         ]},
-      { time: "11:30", end: "12:30", title: "🥯 POPUP BAGELS (West Village)", type: "food", location: "POPUP BAGELS", address: "177 Perry St, New York, NY 10014",
+      { time: "12:30", end: "13:30", title: "🥯 POPUP BAGELS (West Village)", type: "food", location: "POPUP BAGELS", address: "177 Perry St, New York, NY 10014",
         description: "✨ 뉴욕 화제의 베이글 가게 — 갓 구운 작은 베이글로 유명!\n\n🥯 메뉴 특징\n• 작은 사이즈의 hot, fresh 베이글\n• 다양한 schmear(스프레드): 플레인, 스캘리언, 트러플 등\n• 베이글 4개 묶음(half dozen) 또는 a dozen 단위\n• Drop-in walk-in 가능 (인기 시간엔 줄 있음)\n• 1인 $8~15 (베이글 + 스프레드)\n\n📍 West Village 본점\n• 177 Perry St (Washington St 교차점)\n• Washington Square에서 도보 약 12~15분 서쪽\n• 강가에 가까운 한적한 골목\n\n🎫 Pre-order 추천\n• popupbagels.com에서 사전 픽업 주문\n• 줄 안 서고 카운터에서 픽업\n\n💡 셰어 추천: 4명이서 half dozen(6개) + 2~3종 schmear 셰어",
         photo: "https://images.unsplash.com/photo-1612205063850-7c08b53d4738?w=600&h=300&fit=crop&auto=format",
         links: [
@@ -215,7 +212,7 @@ const DAYS = [
         transit: [
           { mode: "walk", icon: "🚶", label: "Washington Sq → POPUP BAGELS", detail: "Washington Square Park → 서쪽 도보\nW 4th St → Bleecker St → Perry St 방향\n약 12~15분 (약 1km)", stop: "POPUP BAGELS 177 Perry St West Village NYC" }
         ]},
-      { time: "12:30", end: "13:30", title: "POPUP BAGELS → 타임스퀘어 이동", type: "transport", location: "West Village → Times Square", address: "Perry St → Broadway & 42nd St",
+      { time: "13:30", end: "14:00", title: "POPUP BAGELS → 타임스퀘어 이동", type: "transport", location: "West Village → Times Square", address: "Perry St → Broadway & 42nd St",
         description: "🚇 1 line이 가장 빠르고 간단\n14 St-7 Av역 → Times Sq-42 St 약 8분",
         tip: "주말 지하철은 가끔 운행 변경 — 진입 전 노선도 확인",
         transit: [
@@ -223,15 +220,15 @@ const DAYS = [
           { mode: "subway", icon: "🚇", label: "🟢 1 line 북쪽 → Times Square", detail: "Christopher St역 → 1 line 북쪽 → Times Sq-42 St 하차\n약 8분 · $2.90 · 환승 없음", stop: "Christopher St Sheridan Square 1 line subway station NYC" },
           { mode: "car", icon: "🚗", label: "🚗 Uber 직행 (트래픽 주의)", detail: "POPUP BAGELS → Times Square\n약 12~20분 · $15~22 (3인 $5~8)\n주말 미드타운 트래픽 多" }
         ]},
-      { time: "13:30", end: "14:30", title: "🌃 타임스퀘어 관광", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, 42nd-47th St, NY",
+      { time: "14:00", end: "15:00", title: "🌃 타임스퀘어 관광", type: "sightseeing", location: "Times Square", address: "Broadway & 7th Ave, 42nd-47th St, NY",
         description: "뉴욕의 심장! 브로드웨이 핵심\n\n📸 핵심 포인트\n• Red Steps (TKTS 부스 위 빨간 계단)\n• LED 빌보드 + 광고판\n• Broadway 극장가 (Lion King, Wicked, Hamilton 등)\n• Times Square 'Crossroads of the World' 표지판\n\n🛍️ 상점/체험\n• M&M Store (1600 Broadway)\n• Disney Store (1540 Broadway)\n• Hard Rock Cafe\n• TKTS 부스 (당일 브로드웨이 할인 티켓)\n\n💡 5월 토요일 오후는 인파 많음 — 사진 찍고 가볍게 통과\n💡 5th Ave 산책을 위해 동쪽으로 이동 준비",
         photo: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=600&h=300&fit=crop",
         tip: "Red Steps에서 사진 + LED 빌보드 인증샷! 소매치기 주의",
         transit: [
           { mode: "walk", icon: "🚶", label: "Times Square 내 도보", detail: "지하철 출구 → Broadway 광장 도보 1분\nTKTS Red Steps · 빌보드 사진 포인트 자유롭게" }
         ]},
-      { time: "14:30", end: "16:30", title: "🏛️ 5th Avenue 랜드마크 워킹 (42nd → 59th)", type: "highlight", location: "5th Avenue 미드타운", address: "5th Ave 42nd St → 59th St (약 1.5km)",
-        description: "5th Ave를 따라 북쪽으로 산책 — 뉴욕 대표 랜드마크 줄줄이!\n\n🚶 도보 코스 (약 1.5km · 2시간 여유)\n\n① 42nd St — New York Public Library\n• 5th Ave & 42nd St\n• 사자상 (Patience & Fortitude)\n• Rose Reading Room (입장 가능, 무료)\n\n② Bryant Park (NYPL 뒤편)\n• 6th Ave & 40-42nd St\n• 정원 + 잔디밭 + 야외 카페\n• 잠깐 휴식 좋음\n\n③ 49-50th St — Rockefeller Center\n• 5th Ave & 50th St\n• Channel Gardens · 프로메테우스 동상\n• Top of the Rock 전망대 ($42, 선택)\n• Atlas 동상 (5th Ave 정면)\n\n④ 50th St — St. Patrick's Cathedral\n• 5th Ave & 50-51st St\n• 뉴욕 최대 가톨릭 성당 (1879)\n• 무료 입장 · 신고딕 건축\n\n⑤ 49-50th St — Saks Fifth Avenue\n• 5th Ave & 49-50th St\n• 럭셔리 백화점 플래그십\n\n⑥ 56th St — Trump Tower\n• 5th Ave & 56th St (외관만)\n\n⑦ 57th St — Tiffany & Co. / Bergdorf Goodman\n• 5th Ave & 57th St\n• Tiffany 본점 (Audrey Hepburn 영화)\n\n⑧ 59th St — Apple Store Fifth Avenue\n• 5th Ave & 59th St (GM Building 앞)\n• 유리 큐브 입구 (24시간 영업)\n• 플라자 호텔(Plaza Hotel) 바로 옆\n\n💡 시간 여유 따라 일부만 골라보기 OK\n💡 16:30경 5th Ave 59th에서 동쪽으로 출발",
+      { time: "15:00", end: "16:30", title: "🏛️ 5th Avenue 랜드마크 워킹 (42nd → 59th)", type: "highlight", location: "5th Avenue 미드타운", address: "5th Ave 42nd St → 59th St (약 1.5km)",
+        description: "5th Ave를 따라 북쪽으로 산책 — 뉴욕 대표 랜드마크 줄줄이!\n\n🚶 도보 코스 (약 1.5km · 1시간 30분 여유)\n\n① 42nd St — New York Public Library\n• 5th Ave & 42nd St\n• 사자상 (Patience & Fortitude)\n• Rose Reading Room (입장 가능, 무료)\n\n② Bryant Park (NYPL 뒤편)\n• 6th Ave & 40-42nd St\n• 정원 + 잔디밭 + 야외 카페\n• 잠깐 휴식 좋음\n\n③ 49-50th St — Rockefeller Center\n• 5th Ave & 50th St\n• Channel Gardens · 프로메테우스 동상\n• Top of the Rock 전망대 ($42, 선택)\n• Atlas 동상 (5th Ave 정면)\n\n④ 50th St — St. Patrick's Cathedral\n• 5th Ave & 50-51st St\n• 뉴욕 최대 가톨릭 성당 (1879)\n• 무료 입장 · 신고딕 건축\n\n⑤ 49-50th St — Saks Fifth Avenue\n• 5th Ave & 49-50th St\n• 럭셔리 백화점 플래그십\n\n⑥ 56th St — Trump Tower\n• 5th Ave & 56th St (외관만)\n\n⑦ 57th St — Tiffany & Co. / Bergdorf Goodman\n• 5th Ave & 57th St\n• Tiffany 본점 (Audrey Hepburn 영화)\n\n⑧ 59th St — Apple Store Fifth Avenue\n• 5th Ave & 59th St (GM Building 앞)\n• 유리 큐브 입구 (24시간 영업)\n• 플라자 호텔(Plaza Hotel) 바로 옆\n\n💡 시간 빠듯 — 핵심 4~5곳 골라보기 권장\n💡 16:30 정각에 5th Ave 59th에서 동쪽으로 출발",
         photo: "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?w=600&h=300&fit=crop&auto=format",
         links: [
           { icon: "📚", label: "NYPL 정보", href: "https://www.nypl.org/locations/schwarzman" },
