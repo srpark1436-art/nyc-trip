@@ -231,11 +231,21 @@ const DAYS = [
         description: "5th Ave를 따라 북쪽으로 산책 — 뉴욕 대표 랜드마크 줄줄이!\n\n🚶 도보 코스 (약 1.5km · 1시간 30분 여유)\n\n① 42nd St — New York Public Library\n• 5th Ave & 42nd St\n• 사자상 (Patience & Fortitude)\n• Rose Reading Room (입장 가능, 무료)\n\n② Bryant Park (NYPL 뒤편)\n• 6th Ave & 40-42nd St\n• 정원 + 잔디밭 + 야외 카페\n• 잠깐 휴식 좋음\n\n③ 49-50th St — Rockefeller Center\n• 5th Ave & 50th St\n• Channel Gardens · 프로메테우스 동상\n• Top of the Rock 전망대 ($42, 선택)\n• Atlas 동상 (5th Ave 정면)\n\n④ 50th St — St. Patrick's Cathedral\n• 5th Ave & 50-51st St\n• 뉴욕 최대 가톨릭 성당 (1879)\n• 무료 입장 · 신고딕 건축\n\n⑤ 49-50th St — Saks Fifth Avenue\n• 5th Ave & 49-50th St\n• 럭셔리 백화점 플래그십\n\n⑥ 56th St — Trump Tower\n• 5th Ave & 56th St (외관만)\n\n⑦ 57th St — Tiffany & Co. / Bergdorf Goodman\n• 5th Ave & 57th St\n• Tiffany 본점 (Audrey Hepburn 영화)\n\n⑧ 59th St — Apple Store Fifth Avenue\n• 5th Ave & 59th St (GM Building 앞)\n• 유리 큐브 입구 (24시간 영업)\n• 플라자 호텔(Plaza Hotel) 바로 옆\n\n💡 시간 빠듯 — 핵심 4~5곳 골라보기 권장\n💡 16:30 정각에 5th Ave 59th에서 동쪽으로 출발",
         photo: "https://images.unsplash.com/photo-1565060299509-453c4f3bc905?w=600&h=300&fit=crop&auto=format",
         links: [
-          { icon: "📚", label: "NYPL 정보", href: "https://www.nypl.org/locations/schwarzman" },
-          { icon: "⛪", label: "St Patrick's 정보", href: "https://saintpatrickscathedral.org/" },
-          { icon: "🏙️", label: "Top of the Rock", href: "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/" }
+          { icon: "🗺️", label: "전체 도보 루트 (8 stops)", href: "https://www.google.com/maps/dir/?api=1&origin=Times+Square+New+York&destination=Apple+Store+Fifth+Avenue+New+York&waypoints=New+York+Public+Library+Stephen+A+Schwarzman+Building%7CBryant+Park+NYC%7CRockefeller+Center%7CSt+Patrick%27s+Cathedral+NYC%7CSaks+Fifth+Avenue+NYC%7CTrump+Tower+NYC%7CTiffany+%26+Co+Fifth+Avenue+NYC%7CBergdorf+Goodman+NYC&travelmode=walking" },
+          { icon: "📍", label: "① NYPL", href: "https://www.google.com/maps/search/?api=1&query=New+York+Public+Library+Stephen+A+Schwarzman+Building" },
+          { icon: "📍", label: "② Bryant Park", href: "https://www.google.com/maps/search/?api=1&query=Bryant+Park+NYC" },
+          { icon: "📍", label: "③ Rockefeller Center", href: "https://www.google.com/maps/search/?api=1&query=Rockefeller+Center+NYC" },
+          { icon: "📍", label: "④ St Patrick's Cathedral", href: "https://www.google.com/maps/search/?api=1&query=St+Patricks+Cathedral+NYC" },
+          { icon: "📍", label: "⑤ Saks Fifth Avenue", href: "https://www.google.com/maps/search/?api=1&query=Saks+Fifth+Avenue+NYC" },
+          { icon: "📍", label: "⑥ Trump Tower", href: "https://www.google.com/maps/search/?api=1&query=Trump+Tower+NYC" },
+          { icon: "📍", label: "⑦ Tiffany & Co.", href: "https://www.google.com/maps/search/?api=1&query=Tiffany+%26+Co+Fifth+Avenue+NYC" },
+          { icon: "📍", label: "⑧ Bergdorf Goodman", href: "https://www.google.com/maps/search/?api=1&query=Bergdorf+Goodman+NYC" },
+          { icon: "📍", label: "🍎 Apple 5th Ave", href: "https://www.google.com/maps/search/?api=1&query=Apple+Store+Fifth+Avenue+NYC" },
+          { icon: "📚", label: "NYPL 공식", href: "https://www.nypl.org/locations/schwarzman" },
+          { icon: "⛪", label: "St Patrick's 공식", href: "https://saintpatrickscathedral.org/" },
+          { icon: "🏙️", label: "Top of the Rock 예매", href: "https://www.rockefellercenter.com/attractions/top-of-the-rock-observation-deck/" }
         ],
-        tip: "토요일 오후 인파 多 — 핵심만 골라보고 사진 위주로 산책",
+        tip: "🗺️ 첫 버튼 '전체 도보 루트' 누르면 Google Maps에 8개 랜드마크 핀 + 도보 경로 한번에!\n토요일 오후 인파 多 — 핵심만 골라보고 사진 위주",
         transit: [
           { mode: "walk", icon: "🚶", label: "Times Square → 5th Ave 42nd", detail: "Broadway 42nd St → 동쪽 도보 약 5분\n→ 5th Ave & 42nd St (NYPL 시작점)" },
           { mode: "walk", icon: "🚶", label: "5th Ave 북상 (42nd → 59th)", detail: "5th Ave 따라 북쪽 도보\n총 약 1.5km · 천천히 2시간\n중간 랜드마크 각 5~15분씩 둘러보기" }
